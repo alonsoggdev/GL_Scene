@@ -1,0 +1,58 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "c8e7030a9abc160f5405bcabafc10853e01ce188183b1ed6d34b22a0403ad17e"
+    }
+  ],
+  "containerPath" : "/Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx15.2",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/DerivedData/GL_Scene/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/DerivedData/GL_Scene/Build/Products",
+      "derivedDataPath" : "/Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/DerivedData/GL_Scene/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/DerivedData/GL_Scene/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/DerivedData/GL_Scene/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "YES",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
