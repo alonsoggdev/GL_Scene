@@ -60,16 +60,16 @@ namespace udit
         glUseProgram(skybox.get_shader_program_id());
         glm::mat4 skybox_matrix = glm::translate(model_view_matrix, glm::vec3(0.0f, -1.0f, 0.0f));
         skybox_matrix = glm::rotate(skybox_matrix, glm::radians(180.0f), glm::vec3(1.f, 0.f, 0.f));
-        glUniformMatrix4fv(skybox.get_shader_matrix_ids().first, 1, GL_FALSE, glm::value_ptr(view_matrix));
-        glUniformMatrix4fv(skybox.get_shader_matrix_ids().second, 1, GL_FALSE, glm::value_ptr(projection_matrix));
+        glm::mat4 skybox_model_view_matrix = view_matrix * skybox_matrix;
+        glUniformMatrix4fv(skybox.get_shader_matrix_ids().first, 1, GL_FALSE, glm::value_ptr(skybox_model_view_matrix));
         skybox.render();
         
         //* Plane rendering
         glUseProgram(plane.get_shader_program_id());
         glm::mat4 plane_matrix = glm::translate(model_view_matrix, glm::vec3(0.0f, 0.0f, -4.0f));
         plane_matrix = glm::rotate(plane_matrix, glm::radians(40.0f), glm::vec3(1.f, 0.f, 0.f));
-        glUniformMatrix4fv(plane.get_shader_matrix_ids().first, 1, GL_FALSE, glm::value_ptr(view_matrix));
-        glUniformMatrix4fv(plane.get_shader_matrix_ids().second, 1, GL_FALSE, glm::value_ptr(projection_matrix));
+        glm::mat4 plane_model_view_matrix = view_matrix * plane_matrix;
+        glUniformMatrix4fv(plane.get_shader_matrix_ids().first, 1, GL_FALSE, glm::value_ptr(plane_model_view_matrix));
         plane.render();
     }
     
@@ -80,8 +80,11 @@ namespace udit
 
         glm::mat4 projection_matrix = glm::perspective (20.f, GLfloat(width) / height, 1.f, 5000.f);
 
-        glUniformMatrix4fv (skybox_matrix_ids.second, 1, GL_FALSE, glm::value_ptr(projection_matrix));
-        glUniformMatrix4fv (plane_matrix_ids.second, 1, GL_FALSE, glm::value_ptr(projection_matrix));
+        glUseProgram(skybox.get_shader_program_id());
+        glUniformMatrix4fv(skybox_matrix_ids.second, 1, GL_FALSE, glm::value_ptr(projection_matrix));
+
+        glUseProgram(plane.get_shader_program_id());
+        glUniformMatrix4fv(plane_matrix_ids.second, 1, GL_FALSE, glm::value_ptr(projection_matrix));
 
         glViewport (0, 0, width, height);
     }
