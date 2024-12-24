@@ -50,6 +50,8 @@ void Camera::process_keyboard(CameraMovement direction, float delta_time)
     {
         position += right * velocity;
     }
+    
+    position.y = 0.0f;
 }
 
 void Camera::process_mouse_movement(float x_offset, float y_offset, bool constraint_pitch)

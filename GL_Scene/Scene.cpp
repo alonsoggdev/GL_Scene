@@ -25,7 +25,7 @@ namespace udit
      *@param height Alto de la escena
      */
     Scene::Scene(unsigned width, unsigned height) :
-    skybox(100.0f, skybox_faces), plane()
+    skybox(100.0f, skybox_faces), plane(100.0f)
     {
         // std::cout << "Creating scene..." << std::endl;
         
@@ -66,8 +66,8 @@ namespace udit
         
         //* Plane rendering
         glUseProgram(plane.get_shader_program_id());
-        glm::mat4 plane_matrix = glm::translate(model_view_matrix, glm::vec3(0.0f, 0.0f, -4.0f));
-        plane_matrix = glm::rotate(plane_matrix, glm::radians(40.0f), glm::vec3(1.f, 0.f, 0.f));
+        glm::mat4 plane_matrix = glm::translate(model_view_matrix, glm::vec3(0.0f, -2.0f, 0.0f));
+        plane_matrix = glm::rotate(plane_matrix, glm::radians(90.0f), glm::vec3(1.0f, 0.f, 0.f));
         glm::mat4 plane_model_view_matrix = view_matrix * plane_matrix;
         glUniformMatrix4fv(plane.get_shader_matrix_ids().first, 1, GL_FALSE, glm::value_ptr(plane_model_view_matrix));
         plane.render();

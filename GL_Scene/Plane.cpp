@@ -13,6 +13,10 @@ using udit::Plane;
 
 namespace udit
 {
+    Plane::Plane(float size) : width(size), height(size), columns(size), rows(size)
+    {
+        create_plane();
+    }
 
     Plane::Plane() : width(5.0f), height(5.0f), columns (5), rows (5)
     {

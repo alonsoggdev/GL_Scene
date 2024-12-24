@@ -22,6 +22,7 @@ namespace udit
         unsigned rows;
     public:
         Plane();
+        Plane(float size);
         Plane(float width, float height, unsigned columns, unsigned rows);
     private:
         void create_plane();
