@@ -12,6 +12,7 @@
 
 #include "Skybox.hpp"
 #include "Cube.hpp"
+#include "Plane.hpp"
 
 namespace udit
 {
@@ -22,13 +23,16 @@ namespace udit
         {
                "skybox_east.jpg", "skybox_west.jpg", "skybox_up.jpg",
                "skybox_down.jpg", "skybox_north.jpg", "skybox_south.jpg"
-            
         };
         
         float angle = 0.0f;
                 
         Skybox skybox;
+        Plane plane;
         // Cube cube;
+        
+        glm::mat4 view_matrix;
+        glm::mat4 projection_matrix;
         
     public:
         Scene(unsigned width, unsigned height);
@@ -36,5 +40,8 @@ namespace udit
         void update();
         void render();
         void resize(unsigned width, unsigned height);
+        
+        void set_view_matrix(const glm::mat4& view);
+        void set_projection_matrix(const glm::mat4& projection);
     };
 }

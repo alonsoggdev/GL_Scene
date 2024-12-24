@@ -73,7 +73,7 @@ namespace udit
 
         program_id = compile_shaders (vertex_code.c_str(), fragment_code.c_str());
 
-        glUseProgram (program_id);
+        //glUseProgram (program_id);
     }
 
     Shader::Shader()
@@ -85,7 +85,7 @@ namespace udit
 
         program_id = compile_shaders (default_vertex_shader_code.c_str(), default_fragment_shader_code.c_str());
 
-        glUseProgram (program_id);
+        //glUseProgram (program_id);
     }
     
     /**

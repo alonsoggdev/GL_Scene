@@ -49,6 +49,7 @@ namespace udit
         void update();
         void render();
         void set_shader( std::unique_ptr < udit::Shader > shader );
+        GLuint get_shader_program_id() const;
         std::pair < GLint, GLint > get_shader_matrix_ids();
 
     };

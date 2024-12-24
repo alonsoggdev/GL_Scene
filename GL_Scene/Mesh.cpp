@@ -106,4 +106,17 @@ namespace udit
     {
         return std::make_pair(m_shader->get_model_view_matrix_id(), m_shader->get_projection_matrix_id());
     }
+
+    GLuint Mesh::get_shader_program_id() const
+    {
+        if (m_shader)
+        {
+            return m_shader->get_program_id();
+        }
+        else
+        {
+            std::cerr << "Error: No shader assigned to this mesh." << std::endl;
+            return 0;
+        }
+    }
 }

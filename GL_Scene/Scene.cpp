@@ -25,13 +25,16 @@ namespace udit
      *@param height Alto de la escena
      */
     Scene::Scene(unsigned width, unsigned height) :
-    skybox(5.0f, skybox_faces)
+    skybox(100.0f, skybox_faces), plane()
     {
         // std::cout << "Creating scene..." << std::endl;
-        std::unique_ptr < Shader >skybox_shader_program = ShaderFactory::make_shader(udit::ShaderType::SKYBOX, "Shader_Skybox_Vertex.glsl", "Shader_Skybox_Fragment.glsl");
         
+        std::unique_ptr < Shader > skybox_shader_program = ShaderFactory::make_shader(udit::ShaderType::SKYBOX, "Shader_Skybox_Vertex.glsl", "Shader_Skybox_Fragment.glsl");
         skybox.set_shader(std::move(skybox_shader_program));
-                
+
+        std::unique_ptr < Shader > plane_shader_program = ShaderFactory::make_shader(udit::ShaderType::DEFAULT);
+        plane.set_shader(std::move(plane_shader_program));
+
         resize(width, height);
     }
     /**
@@ -53,26 +56,44 @@ namespace udit
         
         glm::mat4 model_view_matrix(1);
         
-        std::pair < GLint, GLint > skybox_matrix_ids = skybox.get_shader_matrix_ids();
-        
-        model_view_matrix = glm::translate(model_view_matrix, glm::vec3(0.0f, -1.0f, 0.0f));
-                        
-        model_view_matrix = glm::rotate(model_view_matrix, glm::radians(180.0f), glm::vec3(1.f, 0.f, 0.f));
-
-        glUniformMatrix4fv (skybox_matrix_ids.first, 1, GL_FALSE, glm::value_ptr(model_view_matrix));
-
+        //* Skybox rendering
+        glUseProgram(skybox.get_shader_program_id());
+        glm::mat4 skybox_matrix = glm::translate(model_view_matrix, glm::vec3(0.0f, -1.0f, 0.0f));
+        skybox_matrix = glm::rotate(skybox_matrix, glm::radians(180.0f), glm::vec3(1.f, 0.f, 0.f));
+        glUniformMatrix4fv(skybox.get_shader_matrix_ids().first, 1, GL_FALSE, glm::value_ptr(view_matrix));
+        glUniformMatrix4fv(skybox.get_shader_matrix_ids().second, 1, GL_FALSE, glm::value_ptr(projection_matrix));
         skybox.render();
-         
+        
+        //* Plane rendering
+        glUseProgram(plane.get_shader_program_id());
+        glm::mat4 plane_matrix = glm::translate(model_view_matrix, glm::vec3(0.0f, 0.0f, -4.0f));
+        plane_matrix = glm::rotate(plane_matrix, glm::radians(40.0f), glm::vec3(1.f, 0.f, 0.f));
+        glUniformMatrix4fv(plane.get_shader_matrix_ids().first, 1, GL_FALSE, glm::value_ptr(view_matrix));
+        glUniformMatrix4fv(plane.get_shader_matrix_ids().second, 1, GL_FALSE, glm::value_ptr(projection_matrix));
+        plane.render();
     }
     
     void Scene::resize (unsigned width, unsigned height)
     {
         std::pair < GLint, GLint > skybox_matrix_ids = skybox.get_shader_matrix_ids();
+        std::pair < GLint, GLint > plane_matrix_ids = plane.get_shader_matrix_ids();
 
         glm::mat4 projection_matrix = glm::perspective (20.f, GLfloat(width) / height, 1.f, 5000.f);
 
         glUniformMatrix4fv (skybox_matrix_ids.second, 1, GL_FALSE, glm::value_ptr(projection_matrix));
+        glUniformMatrix4fv (plane_matrix_ids.second, 1, GL_FALSE, glm::value_ptr(projection_matrix));
 
         glViewport (0, 0, width, height);
     }
+
+    void Scene::set_view_matrix(const glm::mat4& view)
+    {
+        view_matrix = view;
+    }
+
+    void Scene::set_projection_matrix(const glm::mat4& projection)
+    {
+        projection_matrix = projection;
+    }
+
 }

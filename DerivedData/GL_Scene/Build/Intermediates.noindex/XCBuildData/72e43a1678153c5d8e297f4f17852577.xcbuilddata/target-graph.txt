@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'GL_Scene' in project 'GL_Scene' (no dependencies)
