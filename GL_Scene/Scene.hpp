@@ -31,6 +31,8 @@ namespace udit
         Skybox skybox;
         Plane terrain;
         
+        std::unique_ptr<Mesh> bull;
+                
         glm::mat4 view_matrix;
         glm::mat4 projection_matrix;
         

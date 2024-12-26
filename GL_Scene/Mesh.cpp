@@ -7,6 +7,10 @@
 
 #include <iostream>
 
+#include <assimp/Importer.hpp>
+#include <assimp/scene.h>
+#include <assimp/postprocess.h>
+
 #include "Mesh.hpp"
 
 using udit::Mesh;
@@ -20,50 +24,131 @@ namespace udit
     {
         
     }
+
+    Mesh::Mesh(std::string & path)
+    {
+        Assimp::Importer importer;
+        std::cout << "Loading mesh from " << path << std::endl;
+        const aiScene * scene = importer.ReadFile(path, aiProcess_Triangulate | aiProcess_FlipUVs);
+        
+        if (!scene || !scene->HasMeshes())
+        {
+            std::cerr << "Error cargando modelo 3D: " << path << std::endl;
+            return;
+        }
+        
+        for (unsigned int i = 0; i < scene->mNumMeshes; ++i)
+        {
+            aiMesh * mesh = scene->mMeshes[i];
+            
+            size_t number_of_vertices = mesh->mNumVertices;
+            size_t number_of_indices;
+            
+            glGenBuffers(VBO_COUNT, vbo_ids);
+            glGenVertexArrays(1, &vao_id);
+            
+            glBindVertexArray(vao_id);
+            
+            static_assert(sizeof(aiVector3D) == sizeof(glm::fvec3), "aiVector3D deberia tener tres floats");
+            
+            glBindBuffer(GL_ARRAY_BUFFER, vbo_ids[COORDINATES_VBO]);
+            glBufferData(GL_ARRAY_BUFFER, number_of_vertices * sizeof(aiVector3D), mesh->mVertices, GL_STATIC_DRAW);
+            
+            glEnableVertexAttribArray(0);
+            glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
+            
+            for (size_t i = 0; i < number_of_vertices; ++i)
+            {
+                colors.push_back(glm::vec3(0.5f, 0.5f, 0.5f));
+            }
+            
+            glBindBuffer (GL_ARRAY_BUFFER, vbo_ids[COLORS_VBO]);
+            glBufferData(GL_ARRAY_BUFFER, colors.size() * sizeof(glm::vec3), colors.data(), GL_STATIC_DRAW);
+            
+            glEnableVertexAttribArray(1);
+            glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, 0);
+
+            for (unsigned int j = 0; j < mesh->mNumVertices; ++j)
+            {
+                aiVector3D aiVertex = mesh->mVertices[j];
+                coordinates.push_back(glm::vec3(aiVertex.x, aiVertex.y, aiVertex.z));
+            }
+            
+            for (unsigned int j = 0; j < mesh->mNumFaces; ++j)
+            {
+                aiFace & face = mesh->mFaces[j];
+                for (unsigned int k = 0; k < face.mNumIndices; ++k)
+                {
+                    indices.push_back(face.mIndices[k]);
+                }
+            }
+            
+            glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vbo_ids[INDEXES_VBO]);
+            glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(GLuint), indices.data(), GL_STATIC_DRAW);
+        }
+        std::cout << scene->mNumMeshes << " meshes loaded." << std::endl;
+    }
     
     /**
      *@brief Crea una malla utilizando las coordenadas, colores e indices de la propia clase
      *
      *@param mesh_name Nombre de la malla
      */
+
+    void check_gl_error(const std::string& function_name)
+    {
+        GLenum err;
+        while ((err = glGetError()) != GL_NO_ERROR)
+        {
+            std::cout << "OpenGL error in function " << function_name << ": " << err << std::endl;
+        }
+    }
+
     void Mesh::create_mesh(std::string mesh_name)
     {
-        // std::cout << "Creating Mesh: " << mesh_name << std::endl;
+        std::cout << "Creating Mesh: " << mesh_name << std::endl;
+        
+        // Generar los buffers y verificar errores
         glGenBuffers(VBO_COUNT, vbo_ids);
+        check_gl_error("glGenBuffers");
+
         glGenVertexArrays(1, &vao_id);
-        
+        check_gl_error("glGenVertexArrays");
+
         glBindVertexArray(vao_id);
-        
+        check_gl_error("glBindVertexArray");
+
+        // Crear el VBO para las coordenadas
         glBindBuffer(GL_ARRAY_BUFFER, vbo_ids[COORDINATES_VBO]);
         glBufferData(GL_ARRAY_BUFFER, coordinates.size() * sizeof(glm::vec3), coordinates.data(), GL_STATIC_DRAW);
-        
-        glEnableVertexAttribArray (0);
-        glVertexAttribPointer (0, 3, GL_FLOAT, GL_FALSE, 0, 0);
+        check_gl_error("glBufferData (COORDINATES_VBO)");
 
+        glEnableVertexAttribArray(0);
+        check_gl_error("glEnableVertexAttribArray (COORDINATES_VBO)");
 
-        glBindBuffer (GL_ARRAY_BUFFER, vbo_ids[COLORS_VBO]);
-        glBufferData (GL_ARRAY_BUFFER, colors.size() * sizeof(glm::vec3), colors.data(), GL_STATIC_DRAW);
+        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
+        check_gl_error("glVertexAttribPointer (COORDINATES_VBO)");
 
-        glEnableVertexAttribArray (1);
-        glVertexAttribPointer (1, 3, GL_FLOAT, GL_FALSE, 0, 0);
+        // Crear el VBO para los colores
+        glBindBuffer(GL_ARRAY_BUFFER, vbo_ids[COLORS_VBO]);
+        glBufferData(GL_ARRAY_BUFFER, colors.size() * sizeof(glm::vec3), colors.data(), GL_STATIC_DRAW);
+        check_gl_error("glBufferData (COLORS_VBO)");
 
+        glEnableVertexAttribArray(1);
+        check_gl_error("glEnableVertexAttribArray (COLORS_VBO)");
 
-        glBindBuffer (GL_ELEMENT_ARRAY_BUFFER, vbo_ids[INDEXES_VBO]);
-        glBufferData (GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(GLuint), indices.data(), GL_STATIC_DRAW);
+        glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, 0);
+        check_gl_error("glVertexAttribPointer (COLORS_VBO)");
 
-        glBindVertexArray (0);
-        
-        /*
-        for (size_t i = 0; i < coordinates.size(); ++i) {
-            const glm::vec3& coord = coordinates[i];
-            std::cout << "(" << coord.x << ", " << coord.y << ", " << coord.z << ")";
-            if (i != coordinates.size() - 1) {
-                std::cout << ", ";
-            }
-        }
+        // Crear el VBO para los índices
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vbo_ids[INDEXES_VBO]);
+        glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(GLuint), indices.data(), GL_STATIC_DRAW);
+        check_gl_error("glBufferData (INDEXES_VBO)");
 
-        std::cout << std::endl;
-         */
+        glBindVertexArray(0);
+        check_gl_error("glBindVertexArray (0)");
+
+        std::cout << "Mesh created successfully: " << mesh_name << std::endl;
     }
 
     /**

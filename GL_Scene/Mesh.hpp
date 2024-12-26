@@ -44,7 +44,7 @@ namespace udit
         
         GLsizei number_of_vertices;
 
-        void create_mesh(std::string mesh_name);
+        void create_mesh(std::string mesh_name = "");
         
     private:
         GLuint vbo_ids[VBO_COUNT];
@@ -55,6 +55,7 @@ namespace udit
     public:
 
         Mesh();
+        Mesh(std::string & path);
         ~Mesh();
         void update();
         void render();

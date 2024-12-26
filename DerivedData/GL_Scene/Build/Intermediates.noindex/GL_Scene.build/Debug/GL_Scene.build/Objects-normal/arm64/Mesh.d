@@ -1,5 +1,9 @@
 dependencies: \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Mesh.cpp \
+  /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/assimp/Importer.hpp \
+  /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/assimp/scene.h \
+  /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/assimp/postprocess.h \
+  /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/assimp/types.h \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Mesh.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/glm.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/detail/_fixes.hpp \

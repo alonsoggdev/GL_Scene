@@ -6,7 +6,7 @@
 	<integer>11</integer>
 	<key>logs</key>
 	<dict>
-		<key>074C665E-05BC-46C7-A478-6078B5996CE0</key>
+		<key>0E8DE454-6A12-4BEB-9744-81005D54CFBB</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,49 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>074C665E-05BC-46C7-A478-6078B5996CE0.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>16</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756900678.91139901</real>
-			<key>timeStoppedRecording</key>
-			<real>756900679.69811201</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>074C665E-05BC-46C7-A478-6078B5996CE0</string>
-		</dict>
-		<key>0E7E7582-0E93-4268-9ED8-B81B0849F4C8</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>0E7E7582-0E93-4268-9ED8-B81B0849F4C8.xcactivitylog</string>
+			<string>0E8DE454-6A12-4BEB-9744-81005D54CFBB.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,15 +40,15 @@
 			<key>signature</key>
 			<string>Build GL_Scene</string>
 			<key>timeStartedRecording</key>
-			<real>756921502.93280804</real>
+			<real>756929855.92216396</real>
 			<key>timeStoppedRecording</key>
-			<real>756921504.25633204</real>
+			<real>756929857.44270897</real>
 			<key>title</key>
 			<string>Build GL_Scene</string>
 			<key>uniqueIdentifier</key>
-			<string>0E7E7582-0E93-4268-9ED8-B81B0849F4C8</string>
+			<string>0E8DE454-6A12-4BEB-9744-81005D54CFBB</string>
 		</dict>
-		<key>146D1922-9E8F-4B20-8102-D8A88DF740E2</key>
+		<key>13F6F989-DD75-4208-8870-87F5393C4500</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -99,7 +57,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>146D1922-9E8F-4B20-8102-D8A88DF740E2.xcactivitylog</string>
+			<string>13F6F989-DD75-4208-8870-87F5393C4500.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -124,15 +82,15 @@
 			<key>signature</key>
 			<string>Build GL_Scene</string>
 			<key>timeStartedRecording</key>
-			<real>756898061.634076</real>
+			<real>756929709.66071403</real>
 			<key>timeStoppedRecording</key>
-			<real>756898062.253425</real>
+			<real>756929709.69026399</real>
 			<key>title</key>
 			<string>Build GL_Scene</string>
 			<key>uniqueIdentifier</key>
-			<string>146D1922-9E8F-4B20-8102-D8A88DF740E2</string>
+			<string>13F6F989-DD75-4208-8870-87F5393C4500</string>
 		</dict>
-		<key>17009373-18E5-4592-A5A3-57270E7269B0</key>
+		<key>1DCC4239-75FB-4AA9-A2E2-3F7AD0F74309</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -141,763 +99,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>17009373-18E5-4592-A5A3-57270E7269B0.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756919432.50874805</real>
-			<key>timeStoppedRecording</key>
-			<real>756919432.55793905</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>17009373-18E5-4592-A5A3-57270E7269B0</string>
-		</dict>
-		<key>1880415B-E35D-43D1-B1DD-2400E0EE0466</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>1880415B-E35D-43D1-B1DD-2400E0EE0466.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756898570.19846296</real>
-			<key>timeStoppedRecording</key>
-			<real>756898571.04194403</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>1880415B-E35D-43D1-B1DD-2400E0EE0466</string>
-		</dict>
-		<key>230AD7F6-B88C-4D16-956F-2648EEE1E73C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>230AD7F6-B88C-4D16-956F-2648EEE1E73C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756919220.61807704</real>
-			<key>timeStoppedRecording</key>
-			<real>756919221.50991702</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>230AD7F6-B88C-4D16-956F-2648EEE1E73C</string>
-		</dict>
-		<key>2970D125-C33E-4D4A-BB94-476C0335026C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>2970D125-C33E-4D4A-BB94-476C0335026C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>1</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756918669.53807104</real>
-			<key>timeStoppedRecording</key>
-			<real>756918670.718099</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>2970D125-C33E-4D4A-BB94-476C0335026C</string>
-		</dict>
-		<key>30189BCE-7A0C-4256-AD59-A49635E1A273</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>30189BCE-7A0C-4256-AD59-A49635E1A273.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>2</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756921111.597893</real>
-			<key>timeStoppedRecording</key>
-			<real>756921113.41360605</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>30189BCE-7A0C-4256-AD59-A49635E1A273</string>
-		</dict>
-		<key>34023C59-09F5-4022-A8B6-23E8FB7E06D9</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>34023C59-09F5-4022-A8B6-23E8FB7E06D9.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756921603.90245199</real>
-			<key>timeStoppedRecording</key>
-			<real>756921604.56462204</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>34023C59-09F5-4022-A8B6-23E8FB7E06D9</string>
-		</dict>
-		<key>34EB325E-39DA-4C24-9D6D-A4084D10820E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>34EB325E-39DA-4C24-9D6D-A4084D10820E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>18</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756901796.14277506</real>
-			<key>timeStoppedRecording</key>
-			<real>756901797.38921201</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>34EB325E-39DA-4C24-9D6D-A4084D10820E</string>
-		</dict>
-		<key>38DC72FC-5179-41D3-8FE5-2190795E0D72</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>38DC72FC-5179-41D3-8FE5-2190795E0D72.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756919538.57527196</real>
-			<key>timeStoppedRecording</key>
-			<real>756919540.22442698</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>38DC72FC-5179-41D3-8FE5-2190795E0D72</string>
-		</dict>
-		<key>397F3789-807C-46B0-AE29-5A5894F23103</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>397F3789-807C-46B0-AE29-5A5894F23103.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>17</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756901910.58813202</real>
-			<key>timeStoppedRecording</key>
-			<real>756901911.27256298</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>397F3789-807C-46B0-AE29-5A5894F23103</string>
-		</dict>
-		<key>414EF76B-7EC4-4A60-B6D5-548CC468933D</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>414EF76B-7EC4-4A60-B6D5-548CC468933D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>17</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756918827.61457205</real>
-			<key>timeStoppedRecording</key>
-			<real>756918828.53562701</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>414EF76B-7EC4-4A60-B6D5-548CC468933D</string>
-		</dict>
-		<key>46B46E3F-644D-4F9E-AB2B-A30FF5BAB987</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>46B46E3F-644D-4F9E-AB2B-A30FF5BAB987.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756919683.65813506</real>
-			<key>timeStoppedRecording</key>
-			<real>756919684.40089297</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>46B46E3F-644D-4F9E-AB2B-A30FF5BAB987</string>
-		</dict>
-		<key>498B6318-15DC-4BFD-8B64-527015E4CD6E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>498B6318-15DC-4BFD-8B64-527015E4CD6E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756820158.23304999</real>
-			<key>timeStoppedRecording</key>
-			<real>756820158.96191299</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>498B6318-15DC-4BFD-8B64-527015E4CD6E</string>
-		</dict>
-		<key>4A407E4E-A493-47BE-8711-5FBE77BFA0B3</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>4A407E4E-A493-47BE-8711-5FBE77BFA0B3.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>16</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756900308.24945605</real>
-			<key>timeStoppedRecording</key>
-			<real>756900308.99240398</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>4A407E4E-A493-47BE-8711-5FBE77BFA0B3</string>
-		</dict>
-		<key>4BE174D5-1EAD-40E4-9D4C-04FFD8D83708</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>4BE174D5-1EAD-40E4-9D4C-04FFD8D83708.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756919968.01705503</real>
-			<key>timeStoppedRecording</key>
-			<real>756919968.06654704</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>4BE174D5-1EAD-40E4-9D4C-04FFD8D83708</string>
-		</dict>
-		<key>4C9C446B-8EFF-4F12-8269-8D1E8B4E216A</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>4C9C446B-8EFF-4F12-8269-8D1E8B4E216A.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756919995.20393395</real>
-			<key>timeStoppedRecording</key>
-			<real>756919996.33257604</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>4C9C446B-8EFF-4F12-8269-8D1E8B4E216A</string>
-		</dict>
-		<key>4DE15DDC-BECA-416E-AF8B-FA1369359D72</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>4DE15DDC-BECA-416E-AF8B-FA1369359D72.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756897610.63310206</real>
-			<key>timeStoppedRecording</key>
-			<real>756897611.22065902</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>4DE15DDC-BECA-416E-AF8B-FA1369359D72</string>
-		</dict>
-		<key>4F7905BD-A33D-4632-B843-8ABDA9DD1FEF</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>4F7905BD-A33D-4632-B843-8ABDA9DD1FEF.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>17</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756917856.33153403</real>
-			<key>timeStoppedRecording</key>
-			<real>756917857.84056497</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>4F7905BD-A33D-4632-B843-8ABDA9DD1FEF</string>
-		</dict>
-		<key>53AEFC6A-523B-4310-9AE3-795D61B0B12A</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>53AEFC6A-523B-4310-9AE3-795D61B0B12A.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756921582.07979703</real>
-			<key>timeStoppedRecording</key>
-			<real>756921583.00143802</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>53AEFC6A-523B-4310-9AE3-795D61B0B12A</string>
-		</dict>
-		<key>56B0D049-505A-4B60-BDD2-5A36038A3BC4</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>56B0D049-505A-4B60-BDD2-5A36038A3BC4.xcactivitylog</string>
+			<string>1DCC4239-75FB-4AA9-A2E2-3F7AD0F74309.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -922,15 +124,15 @@
 			<key>signature</key>
 			<string>Build GL_Scene</string>
 			<key>timeStartedRecording</key>
-			<real>756898568.01141596</real>
+			<real>756927093.08674002</real>
 			<key>timeStoppedRecording</key>
-			<real>756898568.42433</real>
+			<real>756927093.82330406</real>
 			<key>title</key>
 			<string>Build GL_Scene</string>
 			<key>uniqueIdentifier</key>
-			<string>56B0D049-505A-4B60-BDD2-5A36038A3BC4</string>
+			<string>1DCC4239-75FB-4AA9-A2E2-3F7AD0F74309</string>
 		</dict>
-		<key>5C2423DB-CC4D-4E8A-ADD0-60CB4D9EF4CA</key>
+		<key>242F2D8B-3B79-4347-B1E6-4706E555D520</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -939,49 +141,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>5C2423DB-CC4D-4E8A-ADD0-60CB4D9EF4CA.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756919373.60690498</real>
-			<key>timeStoppedRecording</key>
-			<real>756919374.43303394</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>5C2423DB-CC4D-4E8A-ADD0-60CB4D9EF4CA</string>
-		</dict>
-		<key>64FD66C7-4D7F-489E-80E1-809EEF3B59C7</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>64FD66C7-4D7F-489E-80E1-809EEF3B59C7.xcactivitylog</string>
+			<string>242F2D8B-3B79-4347-B1E6-4706E555D520.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1006,15 +166,15 @@
 			<key>signature</key>
 			<string>Build GL_Scene</string>
 			<key>timeStartedRecording</key>
-			<real>756898071.44502902</real>
+			<real>756929506.87585998</real>
 			<key>timeStoppedRecording</key>
-			<real>756898072.17853701</real>
+			<real>756929508.70989394</real>
 			<key>title</key>
 			<string>Build GL_Scene</string>
 			<key>uniqueIdentifier</key>
-			<string>64FD66C7-4D7F-489E-80E1-809EEF3B59C7</string>
+			<string>242F2D8B-3B79-4347-B1E6-4706E555D520</string>
 		</dict>
-		<key>6C8DEA2F-3581-40E7-BB44-787FEB70D8C5</key>
+		<key>24CD1DC6-B163-4A1E-BBB7-F1EFEBC8CFBF</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1023,7 +183,91 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>6C8DEA2F-3581-40E7-BB44-787FEB70D8C5.xcactivitylog</string>
+			<string>24CD1DC6-B163-4A1E-BBB7-F1EFEBC8CFBF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GL_Scene project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GL_Scene</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build GL_Scene</string>
+			<key>timeStartedRecording</key>
+			<real>756929437.997679</real>
+			<key>timeStoppedRecording</key>
+			<real>756929438.75958502</real>
+			<key>title</key>
+			<string>Build GL_Scene</string>
+			<key>uniqueIdentifier</key>
+			<string>24CD1DC6-B163-4A1E-BBB7-F1EFEBC8CFBF</string>
+		</dict>
+		<key>334ABBD2-0C95-496A-BA39-3DE0F3834842</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>334ABBD2-0C95-496A-BA39-3DE0F3834842.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GL_Scene project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GL_Scene</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build GL_Scene</string>
+			<key>timeStartedRecording</key>
+			<real>756929033.41129398</real>
+			<key>timeStoppedRecording</key>
+			<real>756929034.44266498</real>
+			<key>title</key>
+			<string>Build GL_Scene</string>
+			<key>uniqueIdentifier</key>
+			<string>334ABBD2-0C95-496A-BA39-3DE0F3834842</string>
+		</dict>
+		<key>58155D36-3736-4898-84B0-4B555AE63545</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>58155D36-3736-4898-84B0-4B555AE63545.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1033,7 +277,7 @@
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
-				<integer>2</integer>
+				<integer>7</integer>
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
@@ -1048,15 +292,15 @@
 			<key>signature</key>
 			<string>Build GL_Scene</string>
 			<key>timeStartedRecording</key>
-			<real>756921569.06178498</real>
+			<real>756927088.28564298</real>
 			<key>timeStoppedRecording</key>
-			<real>756921569.65369904</real>
+			<real>756927089.482566</real>
 			<key>title</key>
 			<string>Build GL_Scene</string>
 			<key>uniqueIdentifier</key>
-			<string>6C8DEA2F-3581-40E7-BB44-787FEB70D8C5</string>
+			<string>58155D36-3736-4898-84B0-4B555AE63545</string>
 		</dict>
-		<key>74D95180-F087-4AF5-83BA-6D85609094E0</key>
+		<key>5F62F041-768E-475D-845C-26F20C3DB0C5</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1065,7 +309,49 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>74D95180-F087-4AF5-83BA-6D85609094E0.xcactivitylog</string>
+			<string>5F62F041-768E-475D-845C-26F20C3DB0C5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GL_Scene project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GL_Scene</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build GL_Scene</string>
+			<key>timeStartedRecording</key>
+			<real>756929667.76102996</real>
+			<key>timeStoppedRecording</key>
+			<real>756929668.67728603</real>
+			<key>title</key>
+			<string>Build GL_Scene</string>
+			<key>uniqueIdentifier</key>
+			<string>5F62F041-768E-475D-845C-26F20C3DB0C5</string>
+		</dict>
+		<key>701C10D6-ABBB-4BA5-BAAE-D19203D4DDE6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>701C10D6-ABBB-4BA5-BAAE-D19203D4DDE6.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1075,7 +361,7 @@
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
-				<integer>4</integer>
+				<integer>8</integer>
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
@@ -1090,15 +376,15 @@
 			<key>signature</key>
 			<string>Build GL_Scene</string>
 			<key>timeStartedRecording</key>
-			<real>756920582.60466599</real>
+			<real>756928431.20930696</real>
 			<key>timeStoppedRecording</key>
-			<real>756920583.91607106</real>
+			<real>756928432.32522094</real>
 			<key>title</key>
 			<string>Build GL_Scene</string>
 			<key>uniqueIdentifier</key>
-			<string>74D95180-F087-4AF5-83BA-6D85609094E0</string>
+			<string>701C10D6-ABBB-4BA5-BAAE-D19203D4DDE6</string>
 		</dict>
-		<key>7633AC28-EDB8-4080-9CC0-33F88BF4E3C8</key>
+		<key>A44F0557-1674-4AE3-919F-75C7E4766F86</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1107,301 +393,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>7633AC28-EDB8-4080-9CC0-33F88BF4E3C8.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756898557.38694799</real>
-			<key>timeStoppedRecording</key>
-			<real>756898559.03346395</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>7633AC28-EDB8-4080-9CC0-33F88BF4E3C8</string>
-		</dict>
-		<key>77F9E1CA-A0AB-42B0-BA6C-2E248ED98790</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>77F9E1CA-A0AB-42B0-BA6C-2E248ED98790.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756897568.08079696</real>
-			<key>timeStoppedRecording</key>
-			<real>756897569.34594297</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>77F9E1CA-A0AB-42B0-BA6C-2E248ED98790</string>
-		</dict>
-		<key>7AF7BFB6-626C-4AE7-B74B-67837344A2C7</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>7AF7BFB6-626C-4AE7-B74B-67837344A2C7.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>17</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756901898.30459094</real>
-			<key>timeStoppedRecording</key>
-			<real>756901898.35728395</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>7AF7BFB6-626C-4AE7-B74B-67837344A2C7</string>
-		</dict>
-		<key>7BB77D23-5809-439E-8ECA-BD6D91370F2B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>7BB77D23-5809-439E-8ECA-BD6D91370F2B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756821568.11054206</real>
-			<key>timeStoppedRecording</key>
-			<real>756821569.63423097</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>7BB77D23-5809-439E-8ECA-BD6D91370F2B</string>
-		</dict>
-		<key>7C4DA5AC-8A12-427E-9F6B-2D8C3C752C9D</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>7C4DA5AC-8A12-427E-9F6B-2D8C3C752C9D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756897099.40896595</real>
-			<key>timeStoppedRecording</key>
-			<real>756897099.784899</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>7C4DA5AC-8A12-427E-9F6B-2D8C3C752C9D</string>
-		</dict>
-		<key>7FD8A547-685F-4859-AD36-205B1F747746</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>7FD8A547-685F-4859-AD36-205B1F747746.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756897996.28751802</real>
-			<key>timeStoppedRecording</key>
-			<real>756897997.27032304</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>7FD8A547-685F-4859-AD36-205B1F747746</string>
-		</dict>
-		<key>81037CD0-1E84-4317-B1AD-D10C53697D0B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>81037CD0-1E84-4317-B1AD-D10C53697D0B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>17</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756901888.13940501</real>
-			<key>timeStoppedRecording</key>
-			<real>756901888.85218501</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>81037CD0-1E84-4317-B1AD-D10C53697D0B</string>
-		</dict>
-		<key>8338AFDF-6FD3-40D0-9E69-3320F7509185</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>8338AFDF-6FD3-40D0-9E69-3320F7509185.xcactivitylog</string>
+			<string>A44F0557-1674-4AE3-919F-75C7E4766F86.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1411,133 +403,7 @@
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
-				<integer>1</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756918812.37401199</real>
-			<key>timeStoppedRecording</key>
-			<real>756918813.56030202</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>8338AFDF-6FD3-40D0-9E69-3320F7509185</string>
-		</dict>
-		<key>8660931C-31F9-42D3-99D4-1F29827758ED</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>8660931C-31F9-42D3-99D4-1F29827758ED.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>18</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756901720.45470095</real>
-			<key>timeStoppedRecording</key>
-			<real>756901722.25307596</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>8660931C-31F9-42D3-99D4-1F29827758ED</string>
-		</dict>
-		<key>877B1647-7467-473B-9413-07A41AC0C948</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>877B1647-7467-473B-9413-07A41AC0C948.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>1</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756918778.19236195</real>
-			<key>timeStoppedRecording</key>
-			<real>756918778.76806796</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>877B1647-7467-473B-9413-07A41AC0C948</string>
-		</dict>
-		<key>9356DD2C-B2B7-4AD2-B36D-1EF2241EF228</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>9356DD2C-B2B7-4AD2-B36D-1EF2241EF228.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
+				<integer>8</integer>
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
@@ -1552,181 +418,13 @@
 			<key>signature</key>
 			<string>Build GL_Scene</string>
 			<key>timeStartedRecording</key>
-			<real>756897944.00354195</real>
+			<real>756928380.19318199</real>
 			<key>timeStoppedRecording</key>
-			<real>756897944.77692795</real>
+			<real>756928381.61475801</real>
 			<key>title</key>
 			<string>Build GL_Scene</string>
 			<key>uniqueIdentifier</key>
-			<string>9356DD2C-B2B7-4AD2-B36D-1EF2241EF228</string>
-		</dict>
-		<key>A952744D-75E2-4E4E-BE04-4F411041DAFE</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A952744D-75E2-4E4E-BE04-4F411041DAFE.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>18</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756900705.36885297</real>
-			<key>timeStoppedRecording</key>
-			<real>756900706.11281705</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>A952744D-75E2-4E4E-BE04-4F411041DAFE</string>
-		</dict>
-		<key>AF2F46DE-B596-4F32-BE3C-A67C10330CCC</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>AF2F46DE-B596-4F32-BE3C-A67C10330CCC.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>1</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>16</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756900213.92449498</real>
-			<key>timeStoppedRecording</key>
-			<real>756900214.637725</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>AF2F46DE-B596-4F32-BE3C-A67C10330CCC</string>
-		</dict>
-		<key>B2280409-6E8A-4566-8FBF-CB6545105C76</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>B2280409-6E8A-4566-8FBF-CB6545105C76.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756897224.62975204</real>
-			<key>timeStoppedRecording</key>
-			<real>756897225.62743199</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>B2280409-6E8A-4566-8FBF-CB6545105C76</string>
-		</dict>
-		<key>B5257800-43DC-4AC9-9AFD-16CC59EF91C3</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>B5257800-43DC-4AC9-9AFD-16CC59EF91C3.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756919706.74037099</real>
-			<key>timeStoppedRecording</key>
-			<real>756919707.58516002</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>B5257800-43DC-4AC9-9AFD-16CC59EF91C3</string>
+			<string>A44F0557-1674-4AE3-919F-75C7E4766F86</string>
 		</dict>
 		<key>B5BEA02E-58A8-4E7D-9581-8BB146CF1A11</key>
 		<dict>
@@ -1770,7 +468,7 @@
 			<key>uniqueIdentifier</key>
 			<string>B5BEA02E-58A8-4E7D-9581-8BB146CF1A11</string>
 		</dict>
-		<key>B92D15E6-EDFC-4703-8189-0B247365A35F</key>
+		<key>CBB11E11-221F-4E17-94A3-BB3A2AB84745</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1779,49 +477,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>B92D15E6-EDFC-4703-8189-0B247365A35F.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>17</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756901845.96477795</real>
-			<key>timeStoppedRecording</key>
-			<real>756901846.707623</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>B92D15E6-EDFC-4703-8189-0B247365A35F</string>
-		</dict>
-		<key>B9C33537-F2F4-4125-B495-452433F3689E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>B9C33537-F2F4-4125-B495-452433F3689E.xcactivitylog</string>
+			<string>CBB11E11-221F-4E17-94A3-BB3A2AB84745.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1846,15 +502,15 @@
 			<key>signature</key>
 			<string>Build GL_Scene</string>
 			<key>timeStartedRecording</key>
-			<real>756897803.25320601</real>
+			<real>756929351.88282394</real>
 			<key>timeStoppedRecording</key>
-			<real>756897804.16960895</real>
+			<real>756929353.185601</real>
 			<key>title</key>
 			<string>Build GL_Scene</string>
 			<key>uniqueIdentifier</key>
-			<string>B9C33537-F2F4-4125-B495-452433F3689E</string>
+			<string>CBB11E11-221F-4E17-94A3-BB3A2AB84745</string>
 		</dict>
-		<key>B9FD8CED-7DFB-4417-8EBA-E4140E536FC7</key>
+		<key>ECB6E650-847E-40DE-B51A-8D92425A7C44</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1863,133 +519,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>B9FD8CED-7DFB-4417-8EBA-E4140E536FC7.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756921167.94422698</real>
-			<key>timeStoppedRecording</key>
-			<real>756921168.58698797</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>B9FD8CED-7DFB-4417-8EBA-E4140E536FC7</string>
-		</dict>
-		<key>BF1FD5BB-99E4-4C6D-9676-B1255558EA89</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>BF1FD5BB-99E4-4C6D-9676-B1255558EA89.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>17</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756901815.43569899</real>
-			<key>timeStoppedRecording</key>
-			<real>756901816.17383003</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>BF1FD5BB-99E4-4C6D-9676-B1255558EA89</string>
-		</dict>
-		<key>C61A1E5B-17F1-4E9B-ACB3-0876CD250B64</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>C61A1E5B-17F1-4E9B-ACB3-0876CD250B64.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>16</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756900143.78416896</real>
-			<key>timeStoppedRecording</key>
-			<real>756900145.08833599</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>C61A1E5B-17F1-4E9B-ACB3-0876CD250B64</string>
-		</dict>
-		<key>C7F0189A-F05E-4DA3-ACB9-EF3DA3463CF9</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>C7F0189A-F05E-4DA3-ACB9-EF3DA3463CF9.xcactivitylog</string>
+			<string>ECB6E650-847E-40DE-B51A-8D92425A7C44.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2014,15 +544,15 @@
 			<key>signature</key>
 			<string>Build GL_Scene</string>
 			<key>timeStartedRecording</key>
-			<real>756921649.43810999</real>
+			<real>756929113.51703596</real>
 			<key>timeStoppedRecording</key>
-			<real>756921650.18050599</real>
+			<real>756929114.41612601</real>
 			<key>title</key>
 			<string>Build GL_Scene</string>
 			<key>uniqueIdentifier</key>
-			<string>C7F0189A-F05E-4DA3-ACB9-EF3DA3463CF9</string>
+			<string>ECB6E650-847E-40DE-B51A-8D92425A7C44</string>
 		</dict>
-		<key>CC8EEE40-4CCF-4022-B3B0-7BA7D6BA1A07</key>
+		<key>F596E6D2-2C35-4F8A-8AC0-6ADEA8C31154</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2031,217 +561,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>CC8EEE40-4CCF-4022-B3B0-7BA7D6BA1A07.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756921531.19899797</real>
-			<key>timeStoppedRecording</key>
-			<real>756921531.94010305</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>CC8EEE40-4CCF-4022-B3B0-7BA7D6BA1A07</string>
-		</dict>
-		<key>D60DF96A-1F17-4E59-A7F0-1A02B4187725</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>D60DF96A-1F17-4E59-A7F0-1A02B4187725.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>16</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756900245.25866604</real>
-			<key>timeStoppedRecording</key>
-			<real>756900246.78584003</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>D60DF96A-1F17-4E59-A7F0-1A02B4187725</string>
-		</dict>
-		<key>D8A1BFA5-C5D1-4BBC-B5D6-E37A08FF96C0</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>D8A1BFA5-C5D1-4BBC-B5D6-E37A08FF96C0.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756919647.16534305</real>
-			<key>timeStoppedRecording</key>
-			<real>756919647.90458095</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>D8A1BFA5-C5D1-4BBC-B5D6-E37A08FF96C0</string>
-		</dict>
-		<key>D9EFC3BB-BD39-4995-BEE2-863495D48349</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>D9EFC3BB-BD39-4995-BEE2-863495D48349.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756918870.12614703</real>
-			<key>timeStoppedRecording</key>
-			<real>756918870.85312796</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>D9EFC3BB-BD39-4995-BEE2-863495D48349</string>
-		</dict>
-		<key>DEB44A77-D445-4BCE-993F-CF2793A9A696</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>DEB44A77-D445-4BCE-993F-CF2793A9A696.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GL_Scene project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GL_Scene</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build GL_Scene</string>
-			<key>timeStartedRecording</key>
-			<real>756918856.44761002</real>
-			<key>timeStoppedRecording</key>
-			<real>756918857.188272</real>
-			<key>title</key>
-			<string>Build GL_Scene</string>
-			<key>uniqueIdentifier</key>
-			<string>DEB44A77-D445-4BCE-993F-CF2793A9A696</string>
-		</dict>
-		<key>E6D14129-33F1-4388-A63F-D2F21C52117E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>E6D14129-33F1-4388-A63F-D2F21C52117E.xcactivitylog</string>
+			<string>F596E6D2-2C35-4F8A-8AC0-6ADEA8C31154.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2266,15 +586,15 @@
 			<key>signature</key>
 			<string>Build GL_Scene</string>
 			<key>timeStartedRecording</key>
-			<real>756921642.51696002</real>
+			<real>756929189.80203795</real>
 			<key>timeStoppedRecording</key>
-			<real>756921643.25707698</real>
+			<real>756929190.55853903</real>
 			<key>title</key>
 			<string>Build GL_Scene</string>
 			<key>uniqueIdentifier</key>
-			<string>E6D14129-33F1-4388-A63F-D2F21C52117E</string>
+			<string>F596E6D2-2C35-4F8A-8AC0-6ADEA8C31154</string>
 		</dict>
-		<key>F83BB834-575B-43ED-A391-39BEBFF8441D</key>
+		<key>FBB637BD-7338-4FC9-A3A6-9D42AAAB7B48</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2283,7 +603,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>F83BB834-575B-43ED-A391-39BEBFF8441D.xcactivitylog</string>
+			<string>FBB637BD-7338-4FC9-A3A6-9D42AAAB7B48.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2297,7 +617,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
+				<integer>2</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>GL_Scene project</string>
@@ -2308,13 +628,13 @@
 			<key>signature</key>
 			<string>Build GL_Scene</string>
 			<key>timeStartedRecording</key>
-			<real>756920102.31794906</real>
+			<real>756930706.78958499</real>
 			<key>timeStoppedRecording</key>
-			<real>756920103.03961003</real>
+			<real>756930707.71746194</real>
 			<key>title</key>
 			<string>Build GL_Scene</string>
 			<key>uniqueIdentifier</key>
-			<string>F83BB834-575B-43ED-A391-39BEBFF8441D</string>
+			<string>FBB637BD-7338-4FC9-A3A6-9D42AAAB7B48</string>
 		</dict>
 	</dict>
 </dict>

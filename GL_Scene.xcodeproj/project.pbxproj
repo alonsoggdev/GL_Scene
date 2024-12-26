@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8402913B2D1DD1DF00AB04B6 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402913A2D1DD1DF00AB04B6 /* libz.a */; };
 		84151B4B2D131C7E0073E414 /* libassimpd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84151B4A2D131C7E0073E414 /* libassimpd.a */; };
 		84151B4D2D131C840073E414 /* libSDL2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84151B4C2D131C840073E414 /* libSDL2d.a */; };
 		84151B4F2D131C8C0073E414 /* libSDL2maind.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84151B4E2D131C8C0073E414 /* libSDL2maind.a */; };
@@ -42,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8402913A2D1DD1DF00AB04B6 /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = libraries/debug/libz.a; sourceTree = "<group>"; };
 		84151B312D131A880073E414 /* GL_Scene */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GL_Scene; sourceTree = BUILT_PRODUCTS_DIR; };
 		84151B4A2D131C7E0073E414 /* libassimpd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libassimpd.a; path = libraries/debug/libassimpd.a; sourceTree = "<group>"; };
 		84151B4C2D131C840073E414 /* libSDL2d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2d.a; path = libraries/debug/libSDL2d.a; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8402913B2D1DD1DF00AB04B6 /* libz.a in Frameworks */,
 				849F853B2D16E9E6003662F6 /* libsoil2.a in Frameworks */,
 				849F85392D16E9DE003662F6 /* libsoil2d.a in Frameworks */,
 				84151B6D2D131CDE0073E414 /* OpenGL.framework in Frameworks */,
@@ -130,6 +133,7 @@
 		84151B492D131C7E0073E414 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8402913A2D1DD1DF00AB04B6 /* libz.a */,
 				849F853A2D16E9E6003662F6 /* libsoil2.a */,
 				849F85382D16E9DE003662F6 /* libsoil2d.a */,
 				84151B6C2D131CDE0073E414 /* OpenGL.framework */,
