@@ -298,4 +298,5 @@ dependencies: \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/gtc/../mat4x3.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/gtc/type_ptr.inl \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Shader.hpp \
+  /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Texture.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/SOIL2.h

@@ -18,6 +18,12 @@
 
 namespace udit
 {
+    enum class MeshType
+    {
+        MESH,
+        TERRAIN
+    };
+
     class Mesh
     {
     private:
@@ -28,11 +34,15 @@ namespace udit
             INDEXES_VBO,
             VBO_COUNT
         };
+        
+        MeshType m_mesh_type;
                 
     protected:
         std::vector<glm::vec3> coordinates;
         std::vector<glm::vec3> colors;
         std::vector<GLuint> indices;
+        
+        GLsizei number_of_vertices;
 
         void create_mesh(std::string mesh_name);
         
@@ -51,6 +61,8 @@ namespace udit
         void set_shader( std::unique_ptr < udit::Shader > shader );
         GLuint get_shader_program_id() const;
         std::pair < GLint, GLint > get_shader_matrix_ids();
+        
+        void set_mesh_type(MeshType type) { m_mesh_type = type; }
 
     };
 }

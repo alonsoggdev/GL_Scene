@@ -72,8 +72,6 @@ namespace udit
         glClearColor (.2f, .2f, .2f, 1.f);
 
         program_id = compile_shaders (vertex_code.c_str(), fragment_code.c_str());
-
-        //glUseProgram (program_id);
     }
 
     Shader::Shader()
@@ -84,8 +82,6 @@ namespace udit
         glClearColor (.2f, .2f, .2f, 1.f);
 
         program_id = compile_shaders (default_vertex_shader_code.c_str(), default_fragment_shader_code.c_str());
-
-        //glUseProgram (program_id);
     }
     
     /**
@@ -151,6 +147,32 @@ namespace udit
         projection_matrix_id = glGetUniformLocation(program_id, "projection_matrix");
         
         return (program_id);
+    }
+
+    void Shader::set_texture(const std::shared_ptr<Texture> & texture)
+    {
+        textures.push_back(texture);
+    }
+
+    void Shader::use() const
+    {
+        glUseProgram(program_id);
+        
+        // std::cout << "Textures size: " << textures.size() << std::endl;
+        
+        for (GLint i = 0; i < textures.size(); ++i)
+        {
+            textures[i]->bind();
+            std::string uniform_name = "texture" + std::to_string(i);
+            glUniform1i(glGetUniformLocation(program_id, uniform_name.c_str()), i);
+        }
+    }
+
+    void Shader::set_texture_scale(float scale)
+    {
+        glUseProgram(program_id);
+        GLint scale_location = glGetUniformLocation(program_id, "texture_scale");
+        glUniform1f(scale_location, scale);
     }
     
     /**

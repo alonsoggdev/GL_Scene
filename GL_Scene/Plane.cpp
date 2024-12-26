@@ -76,6 +76,8 @@ namespace udit
                 // std::cout << top_left << ", " << bottom_left << ", " << top_right << std::endl << top_right << ", " << bottom_left << ", " << bottom_right << std::endl;
             }
         }
+        
+        
         create_mesh("Plane");
     }
 }

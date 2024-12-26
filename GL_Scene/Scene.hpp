@@ -11,8 +11,9 @@
 #include "Shader.hpp"
 
 #include "Skybox.hpp"
-#include "Cube.hpp"
+#include "Terrain.hpp"
 #include "Plane.hpp"
+
 
 namespace udit
 {
@@ -28,8 +29,7 @@ namespace udit
         float angle = 0.0f;
                 
         Skybox skybox;
-        Plane plane;
-        // Cube cube;
+        Plane terrain;
         
         glm::mat4 view_matrix;
         glm::mat4 projection_matrix;

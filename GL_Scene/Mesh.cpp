@@ -88,9 +88,22 @@ namespace udit
     void Mesh::render()
     {
         // std::cout << "Rendering mesh..." << std::endl;
+        
+        if (m_shader->has_textures())
+        {
+            m_shader->use();
+        }
+        
         glBindVertexArray (vao_id);
-        //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-        glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(indices.size()), GL_UNSIGNED_INT, 0);
+        
+        if (m_mesh_type == MeshType::TERRAIN)
+        {
+            glDrawElements(GL_LINE_STRIP, static_cast<GLsizei>(indices.size()), GL_UNSIGNED_INT, 0);
+        }
+        else
+        {
+            glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(indices.size()), GL_UNSIGNED_INT, 0);
+        }
         glBindVertexArray (0);
     }
 

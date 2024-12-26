@@ -34,7 +34,7 @@ void EventHandler::process_mouse_motion(const SDL_Event& event)
     
     y_pos = - y_pos; // Invertir el eje y
     
-    std::cout << x_pos << " " << y_pos << std::endl;
+    // std::cout << x_pos << " " << y_pos << std::endl;
 
     camera.process_mouse_movement(x_pos, y_pos);
 }

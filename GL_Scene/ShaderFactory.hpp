@@ -9,8 +9,11 @@
 
 class ShaderFactory
 {
-private:
-    
 public:
-    static std::unique_ptr < udit::Shader > make_shader(udit::ShaderType type = udit::ShaderType::DEFAULT, const std::string & vertex_shader = "", const std::string & fragment_shader = "");
+    static std::unique_ptr < udit::Shader > make_shader(
+        udit::ShaderType type = udit::ShaderType::DEFAULT,
+        const std::string & vertex_shader = "",
+        const std::string & fragment_shader = "",
+        const std::vector<std::string> & texture_paths = {}
+    );
 };

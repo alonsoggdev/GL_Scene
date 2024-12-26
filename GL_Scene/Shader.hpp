@@ -11,12 +11,16 @@
 
 #include "glad.h"
 
+#include "Texture.hpp"
+
 namespace udit
 {
     enum class ShaderType
     {
         SKYBOX,
         GEOMETRY,
+        SINGLE_TEXTURE,
+        TERRAIN,
         DEFAULT
     };
 
@@ -36,6 +40,8 @@ namespace udit
         
         static const std::string    default_vertex_shader_code;
         static const std::string    default_fragment_shader_code;
+        
+        std::vector <std::shared_ptr<Texture>> textures;
     public:
         Shader();
         Shader(ShaderType type, const std::string & vertex_source, const std::string & fragment_source);
@@ -45,7 +51,15 @@ namespace udit
         GLint get_projection_matrix_id() { return projection_matrix_id; }
         
         GLuint get_program_id() const { return program_id; }
+
+        void set_texture(const std::shared_ptr<Texture> & texture);
+        void use() const;
+        
+        void set_texture_scale(float scale);
+        
+        bool has_textures() { return !textures.empty(); }
     private:
+        
         void show_compilation_error(GLuint shader_id);
         void show_linkage_error(GLuint program_id);
     };

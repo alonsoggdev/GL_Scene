@@ -4,6 +4,7 @@ dependencies: \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Shader.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/glad.h \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/khrplatform.h \
+  /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Texture.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Skybox.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Cube.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Mesh.hpp \
@@ -299,5 +300,6 @@ dependencies: \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/gtc/../mat4x2.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/gtc/../mat4x3.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/gtc/type_ptr.inl \
+  /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Terrain.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Plane.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/ShaderFactory.hpp
