@@ -20,6 +20,7 @@ namespace udit
 {
     enum class MeshType
     {
+        BASIC,
         MESH,
         TERRAIN,
         SKYBOX
@@ -58,15 +59,16 @@ namespace udit
 
         Mesh();
         Mesh(std::string & path);
-        ~Mesh();
+        virtual ~Mesh();
         
-        void translate(glm::vec3 translation);
-        void rotate(glm::vec3 rotation, float angle);
-        void scale(glm::vec3 scale);
+        virtual void translate(glm::vec3 translation);
+        virtual void rotate(glm::vec3 rotation, float angle);
+        virtual void scale(glm::vec3 scale);
         
-        void update();
-        void render(glm::mat4 view_matrix);
-        void set_shader( std::shared_ptr < udit::Shader > shader );
+        virtual void update();
+        virtual void render(glm::mat4 view_matrix);
+        virtual void resize(glm::mat4 projection_matrix);
+        virtual void set_shader( std::shared_ptr < udit::Shader > shader );
         GLuint get_shader_program_id() const;
         std::vector < GLint > get_shader_matrix_ids();
         glm::mat4 get_model_view_matrix() const         { return model_view_matrix; }

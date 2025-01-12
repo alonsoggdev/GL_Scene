@@ -201,6 +201,12 @@ namespace udit
         glBindVertexArray (0);
     }
 
+    void Mesh::resize(glm::mat4 projection_matrix)
+    {
+        glUseProgram(get_shader_program_id());
+        glUniformMatrix4fv(get_shader_matrix_ids()[1], 1, GL_FALSE, glm::value_ptr(projection_matrix));
+    }
+
     void Mesh::set_shader( std::shared_ptr < udit::Shader > shader)
     {
         if (shader != nullptr)

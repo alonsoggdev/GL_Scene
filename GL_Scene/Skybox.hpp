@@ -4,6 +4,7 @@
 //
 //  Created by Alonso García on 21/12/24.
 //
+#pragma once
 
 #include "Cube.hpp"
 

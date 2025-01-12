@@ -6,9 +6,12 @@
 //
 
 #include "Mesh.hpp"
+#include "Skybox.hpp"
+
+using udit::MeshType;
 
 class MeshFactory
 {
 public:
-    static std::shared_ptr < udit::Mesh > make_mesh(const std::string & path);
+    static std::shared_ptr < udit::Mesh > make_mesh(MeshType type = MeshType::MESH, const std::string & path = "");
 };
