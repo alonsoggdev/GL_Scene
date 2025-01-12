@@ -49,6 +49,7 @@ namespace udit
     private:
         GLuint vbo_ids[VBO_COUNT];
         GLuint vao_id;
+        glm::mat4 model_view_matrix;
         
         std::unique_ptr < udit::Shader > m_shader;
 
@@ -57,11 +58,18 @@ namespace udit
         Mesh();
         Mesh(std::string & path);
         ~Mesh();
+        
+        void translate(glm::vec3 translation);
+        void rotate(glm::vec3 rotation, float angle);
+        void scale(glm::vec3 scale);
+        
         void update();
-        void render();
+        void render(glm::mat4 view_matrix);
         void set_shader( std::unique_ptr < udit::Shader > shader );
         GLuint get_shader_program_id() const;
-        std::pair < GLint, GLint > get_shader_matrix_ids();
+        std::vector < GLint > get_shader_matrix_ids();
+        glm::mat4 get_model_view_matrix() const         { return model_view_matrix; }
+        void set_model_view_matrix(glm::mat4 matrix)    { model_view_matrix = matrix; }
         
         void set_mesh_type(MeshType type) { m_mesh_type = type; }
 

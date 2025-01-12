@@ -27,6 +27,7 @@ namespace udit
 
     Mesh::Mesh(std::string & path)
     {
+        m_mesh_type = MeshType::MESH;
         Assimp::Importer importer;
         std::cout << "Loading mesh from " << path << std::endl;
         const aiScene * scene = importer.ReadFile(path, aiProcess_Triangulate | aiProcess_FlipUVs);
@@ -42,7 +43,6 @@ namespace udit
             aiMesh * mesh = scene->mMeshes[i];
             
             size_t number_of_vertices = mesh->mNumVertices;
-            size_t number_of_indices;
             
             glGenBuffers(VBO_COUNT, vbo_ids);
             glGenVertexArrays(1, &vao_id);
@@ -167,23 +167,38 @@ namespace udit
     {
     }
 
+    void Mesh::translate(glm::vec3 translation)
+    {
+        model_view_matrix = glm::translate(model_view_matrix, translation);
+    }
+
+    void Mesh::rotate(glm::vec3 rotation, float angle)
+    {
+        model_view_matrix = glm::rotate(model_view_matrix, glm::radians(angle), rotation);
+    }
+
+    void Mesh::scale(glm::vec3 scale)
+    {
+        model_view_matrix = glm::scale(model_view_matrix, scale);
+    }
+
     /**
      *@brief Función de renderizado de la malla en el bucle principal
      */
-    void Mesh::render()
+    void Mesh::render(glm::mat4 view_matrix)
     {
         // std::cout << "Rendering mesh..." << std::endl;
+        model_view_matrix = view_matrix * model_view_matrix;
         
-        if (m_shader->has_textures())
-        {
-            m_shader->use();
-        }
+        m_shader->use();
+        
+        glUniformMatrix4fv(m_shader->get_model_view_matrix_id(), 1, GL_FALSE, glm::value_ptr(model_view_matrix));
         
         glBindVertexArray (vao_id);
         
         if (m_mesh_type == MeshType::TERRAIN)
         {
-            glDrawElements(GL_LINE_STRIP, static_cast<GLsizei>(indices.size()), GL_UNSIGNED_INT, 0);
+            glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(indices.size()), GL_UNSIGNED_INT, 0);
         }
         else
         {
@@ -200,9 +215,10 @@ namespace udit
         }
     }
 
-    std::pair < GLint, GLint > Mesh::get_shader_matrix_ids()
+    std::vector < GLint > Mesh::get_shader_matrix_ids()
     {
-        return std::make_pair(m_shader->get_model_view_matrix_id(), m_shader->get_projection_matrix_id());
+        std::vector<GLint> ids = { m_shader->get_model_view_matrix_id(), m_shader->get_projection_matrix_id(), m_shader->get_normal_matrix_id() };
+        return ids;
     }
 
     GLuint Mesh::get_shader_program_id() const

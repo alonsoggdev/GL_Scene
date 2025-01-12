@@ -32,6 +32,8 @@ namespace udit
         Plane terrain;
         
         std::unique_ptr<Mesh> bull;
+        
+        Mesh bull2;
                 
         glm::mat4 view_matrix;
         glm::mat4 projection_matrix;

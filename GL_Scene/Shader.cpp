@@ -15,18 +15,37 @@ namespace udit
     const std::string Shader::default_vertex_shader_code =
         "#version 330\n"
         ""
+        "struct Light"
+        "{"
+        "    vec4 position;"
+        "    vec3 color;"
+        "};"
+        ""
+        "uniform Light light;"
+        "uniform float ambient_intensity;"
+        "uniform float diffuse_intensity;"
+        ""
+        "uniform vec3 material_color;"
+        ""
         "uniform mat4 model_view_matrix;"
         "uniform mat4 projection_matrix;"
+        "uniform mat4     normal_matrix;"
         ""
         "layout (location = 0) in vec3 vertex_coordinates;"
-        "layout (location = 1) in vec3 vertex_color;"
+        "layout (location = 1) in vec3 vertex_normal;"
         ""
         "out vec3 front_color;"
         ""
         "void main()"
         "{"
-        "   gl_Position = projection_matrix * model_view_matrix * vec4(vertex_coordinates, 1.0);"
-        "   front_color = vertex_color;"
+        "    vec4  normal   = normal_matrix * vec4(vertex_normal, 0.0);"
+        "    vec4  position = model_view_matrix * vec4(vertex_coordinates, 1.0);"
+        ""
+        "    vec4  light_direction = light.position - position;"
+        "    float light_intensity = diffuse_intensity * max (dot (normalize (normal.xyz), normalize (light_direction.xyz)), 0.0);"
+        ""
+        "    front_color = ambient_intensity * material_color + diffuse_intensity * light_intensity * light.color * material_color;"
+        "    gl_Position = projection_matrix * position;"
         "}";
 
     const std::string Shader::default_fragment_shader_code =
@@ -145,6 +164,7 @@ namespace udit
         
         model_view_matrix_id = glGetUniformLocation(program_id, "model_view_matrix");
         projection_matrix_id = glGetUniformLocation(program_id, "projection_matrix");
+        normal_matrix_id     = glGetUniformLocation(program_id, "normal_matrix");
         
         return (program_id);
     }
@@ -160,11 +180,14 @@ namespace udit
         
         // std::cout << "Textures size: " << textures.size() << std::endl;
         
-        for (GLint i = 0; i < textures.size(); ++i)
+        if (textures.size() > 0)
         {
-            textures[i]->bind();
-            std::string uniform_name = "texture" + std::to_string(i);
-            glUniform1i(glGetUniformLocation(program_id, uniform_name.c_str()), i);
+            for (GLint i = 0; i < textures.size(); ++i)
+            {
+                textures[i]->bind();
+                std::string uniform_name = "texture" + std::to_string(i);
+                glUniform1i(glGetUniformLocation(program_id, uniform_name.c_str()), i);
+            }
         }
     }
 
