@@ -35,6 +35,7 @@ namespace udit
                 
         std::shared_ptr < Shader > skybox_shader_program = ShaderFactory::make_shader(udit::ShaderType::SKYBOX, "Shader_Skybox_Vertex.glsl", "Shader_Skybox_Fragment.glsl");
         skybox.set_shader(std::move(skybox_shader_program));
+        skybox.set_mesh_type(udit::MeshType::SKYBOX);
 
         std::shared_ptr< Shader > terrain_shader_program = ShaderFactory::make_shader(udit::ShaderType::TERRAIN, "Shader_Terrain_Vertex.glsl", "Shader_Terrain_Fragment.glsl", {"height-map.png"});
         terrain.set_shader(std::move(terrain_shader_program));
@@ -61,11 +62,11 @@ namespace udit
         // std::cout << "Rendering scene..." << std::endl;
         
         glClear (GL_COLOR_BUFFER_BIT);
-        
+       
         //* Skybox rendering
+        glm::mat4 skybox_view_matrix = glm::mat4(glm::mat3(view_matrix));
         skybox.set_model_view_matrix(glm::mat4(1.0f));
-        skybox.rotate(glm::vec3(1.0f, 0.0f, 0.0f), 180.0f);
-        skybox.render(view_matrix);
+        skybox.render(skybox_view_matrix);
                 
         //* Terrain rendering
         terrain.set_model_view_matrix(glm::mat4(1.0f));
@@ -77,7 +78,7 @@ namespace udit
         bull->scale(glm::vec3(0.01f, 0.01f, 0.01f));
         bull->rotate(glm::vec3(1.0f, 0.0f, 0.0f), -90.0f);
         bull->translate(glm::vec3(0.0f, 0.0f, -5.0f));
-        bull->render(view_matrix);
+        bull->render(view_matrix);        
     }
     
     void Scene::resize (unsigned width, unsigned height)

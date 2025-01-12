@@ -21,7 +21,8 @@ namespace udit
     enum class MeshType
     {
         MESH,
-        TERRAIN
+        TERRAIN,
+        SKYBOX
     };
 
     class Mesh

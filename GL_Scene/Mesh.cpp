@@ -183,7 +183,7 @@ namespace udit
     {
         // std::cout << "Rendering mesh..." << std::endl;
         model_view_matrix = view_matrix * model_view_matrix;
-        
+
         m_shader->use();
         
         glUniformMatrix4fv(m_shader->get_model_view_matrix_id(), 1, GL_FALSE, glm::value_ptr(model_view_matrix));

@@ -9,6 +9,6 @@ out vec3 texture_coordinates;
 
 void main()
 {
-   texture_coordinates = vec3(vertex_coordinates.x, -vertex_coordinates.y, vertex_coordinates.z);
-   gl_Position = projection_matrix * model_view_matrix * vec4(vertex_coordinates, 1.0);
+    texture_coordinates = vertex_coordinates;
+    gl_Position = projection_matrix * model_view_matrix * vec4(vertex_coordinates, 1.0);
 }
