@@ -31,12 +31,12 @@ namespace udit
     {
         // std::cout << "Creating scene..." << std::endl;
         
-        std::unique_ptr< Shader > default_shader_program = ShaderFactory::make_shader(udit::ShaderType::DEFAULT);
+        std::shared_ptr< Shader > default_shader_program = ShaderFactory::make_shader(udit::ShaderType::DEFAULT);
                 
-        std::unique_ptr < Shader > skybox_shader_program = ShaderFactory::make_shader(udit::ShaderType::SKYBOX, "Shader_Skybox_Vertex.glsl", "Shader_Skybox_Fragment.glsl");
+        std::shared_ptr < Shader > skybox_shader_program = ShaderFactory::make_shader(udit::ShaderType::SKYBOX, "Shader_Skybox_Vertex.glsl", "Shader_Skybox_Fragment.glsl");
         skybox.set_shader(std::move(skybox_shader_program));
 
-        std::unique_ptr< Shader > terrain_shader_program = ShaderFactory::make_shader(udit::ShaderType::TERRAIN, "Shader_Terrain_Vertex.glsl", "Shader_Terrain_Fragment.glsl", {"height-map.png"});
+        std::shared_ptr< Shader > terrain_shader_program = ShaderFactory::make_shader(udit::ShaderType::TERRAIN, "Shader_Terrain_Vertex.glsl", "Shader_Terrain_Fragment.glsl", {"height-map.png"});
         terrain.set_shader(std::move(terrain_shader_program));
         terrain.set_mesh_type(udit::MeshType::TERRAIN);
         

@@ -89,12 +89,6 @@ namespace udit
         std::cout << scene->mNumMeshes << " meshes loaded." << std::endl;
     }
     
-    /**
-     *@brief Crea una malla utilizando las coordenadas, colores e indices de la propia clase
-     *
-     *@param mesh_name Nombre de la malla
-     */
-
     void check_gl_error(const std::string& function_name)
     {
         GLenum err;
@@ -207,7 +201,7 @@ namespace udit
         glBindVertexArray (0);
     }
 
-    void Mesh::set_shader( std::unique_ptr < udit::Shader > shader)
+    void Mesh::set_shader( std::shared_ptr < udit::Shader > shader)
     {
         if (shader != nullptr)
         {

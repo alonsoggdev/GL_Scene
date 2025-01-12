@@ -10,5 +10,5 @@
 class MeshFactory
 {
 public:
-    static std::unique_ptr < udit::Mesh > make_mesh(const std::string & path);
+    static std::shared_ptr < udit::Mesh > make_mesh(const std::string & path);
 };

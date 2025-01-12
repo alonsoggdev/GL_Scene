@@ -51,7 +51,7 @@ namespace udit
         GLuint vao_id;
         glm::mat4 model_view_matrix;
         
-        std::unique_ptr < udit::Shader > m_shader;
+        std::shared_ptr < udit::Shader > m_shader;
 
     public:
 
@@ -65,7 +65,7 @@ namespace udit
         
         void update();
         void render(glm::mat4 view_matrix);
-        void set_shader( std::unique_ptr < udit::Shader > shader );
+        void set_shader( std::shared_ptr < udit::Shader > shader );
         GLuint get_shader_program_id() const;
         std::vector < GLint > get_shader_matrix_ids();
         glm::mat4 get_model_view_matrix() const         { return model_view_matrix; }

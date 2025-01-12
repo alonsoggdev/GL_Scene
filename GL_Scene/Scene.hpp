@@ -31,7 +31,7 @@ namespace udit
         Skybox skybox;
         Plane terrain;
         
-        std::unique_ptr<Mesh> bull;
+        std::shared_ptr<Mesh> bull;
         
         Mesh bull2;
                 

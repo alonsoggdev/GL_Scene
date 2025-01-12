@@ -10,7 +10,7 @@
 class ShaderFactory
 {
 public:
-    static std::unique_ptr < udit::Shader > make_shader(
+    static std::shared_ptr < udit::Shader > make_shader(
         udit::ShaderType type = udit::ShaderType::DEFAULT,
         const std::string & vertex_shader = "",
         const std::string & fragment_shader = "",

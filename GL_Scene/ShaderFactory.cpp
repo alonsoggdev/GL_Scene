@@ -9,7 +9,7 @@
 
 using udit::Texture;
 
-std::unique_ptr < udit::Shader > ShaderFactory::make_shader(
+std::shared_ptr < udit::Shader > ShaderFactory::make_shader(
     udit::ShaderType type,
     const std::string & vertex_shader,
     const std::string & fragment_shader,
@@ -18,7 +18,7 @@ std::unique_ptr < udit::Shader > ShaderFactory::make_shader(
 {
     std::string absolute_path = "/Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/resources/";
 
-    auto shader = std::make_unique<udit::Shader>(type, vertex_shader, fragment_shader);
+    auto shader = std::make_shared<udit::Shader>(type, vertex_shader, fragment_shader);
     switch (type)
     {
         case udit::ShaderType::SKYBOX:
@@ -28,7 +28,7 @@ std::unique_ptr < udit::Shader > ShaderFactory::make_shader(
             break;
         default:
             shader = nullptr;
-            return std::make_unique<udit::Shader>();
+            return std::make_shared<udit::Shader>();
     }
     GLenum texture_unit = GL_TEXTURE0;
     if (type == udit::ShaderType::TERRAIN)
