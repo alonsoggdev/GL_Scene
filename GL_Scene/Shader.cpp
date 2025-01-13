@@ -62,8 +62,8 @@ namespace udit
     /**
      *@brief Constructor por defecto
      */
-    Shader::Shader(ShaderType type, const std::string & vertex_source, const std::string & fragment_source)
-    : m_type(type), m_vertex_source(vertex_source), m_fragment_source(fragment_source)
+    Shader::Shader(ShaderType type, const std::string & vertex_source, const std::string & fragment_source, const std::string & name)
+    : m_type(type), m_vertex_source(vertex_source), m_fragment_source(fragment_source), m_name(name)
     {
         std::cout << "Loading custom shader..." << std::endl;
         std::cout << vertex_source << " | " << fragment_source << std::endl;
@@ -101,6 +101,91 @@ namespace udit
         glClearColor (.2f, .2f, .2f, 1.f);
 
         program_id = compile_shaders (default_vertex_shader_code.c_str(), default_fragment_shader_code.c_str());
+    }
+
+
+    std::shared_ptr < Shader > Shader::make_shader(
+        udit::ShaderType type,
+        const std::string & vertex_shader,
+        const std::string & fragment_shader,
+        const std::vector<std::string> & texture_paths,
+        const std::string & name
+    )
+    {
+        std::string absolute_path = "/Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/resources/";
+        auto shader = std::make_shared<udit::Shader>(type, vertex_shader, fragment_shader, name);
+
+        switch (type)
+        {
+            case udit::ShaderType::SKYBOX:
+            case udit::ShaderType::GEOMETRY:
+            case udit::ShaderType::SINGLE_TEXTURE:
+            case udit::ShaderType::TERRAIN:
+                break;
+            default:
+                shader = nullptr;
+                return std::make_shared<udit::Shader>();
+        }
+        GLenum texture_unit = GL_TEXTURE0;
+        if (type == udit::ShaderType::TERRAIN)
+        {
+            std::cout << "TERRAIN SHADER" << std::endl;
+            glUniform1d(glGetUniformLocation(shader->get_program_id(), "max_height"), 5.0f);
+            std::string complete_path = absolute_path + texture_paths[0];
+            auto texture = std::make_shared<Texture>(complete_path, texture_unit, udit::Texture_Type::HEIGHT);
+            
+            if (texture->is_loaded())
+            {
+                shader->set_texture(texture);
+            }
+            return shader;
+        }
+        std::cout << "Loading " << texture_paths.size() << " textures." << std::endl;
+        for (const auto & path : texture_paths)
+        {
+            if (path == "") break;
+            std::string complete_path = absolute_path + path;
+            // std::cout << path << std::endl;
+            auto texture = std::make_shared<Texture>(complete_path, texture_unit);
+            
+            if (texture->is_loaded())
+            {
+                shader->set_texture(texture);
+                shader->set_texture_scale(1.0f);
+                ++texture_unit;
+            }
+            else
+            {
+                std::cerr << "No se pudo cargar la textura desde " << complete_path << std::endl;
+            }
+            
+            GLint max_texture_units;
+            glGetIntegerv(GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS, &max_texture_units);
+            if (texture_unit - GL_TEXTURE0 >= max_texture_units)
+            {
+                std::cerr << "Advertencia: Se superó el número máximo de unidades de textura (" << max_texture_units << "). Textura " << path << " no fue asociada." << std::endl;
+                break;
+            }
+        }
+        switch (type)
+        {
+            case udit::ShaderType::SKYBOX:
+                shader->set_name("Skybox");
+            case udit::ShaderType::GEOMETRY:
+                shader->set_name("Geometry");
+            case udit::ShaderType::SINGLE_TEXTURE:
+                shader->set_name("Texture");
+            case udit::ShaderType::TERRAIN:
+                shader->set_name("Terrain");
+                break;
+            case udit::ShaderType::DEFAULT:
+                shader->set_name("Default");
+                break;
+            default:
+                shader->set_name("None");
+                break;
+        }
+        return shader;
     }
     
     /**
@@ -166,6 +251,21 @@ namespace udit
         projection_matrix_id = glGetUniformLocation(program_id, "projection_matrix");
         normal_matrix_id     = glGetUniformLocation(program_id, "normal_matrix");
         
+        //  Configure material
+        GLint material_color = glGetUniformLocation(program_id, "material_color");
+        glUniform3f(material_color, 0.f, 1.f, 0.f);
+        
+        // Configure light
+        GLint light_position    = glGetUniformLocation (program_id, "light.position");
+        GLint light_color       = glGetUniformLocation (program_id, "light.color"   );
+        GLint ambient_intensity = glGetUniformLocation (program_id, "ambient_intensity");
+        GLint diffuse_intensity = glGetUniformLocation (program_id, "diffuse_intensity");
+
+        glUniform4f (light_position,   10.0f, 10.f, 10.f, 1.f);
+        glUniform3f (light_color,       1.0f,  1.f,  1.f);
+        glUniform1f (ambient_intensity, 10.f);
+        glUniform1f (diffuse_intensity, 100.f);
+
         return (program_id);
     }
 
@@ -224,6 +324,7 @@ namespace udit
      */
     void Shader::show_linkage_error (GLuint program_id)
     {
+        std::cout << "Linkage error in " + get_name();
         std::string info_log;
         GLint  info_log_length;
 

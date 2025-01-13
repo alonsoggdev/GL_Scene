@@ -14,22 +14,22 @@ using udit::Cube;
 
 namespace udit
 {
-    Cube::Cube() : size(2.0f)
+    Cube::Cube() : Mesh(), size(2.0f)
     {
         create_cube();
     }
 
-    Cube::Cube(bool inverted)
+    Cube::Cube(bool inverted) : Mesh()
     {
         create_cube(true);
     }
 
-    Cube::Cube(float size) : size(size)
+    Cube::Cube(float size) : Mesh(), size(size)
     {
         create_cube();
     }
 
-    Cube::Cube(float size, bool inverted) : size(size)
+    Cube::Cube(float size, bool inverted) : Mesh(), size(size)
     {
         create_cube(true);
     }

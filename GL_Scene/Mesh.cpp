@@ -12,6 +12,8 @@
 #include <assimp/postprocess.h>
 
 #include "Mesh.hpp"
+#include "Plane.hpp"
+#include "Skybox.hpp"
 
 using udit::Mesh;
 
@@ -87,6 +89,31 @@ namespace udit
             glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(GLuint), indices.data(), GL_STATIC_DRAW);
         }
         std::cout << scene->mNumMeshes << " meshes loaded." << std::endl;
+    }
+
+    std::shared_ptr <Mesh> Mesh::make_mesh(MeshType type, const std::string &path)
+    {
+        std::string absolute_path = "/Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/resources/";
+        std::string complete_path = absolute_path + path;
+        switch (type)
+        {
+            case MeshType::TERRAIN:
+                return std::make_shared<udit::Plane>(100.0f);
+            case MeshType::BASIC:
+                break;
+                
+            case MeshType::MESH:
+                return path.empty() ? std::make_shared<udit::Mesh>()
+                                    : std::make_shared<udit::Mesh>(complete_path);
+            case MeshType::SKYBOX:
+                std::vector<std::string> skybox_faces =
+                {
+                       "skybox_east.jpg", "skybox_west.jpg", "skybox_up.jpg",
+                       "skybox_down.jpg", "skybox_north.jpg", "skybox_south.jpg"
+                };
+                return std::make_shared<udit::Skybox>(100.0f, skybox_faces);
+        }
+        return nullptr;
     }
     
     void check_gl_error(const std::string& function_name)
@@ -187,6 +214,10 @@ namespace udit
         m_shader->use();
         
         glUniformMatrix4fv(m_shader->get_model_view_matrix_id(), 1, GL_FALSE, glm::value_ptr(model_view_matrix));
+        
+        normal_matrix = glm::transpose(glm::inverse(model_view_matrix));
+        
+        glUniformMatrix4fv(m_shader->get_normal_matrix_id(), 1, GL_FALSE, glm::value_ptr(normal_matrix));
         
         glBindVertexArray (vao_id);
         

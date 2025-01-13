@@ -52,13 +52,14 @@ namespace udit
         GLuint vbo_ids[VBO_COUNT];
         GLuint vao_id;
         glm::mat4 model_view_matrix;
+        glm::mat4 normal_matrix;
         
         std::shared_ptr < udit::Shader > m_shader;
 
     public:
-
         Mesh();
         Mesh(std::string & path);
+        static std::shared_ptr <Mesh> make_mesh(MeshType type, const std::string &path = "");
         virtual ~Mesh();
         
         virtual void translate(glm::vec3 translation);

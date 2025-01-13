@@ -11,7 +11,6 @@
 #include "Shader.hpp"
 
 #include "Skybox.hpp"
-#include "Terrain.hpp"
 #include "Plane.hpp"
 
 
@@ -29,8 +28,7 @@ namespace udit
         float angle = 0.0f;
                 
         std::shared_ptr<Skybox> skybox;
-        // std::shared_ptr<Mesh> terrain;
-        Plane terrain;
+        std::shared_ptr<Plane> terrain;
         std::shared_ptr<Mesh> bull;
                 
         glm::mat4 view_matrix;

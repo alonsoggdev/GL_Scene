@@ -45,7 +45,7 @@ namespace udit
 
             std::string filename = filepath + faces[i];
                         
-            // std::cout << "Searching image in path: " << filename << std::endl;
+            // std::cout << "Searching cubemap image in path: " << filename << std::endl;
 
             unsigned char* image = SOIL_load_image(filename.c_str(), &width, &height, &channels, SOIL_LOAD_RGB);
 
