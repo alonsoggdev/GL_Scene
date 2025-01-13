@@ -57,4 +57,12 @@ void EventHandler::process_keyboard(const Uint8* keystate, float delta_time)
     {
         camera.process_keyboard(CameraMovement::RIGHT, delta_time);
     }
+    if (keystate[SDL_SCANCODE_Q])
+    {
+        camera.process_keyboard(CameraMovement::UP, delta_time);
+    }
+    if (keystate[SDL_SCANCODE_E])
+    {
+        camera.process_keyboard(CameraMovement::DOWN, delta_time);
+    }
 }

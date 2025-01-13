@@ -83,13 +83,12 @@ void Texture::load_texture()
     if (m_type == Texture_Type::COLOR)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, image_data);
-
-        glGenerateMipmap(GL_TEXTURE_2D);
     }
     else if (m_type == Texture_Type::HEIGHT)
     {
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_R16F, width, height, 0, GL_RED, GL_UNSIGNED_BYTE, image_data);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_R8, width, height, 0, GL_RED, GL_UNSIGNED_BYTE, image_data);
     }
+    glGenerateMipmap(GL_TEXTURE_2D);
 
     SOIL_free_image_data(image_data);
     loaded = true;

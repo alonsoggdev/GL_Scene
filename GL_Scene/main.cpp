@@ -5,8 +5,6 @@
 //  Created by Alonso García on 9/12/24.
 //
 /*
-    Dudas:
-        Cuando me dijo lo de hacer la clase Shader en una factoria, era para hacer una clase ShaderFactory que se encargase de construir diferentes sahders?
  */
 
 #include <glad.h>

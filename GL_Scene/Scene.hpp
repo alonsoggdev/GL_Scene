@@ -9,7 +9,7 @@
 
 #include <string>
 #include "Shader.hpp"
-
+#include "Light.hpp"
 #include "Skybox.hpp"
 #include "Plane.hpp"
 
@@ -29,7 +29,9 @@ namespace udit
                 
         std::shared_ptr<Skybox> skybox;
         std::shared_ptr<Plane> terrain;
+        std::shared_ptr<Plane> floor;
         std::shared_ptr<Mesh> bull;
+        std::vector<std::shared_ptr<Light>> lights;
                 
         glm::mat4 view_matrix;
         glm::mat4 projection_matrix;
@@ -43,5 +45,6 @@ namespace udit
         
         void set_view_matrix(const glm::mat4& view);
         void set_projection_matrix(const glm::mat4& projection);
+        void set_lights(GLuint shader_program_id);
     };
 }

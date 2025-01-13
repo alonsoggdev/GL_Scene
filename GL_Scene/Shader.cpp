@@ -15,57 +15,87 @@ namespace udit
     const std::string Shader::default_vertex_shader_code =
         "#version 330\n"
         ""
-        "struct Light"
-        "{"
-        "    vec4 position;"
-        "    vec3 color;"
-        "};"
-        ""
-        "uniform Light light;"
-        "uniform float ambient_intensity;"
-        "uniform float diffuse_intensity;"
-        ""
-        "uniform vec3 material_color;"
-        ""
         "uniform mat4 model_view_matrix;"
         "uniform mat4 projection_matrix;"
-        "uniform mat4     normal_matrix;"
+        "uniform mat4 normal_matrix;"
         ""
         "layout (location = 0) in vec3 vertex_coordinates;"
         "layout (location = 1) in vec3 vertex_normal;"
+        "layout (location = 2) in vec2 vertex_texture_uv;"
         ""
-        "out vec3 front_color;"
+        "out vec3 normal;"
+        "out vec3 fragment_position;"
+        "out vec2 texture_uv;"
         ""
         "void main()"
         "{"
-        "    vec4  normal   = normal_matrix * vec4(vertex_normal, 0.0);"
-        "    vec4  position = model_view_matrix * vec4(vertex_coordinates, 1.0);"
-        ""
-        "    vec4  light_direction = light.position - position;"
-        "    float light_intensity = diffuse_intensity * max (dot (normalize (normal.xyz), normalize (light_direction.xyz)), 0.0);"
-        ""
-        "    front_color = ambient_intensity * material_color + diffuse_intensity * light_intensity * light.color * material_color;"
-        "    gl_Position = projection_matrix * position;"
+        "   vec4 view_space_pos = model_view_matrix * vec4(vertex_coordinates, 1.0);"
+        "   fragment_position = vec3(view_space_pos);"
+        "   normal = normalize(mat3(normal_matrix) * vertex_normal);"
+        "   texture_uv = vertex_texture_uv;"
+        "   gl_Position = projection_matrix * view_space_pos;"
         "}";
 
     const std::string Shader::default_fragment_shader_code =
         "#version 330\n"
         ""
-        "in  vec3 front_color;"
-        "out vec4 fragment_color;"
+        "struct Light"
+        "{"
+        "   vec4 position;"
+        "   vec3 color;"
+        "   float constant;"
+        "   float linear;"
+        "   float quadratic;"
+        "};"
+        ""
+        "uniform Light lights[3];"
+        "uniform float ambient_intensity;"
+        "uniform float diffuse_intensity;"
+        "uniform float specular_intensity;"
+        "uniform float shininess;"
+        ""
+        "uniform vec3 view_pos;"
+        "uniform vec3 material_color;"
+        ""
+        "uniform sampler2D texture0;"
+        ""
+        "in  vec3            normal;"
+        "in  vec3 fragment_position;"
+        "in  vec2 texture_uv;"
+        ""
+        "out vec4    fragment_color;"
         ""
         "void main()"
         "{"
-        "    fragment_color = vec4(front_color, 1.0);"
+        "   vec3 result    = vec3(0.0);"
+        "   vec3 light_dir = vec3(0.0);"
+        "   vec3 norm      = normalize(normal);"
+        "   vec3 view_dir  = normalize(view_pos - fragment_position);"
+        ""
+        "   for (int i = 0; i < 3 ; ++i)\n "
+        "   {\n"
+        "       vec3 light_dir    = normalize(vec3(lights[i].position) - fragment_position);"
+        "       float distance    = length(vec3(lights[i].position) - fragment_position);"
+        "       float attenuation = 1.0 / (lights[i].constant + lights[i].linear * distance + lights[i].quadratic * (distance * distance));"
+        "       vec3 ambient      = ambient_intensity * lights[i].color;"
+        "       float diff        = max(dot(norm, light_dir), 0.0);"
+        "       vec3 diffuse      = diffuse_intensity * diff * lights[i].color;"
+        "       vec3 halfway_dir  = normalize(light_dir + view_dir);"
+        "       float spec        = pow(max(dot(norm, halfway_dir), 0.0), shininess);"
+        "       vec3 specular     = specular_intensity * spec * lights[i].color;"
+        ""
+        "       ambient   *= attenuation;"
+        "       diffuse   *= attenuation;"
+        "       specular  *= attenuation;"
+        "       result    += (ambient + diffuse + specular) * material_color;"
+        "   }\n"
+        "   fragment_color = vec4(result, 1.0) * vec4(texture (texture0, texture_uv.st).rgb, 1.0);"
         "}";
 
-    /**
-     *@brief Constructor por defecto
-     */
     Shader::Shader(ShaderType type, const std::string & vertex_source, const std::string & fragment_source, const std::string & name)
     : m_type(type), m_vertex_source(vertex_source), m_fragment_source(fragment_source), m_name(name)
     {
-        std::cout << "Loading custom shader..." << std::endl;
+        std::cout << "Loading custom shader... " << std::endl;
         std::cout << vertex_source << " | " << fragment_source << std::endl;
         std::string vertex_code, fragment_code;
         try
@@ -103,6 +133,7 @@ namespace udit
         program_id = compile_shaders (default_vertex_shader_code.c_str(), default_fragment_shader_code.c_str());
     }
 
+    Shader::~Shader(){}
 
     std::shared_ptr < Shader > Shader::make_shader(
         udit::ShaderType type,
@@ -113,7 +144,6 @@ namespace udit
     )
     {
         std::string absolute_path = "/Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/resources/";
-        auto shader = std::make_shared<udit::Shader>(type, vertex_shader, fragment_shader, name);
 
         switch (type)
         {
@@ -123,9 +153,10 @@ namespace udit
             case udit::ShaderType::TERRAIN:
                 break;
             default:
-                shader = nullptr;
                 return std::make_shared<udit::Shader>();
         }
+        auto shader = std::make_shared<udit::Shader>(type, vertex_shader, fragment_shader, name);
+        
         GLenum texture_unit = GL_TEXTURE0;
         if (type == udit::ShaderType::TERRAIN)
         {
@@ -324,7 +355,6 @@ namespace udit
      */
     void Shader::show_linkage_error (GLuint program_id)
     {
-        std::cout << "Linkage error in " + get_name();
         std::string info_log;
         GLint  info_log_length;
 

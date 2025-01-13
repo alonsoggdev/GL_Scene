@@ -98,10 +98,8 @@ namespace udit
         switch (type)
         {
             case MeshType::TERRAIN:
+            case MeshType::BASIC:                
                 return std::make_shared<udit::Plane>(100.0f);
-            case MeshType::BASIC:
-                break;
-                
             case MeshType::MESH:
                 return path.empty() ? std::make_shared<udit::Mesh>()
                                     : std::make_shared<udit::Mesh>(complete_path);

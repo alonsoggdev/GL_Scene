@@ -5,9 +5,7 @@ dependencies: \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/glad.h \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/khrplatform.h \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Texture.hpp \
-  /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Skybox.hpp \
-  /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Cube.hpp \
-  /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Mesh.hpp \
+  /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Light.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/glm.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/detail/_fixes.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/detail/setup.hpp \
@@ -188,6 +186,8 @@ dependencies: \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/vector_relational.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/integer.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/detail/func_integer.inl \
+  /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Cube.hpp \
+  /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Mesh.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/gtc/matrix_transform.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/gtc/../mat4x4.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/gtc/../vec2.hpp \
@@ -300,5 +300,5 @@ dependencies: \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/gtc/../mat4x2.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/gtc/../mat4x3.hpp \
   /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/libraries/includes/gtc/type_ptr.inl \
-  /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Plane.hpp \
-  /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Light.hpp
+  /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Skybox.hpp \
+  /Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/Plane.hpp

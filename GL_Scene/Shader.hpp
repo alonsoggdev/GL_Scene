@@ -50,6 +50,7 @@ namespace udit
     public:
         Shader();
         Shader(ShaderType type, const std::string & vertex_source, const std::string & fragment_source, const std::string & name);
+        ~Shader();
         static std::shared_ptr < Shader > make_shader(
             udit::ShaderType type = udit::ShaderType::DEFAULT,
             const std::string & vertex_shader = "",
