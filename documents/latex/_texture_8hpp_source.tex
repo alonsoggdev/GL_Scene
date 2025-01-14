@@ -1,0 +1,56 @@
+\doxysection{Texture.\+hpp}
+\hypertarget{_texture_8hpp_source}{}\label{_texture_8hpp_source}\index{GL\_Scene/Texture.hpp@{GL\_Scene/Texture.hpp}}
+\mbox{\hyperlink{_texture_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ Texture.hpp}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ GL\_Scene}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Alonso\ García\ on\ 24/12/24.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <glad.h>}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{namespace\ }udit}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{_texture_8hpp_a5d05643d6fef9f5f2f3a06738872c62c}{Texture\_Type}}}
+\DoxyCodeLine{00032\ \ \ \ \ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_texture_8hpp_a5d05643d6fef9f5f2f3a06738872c62ca04bd834032febb3fda8c6936ee140949}{COLOR}},\ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_texture_8hpp_a5d05643d6fef9f5f2f3a06738872c62cad770ba3ce18fa409965dfdf5e7c348e6}{HEIGHT}}\ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_texture_ae992200b6fa02dda942d99305828c0c0}{Texture}}}
+\DoxyCodeLine{00046\ \ \ \ \ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ loaded\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ Texture\_Type\ m\_type;}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classudit_1_1_texture_ae992200b6fa02dda942d99305828c0c0}{Texture}}(\textcolor{keyword}{const}\ std::string\ \&\ path,\ GLenum\ \mbox{\hyperlink{class_texture_a6c7f1bf4b136a4bea0392a548822fc5f}{texture\_unit}},\ Texture\_Type\ type\ =\ Texture\_Type::COLOR);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classudit_1_1_texture_a09c4bcb7462f64c1d20fa69dba3cee8a}{\string~Texture}}();}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_texture_a4b85391c6e54686ec566ba38c62dde98}{bind}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_texture_a451d7afac3848417bb1007d39ee7d545}{unbind}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ GLuint\ \mbox{\hyperlink{classudit_1_1_texture_ae709b512f045a1dfbb932487bc075783}{texture\_id}};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ GLenum\ \mbox{\hyperlink{classudit_1_1_texture_a6c7f1bf4b136a4bea0392a548822fc5f}{texture\_unit}};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classudit_1_1_texture_a5fc4b16fd445914330b33e186a421610}{file\_path}};}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_texture_a4961d9feaf30f7099257748f9d12032d}{load\_texture}}();}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_texture_ac2c582bf3de7e2257adcab51f4b618e8}{set\_type}}(\mbox{\hyperlink{_texture_8hpp_a5d05643d6fef9f5f2f3a06738872c62c}{Texture\_Type}}\ type)\ \{\ m\_type\ =\ type;\ \}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classudit_1_1_texture_a4a9e1a40314e13f23aca2597953ce82f}{is\_loaded}}()\ \{\ \textcolor{keywordflow}{return}\ loaded;\ \}}
+\DoxyCodeLine{00116\ \ \ \ \ \};}
+\DoxyCodeLine{00117\ \}}
+\DoxyCodeLine{00118\ }
+
+\end{DoxyCode}

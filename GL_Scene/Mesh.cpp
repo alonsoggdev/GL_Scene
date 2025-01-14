@@ -47,7 +47,6 @@ namespace udit
             aiMesh * mesh = scene->mMeshes[i];
             
             // Cargar la información del mesh (coordenadas, normales, etc.)
-            size_t number_of_vertices = mesh->mNumVertices;
 
             for (unsigned int j = 0; j < mesh->mNumVertices; ++j)
             {

@@ -4,6 +4,7 @@
 //
 //  Created by Alonso García on 9/12/24.
 //
+
 #pragma once
 
 #include <SDL.h>

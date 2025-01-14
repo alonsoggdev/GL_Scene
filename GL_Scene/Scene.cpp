@@ -22,11 +22,12 @@ namespace udit
      *@param width Ancho de la escena
      *@param height Alto de la escena
      */
-    Scene::Scene(unsigned width, unsigned height) : width(width), height(height), light(glm::vec3(4.0f, 2.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), 0.2f, 0.8f)
+    Scene::Scene(unsigned width, unsigned height) : width(width), height(height)
     {
         // std::cout << "Creating scene..." << std::endl;
 
         std::shared_ptr< Shader > default_shader_program = Shader::make_shader(udit::ShaderType::DEFAULT);
+        light = Light::make_light(glm::vec3(4.0f, 2.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), 0.2f, 0.8f);
 
         // SKYBOX
         skybox = std::dynamic_pointer_cast<Skybox>(Mesh::make_mesh(udit::MeshType::SKYBOX));
@@ -55,7 +56,7 @@ namespace udit
         bull = Mesh::make_mesh(udit::MeshType::MESH, "bull.obj");
         bull->set_shader(default_shader_program);
         std::cout << "Bull has shader " << bull->get_shader_program_id() << std::endl;
-        light.send_to_shader(bull->get_shader_program_id());
+        light->send_to_shader(bull->get_shader_program_id());
         
         resize(width, height);
     }

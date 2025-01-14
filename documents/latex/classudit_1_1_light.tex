@@ -1,0 +1,106 @@
+\doxysection{udit\+::Light Class Reference}
+\hypertarget{classudit_1_1_light}{}\label{classudit_1_1_light}\index{udit::Light@{udit::Light}}
+
+
+Clase que representa una fuente de luz en la escena.  
+
+
+
+
+{\ttfamily \#include $<$Light.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classudit_1_1_light_ab6c7daadb61ed8051181bbe1c66687e7}{Light}} (const glm\+::vec3 \&pos, const glm\+::vec3 \&col, float ambient, float diffuse)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{classudit_1_1_light}{Light}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classudit_1_1_light_a36bace83a70cdac93ba4ae1b54fab0f6}{send\+\_\+to\+\_\+shader}} (GLuint program\+\_\+id) const
+\begin{DoxyCompactList}\small\item\em Envía los parámetros de la luz al shader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classudit_1_1_light}{Light}} $>$ \mbox{\hyperlink{classudit_1_1_light_ad3e0c8f91d85f8785eb7cec3da909818}{make\+\_\+light}} (const glm\+::vec3 \&pos, const glm\+::vec3 \&col, float ambient, float diffuse)
+\begin{DoxyCompactList}\small\item\em Crea una luz a partir de los parámetros especificados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que representa una fuente de luz en la escena. 
+
+La clase {\ttfamily \doxylink{classudit_1_1_light}{Light}} es responsable de definir las características básicas de una fuente de luz, tales como su posición, color y las intensidades de la luz ambiental y difusa. Esta clase se utiliza para enviar la información de la luz a los shaders en Open\+GL para que los efectos de luz sean aplicados en la escena 3D. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classudit_1_1_light_ab6c7daadb61ed8051181bbe1c66687e7}\index{udit::Light@{udit::Light}!Light@{Light}}
+\index{Light@{Light}!udit::Light@{udit::Light}}
+\doxysubsubsection{\texorpdfstring{Light()}{Light()}}
+{\footnotesize\ttfamily \label{classudit_1_1_light_ab6c7daadb61ed8051181bbe1c66687e7} 
+Light\+::\+Light (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{pos}{, }\item[{const glm\+::vec3 \&}]{col}{, }\item[{float}]{ambient}{, }\item[{float}]{diffuse}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase \doxylink{classudit_1_1_light}{Light}. 
+
+Este constructor inicializa los parámetros de la luz con valores específicos para su posición, color y las intensidades de luz ambiental y difusa.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Posición de la luz en el espacio 3D. \\
+\hline
+{\em col} & Color de la luz, especificado en formato RGB. \\
+\hline
+{\em ambient} & Intensidad de la luz ambiental. \\
+\hline
+{\em diffuse} & Intensidad de la luz difusa. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classudit_1_1_light_ad3e0c8f91d85f8785eb7cec3da909818}\index{udit::Light@{udit::Light}!make\_light@{make\_light}}
+\index{make\_light@{make\_light}!udit::Light@{udit::Light}}
+\doxysubsubsection{\texorpdfstring{make\_light()}{make\_light()}}
+{\footnotesize\ttfamily \label{classudit_1_1_light_ad3e0c8f91d85f8785eb7cec3da909818} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classudit_1_1_light}{Light}} $>$ Light\+::make\+\_\+light (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{pos}{, }\item[{const glm\+::vec3 \&}]{col}{, }\item[{float}]{ambient}{, }\item[{float}]{diffuse}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crea una luz a partir de los parámetros especificados. 
+
+Esta función estática facilita la creación de un objeto {\ttfamily \doxylink{classudit_1_1_light}{Light}} compartido ({\ttfamily shared\+\_\+ptr}) con los valores de posición, color e intensidades de luz ambiental y difusa.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Posición de la luz en el espacio 3D. \\
+\hline
+{\em col} & Color de la luz, especificado en formato RGB. \\
+\hline
+{\em ambient} & Intensidad de la luz ambiental. \\
+\hline
+{\em diffuse} & Intensidad de la luz difusa.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un {\ttfamily std\+::shared\+\_\+ptr\texorpdfstring{$<$}{<}\doxylink{classudit_1_1_light}{Light}\texorpdfstring{$>$}{>}} que apunta a la nueva luz creada. 
+\end{DoxyReturn}
+\Hypertarget{classudit_1_1_light_a36bace83a70cdac93ba4ae1b54fab0f6}\index{udit::Light@{udit::Light}!send\_to\_shader@{send\_to\_shader}}
+\index{send\_to\_shader@{send\_to\_shader}!udit::Light@{udit::Light}}
+\doxysubsubsection{\texorpdfstring{send\_to\_shader()}{send\_to\_shader()}}
+{\footnotesize\ttfamily \label{classudit_1_1_light_a36bace83a70cdac93ba4ae1b54fab0f6} 
+void Light\+::send\+\_\+to\+\_\+shader (\begin{DoxyParamCaption}\item[{GLuint}]{program\+\_\+id}{}\end{DoxyParamCaption}) const}
+
+
+
+Envía los parámetros de la luz al shader. 
+
+Esta función toma los parámetros de la luz (posición, color, intensidad) y los envía al shader especificado a través de su programa de Open\+GL. Esto permite que la luz sea utilizada en los cálculos de sombreado dentro del pipeline de gráficos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em program\+\_\+id} & El identificador del programa de shader de Open\+GL. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GL\+\_\+\+Scene/Light.\+hpp\item 
+GL\+\_\+\+Scene/Light.\+cpp\end{DoxyCompactItemize}

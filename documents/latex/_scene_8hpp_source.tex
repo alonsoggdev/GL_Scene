@@ -1,0 +1,66 @@
+\doxysection{Scene.\+hpp}
+\hypertarget{_scene_8hpp_source}{}\label{_scene_8hpp_source}\index{GL\_Scene/Scene.hpp@{GL\_Scene/Scene.hpp}}
+\mbox{\hyperlink{_scene_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ Scene.hpp}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ GL\_Geometry}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Alonso\ García\ on\ 9/12/24.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_shader_8hpp}{Shader.hpp}}"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}Light.hpp"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_skybox_8hpp}{Skybox.hpp}}"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}Plane.hpp"{}}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{namespace\ }udit}
+\DoxyCodeLine{00025\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_scene_ae1140680bbef0fc44b6f9ea8349e1a45}{Scene}}}
+\DoxyCodeLine{00035\ \ \ \ \ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ std::vector<std::string>\ skybox\_faces\ =}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}skybox\_east.jpg"{}},\ \textcolor{stringliteral}{"{}skybox\_west.jpg"{}},\ \textcolor{stringliteral}{"{}skybox\_up.jpg"{}},}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}skybox\_down.jpg"{}},\ \textcolor{stringliteral}{"{}skybox\_north.jpg"{}},\ \textcolor{stringliteral}{"{}skybox\_south.jpg"{}}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ angle\ =\ 0.0f;}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ std::shared\_ptr<Skybox>\ skybox;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ std::shared\_ptr<Plane>\ terrain;}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ std::shared\_ptr<Plane>\ floor;}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ std::shared\_ptr<Mesh>\ bull;}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ std::shared\_ptr<Light>\ light;}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ width,\ height;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ glm::mat4\ view\_matrix;}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ glm::mat4\ projection\_matrix;}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classudit_1_1_scene_ae1140680bbef0fc44b6f9ea8349e1a45}{Scene}}(\textcolor{keywordtype}{unsigned}\ width,\ \textcolor{keywordtype}{unsigned}\ height);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_a03e281c23d0e567ee5e953d423988656}{update}}();}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_ad9a399c0646c049a107e0f094ff3b961}{render}}();}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_af96df08fac8334941d8b3c0edf4d786a}{resize}}(\textcolor{keywordtype}{unsigned}\ width,\ \textcolor{keywordtype}{unsigned}\ height);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_a80ba37bc7b0f37ecd8280b7a0efec4dc}{set\_view\_matrix}}(\textcolor{keyword}{const}\ glm::mat4\&\ view);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_a97f81040918793c0817082cb60830bda}{set\_projection\_matrix}}(\textcolor{keyword}{const}\ glm::mat4\&\ projection);}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_a0348a5a32f7f07de916b082373b7fd79}{set\_lights}}(GLuint\ shader\_program\_id);}
+\DoxyCodeLine{00135\ \ \ \ \ \};}
+\DoxyCodeLine{00136\ \}}
+
+\end{DoxyCode}

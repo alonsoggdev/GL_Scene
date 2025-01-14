@@ -1,0 +1,243 @@
+\doxysection{Camera Class Reference}
+\hypertarget{class_camera}{}\label{class_camera}\index{Camera@{Camera}}
+
+
+Clase que gestiona la cámara en un entorno 3D, incluyendo el control de la posición, orientación y el movimiento de la cámara.  
+
+
+
+
+{\ttfamily \#include $<$Camera.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_camera_af3e6e81e79b80bb8a6365c064ae55fc2}{Camera}} (glm\+::vec3 start\+\_\+position, glm\+::vec3 up\+\_\+direction, float start\+\_\+yaw, float start\+\_\+pitch)
+\begin{DoxyCompactList}\small\item\em Constructor de la cámara. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{class_camera_a330720093351b96355d66df8e4e728b9}{get\+\_\+view\+\_\+matrix}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene la matriz de vista de la cámara. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a8fac6f001fe4701239aa5d7cedc403f6}{process\+\_\+keyboard}} (Camera\+Movement direction, float delta\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Procesa la entrada de teclado para mover la cámara. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_ac34989a6aad816da24a2f2a158a425c4}{process\+\_\+mouse\+\_\+movement}} (float x\+\_\+offset, float y\+\_\+offset, bool constraint\+\_\+pitch=true)
+\begin{DoxyCompactList}\small\item\em Procesa el movimiento del ratón para rotar la cámara. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::vec3 \mbox{\hyperlink{class_camera_a04b5db2c530d8630660e8cfb93a4b3b5}{position}}
+\begin{DoxyCompactList}\small\item\em Posición actual de la cámara. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_camera_a8847cf29c9c124906ad5d97ecb5c55d1}{front}}
+\begin{DoxyCompactList}\small\item\em Dirección hacia la cual está mirando la cámara. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_camera_a3fe5f351380fb118ffc600591769f049}{up}}
+\begin{DoxyCompactList}\small\item\em Vectores de orientación de la cámara en el eje Y (arriba). \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_camera_aebffcc6289dd99df7554b18d00a81161}{right}}
+\begin{DoxyCompactList}\small\item\em Vectores de la orientación de la cámara en el eje X (derecha). \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_camera_a6c577ae7b35ade655292bbe1f7c0b862}{world\+\_\+up}}
+\begin{DoxyCompactList}\small\item\em Dirección "{}arriba"{} global. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_camera_ad76701b22630f2df28a0ae15f0497a3a}{yaw}}
+\begin{DoxyCompactList}\small\item\em Ángulo de orientación de la cámara alrededor del eje Y. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_camera_ab56fcb39f580e8d2159cf2c9c6d9a65a}{pitch}}
+\begin{DoxyCompactList}\small\item\em Ángulo de orientación de la cámara alrededor del eje X. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_camera_ac357bed69095828f8ea9fdf64192f0e3}{movement\+\_\+speed}}
+\begin{DoxyCompactList}\small\item\em Velocidad de movimiento de la cámara. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_camera_aec1b9630980c0019ee346c023cafdbd3}{mouse\+\_\+sensitivity}}
+\begin{DoxyCompactList}\small\item\em Sensibilidad al movimiento del ratón. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_camera_a21fc9e142b104d8e94126657abaa075f}{zoom}}
+\begin{DoxyCompactList}\small\item\em Nivel de zoom de la cámara. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que gestiona la cámara en un entorno 3D, incluyendo el control de la posición, orientación y el movimiento de la cámara. 
+
+La clase {\ttfamily \doxylink{class_camera}{Camera}} permite controlar la vista desde una cámara en 3D, proporcionando funcionalidades para mover la cámara en el espacio (adelante, atrás, izquierda, derecha, etc.), así como ajustar su orientación y zoom. Es comúnmente utilizada en aplicaciones gráficas en 3D, como videojuegos o simulaciones, donde se necesita un control interactivo sobre la vista de la escena. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_camera_af3e6e81e79b80bb8a6365c064ae55fc2}\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily \label{class_camera_af3e6e81e79b80bb8a6365c064ae55fc2} 
+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{start\+\_\+position}{, }\item[{glm\+::vec3}]{up\+\_\+direction}{, }\item[{float}]{start\+\_\+yaw}{, }\item[{float}]{start\+\_\+pitch}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de la cámara. 
+
+Inicializa una nueva cámara con la posición, dirección "{}arriba"{}, yaw y pitch especificados.
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+\_\+position} & La posición inicial de la cámara en el espacio 3D. \\
+\hline
+{\em up\+\_\+direction} & La dirección "{}arriba"{} de la cámara. \\
+\hline
+{\em start\+\_\+yaw} & El ángulo de yaw inicial de la cámara. \\
+\hline
+{\em start\+\_\+pitch} & El ángulo de pitch inicial de la cámara. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_camera_a330720093351b96355d66df8e4e728b9}\index{Camera@{Camera}!get\_view\_matrix@{get\_view\_matrix}}
+\index{get\_view\_matrix@{get\_view\_matrix}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{get\_view\_matrix()}{get\_view\_matrix()}}
+{\footnotesize\ttfamily \label{class_camera_a330720093351b96355d66df8e4e728b9} 
+glm\+::mat4 Camera\+::get\+\_\+view\+\_\+matrix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene la matriz de vista de la cámara. 
+
+La matriz de vista se usa para transformar las coordenadas de la escena en relación con la posición y orientación de la cámara.
+
+\begin{DoxyReturn}{Returns}
+Una matriz 4x4 que representa la vista de la cámara. 
+\end{DoxyReturn}
+\Hypertarget{class_camera_a8fac6f001fe4701239aa5d7cedc403f6}\index{Camera@{Camera}!process\_keyboard@{process\_keyboard}}
+\index{process\_keyboard@{process\_keyboard}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{process\_keyboard()}{process\_keyboard()}}
+{\footnotesize\ttfamily \label{class_camera_a8fac6f001fe4701239aa5d7cedc403f6} 
+void Camera\+::process\+\_\+keyboard (\begin{DoxyParamCaption}\item[{Camera\+Movement}]{direction}{, }\item[{float}]{delta\+\_\+time}{}\end{DoxyParamCaption})}
+
+
+
+Procesa la entrada de teclado para mover la cámara. 
+
+Cambia la posición de la cámara según la dirección especificada y el delta\+\_\+time dado. El delta\+\_\+time es usado para ajustar el movimiento en función del tiempo transcurrido.
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & La dirección en la que se desea mover la cámara (adelante, atrás, izquierda, derecha, etc.). \\
+\hline
+{\em delta\+\_\+time} & El tiempo transcurrido desde el último fotograma, usado para controlar la velocidad. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_camera_ac34989a6aad816da24a2f2a158a425c4}\index{Camera@{Camera}!process\_mouse\_movement@{process\_mouse\_movement}}
+\index{process\_mouse\_movement@{process\_mouse\_movement}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{process\_mouse\_movement()}{process\_mouse\_movement()}}
+{\footnotesize\ttfamily \label{class_camera_ac34989a6aad816da24a2f2a158a425c4} 
+void Camera\+::process\+\_\+mouse\+\_\+movement (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+offset}{, }\item[{float}]{y\+\_\+offset}{, }\item[{bool}]{constraint\+\_\+pitch}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Procesa el movimiento del ratón para rotar la cámara. 
+
+Ajusta la orientación de la cámara en función de los movimientos del ratón. La sensibilidad de estos movimientos es controlada por el valor de {\ttfamily mouse\+\_\+sensitivity}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+offset} & El cambio en la posición X del ratón. \\
+\hline
+{\em y\+\_\+offset} & El cambio en la posición Y del ratón. \\
+\hline
+{\em constraint\+\_\+pitch} & Si se debe restringir el ángulo de pitch para evitar una rotación excesiva. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_camera_a8847cf29c9c124906ad5d97ecb5c55d1}\index{Camera@{Camera}!front@{front}}
+\index{front@{front}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{front}{front}}
+{\footnotesize\ttfamily \label{class_camera_a8847cf29c9c124906ad5d97ecb5c55d1} 
+glm\+::vec3 Camera\+::front}
+
+
+
+Dirección hacia la cual está mirando la cámara. 
+
+Define la dirección en la que la cámara está mirando. Esto se utiliza para calcular la matriz de vista de la cámara. \Hypertarget{class_camera_aec1b9630980c0019ee346c023cafdbd3}\index{Camera@{Camera}!mouse\_sensitivity@{mouse\_sensitivity}}
+\index{mouse\_sensitivity@{mouse\_sensitivity}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{mouse\_sensitivity}{mouse\_sensitivity}}
+{\footnotesize\ttfamily \label{class_camera_aec1b9630980c0019ee346c023cafdbd3} 
+float Camera\+::mouse\+\_\+sensitivity}
+
+
+
+Sensibilidad al movimiento del ratón. 
+
+Controla cuánto se ajustan los ángulos de yaw y pitch cuando se mueve el ratón. \Hypertarget{class_camera_ac357bed69095828f8ea9fdf64192f0e3}\index{Camera@{Camera}!movement\_speed@{movement\_speed}}
+\index{movement\_speed@{movement\_speed}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{movement\_speed}{movement\_speed}}
+{\footnotesize\ttfamily \label{class_camera_ac357bed69095828f8ea9fdf64192f0e3} 
+float Camera\+::movement\+\_\+speed}
+
+
+
+Velocidad de movimiento de la cámara. 
+
+Define la rapidez con la que la cámara se mueve en función del delta\+\_\+time. \Hypertarget{class_camera_ab56fcb39f580e8d2159cf2c9c6d9a65a}\index{Camera@{Camera}!pitch@{pitch}}
+\index{pitch@{pitch}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{pitch}{pitch}}
+{\footnotesize\ttfamily \label{class_camera_ab56fcb39f580e8d2159cf2c9c6d9a65a} 
+float Camera\+::pitch}
+
+
+
+Ángulo de orientación de la cámara alrededor del eje X. 
+
+El ángulo de inclinación (pitch) controla la rotación de la cámara alrededor del eje horizontal. \Hypertarget{class_camera_a04b5db2c530d8630660e8cfb93a4b3b5}\index{Camera@{Camera}!position@{position}}
+\index{position@{position}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \label{class_camera_a04b5db2c530d8630660e8cfb93a4b3b5} 
+glm\+::vec3 Camera\+::position}
+
+
+
+Posición actual de la cámara. 
+
+Esta es la posición de la cámara en el espacio 3D. \Hypertarget{class_camera_aebffcc6289dd99df7554b18d00a81161}\index{Camera@{Camera}!right@{right}}
+\index{right@{right}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{right}{right}}
+{\footnotesize\ttfamily \label{class_camera_aebffcc6289dd99df7554b18d00a81161} 
+glm\+::vec3 Camera\+::right}
+
+
+
+Vectores de la orientación de la cámara en el eje X (derecha). 
+
+Define la dirección "{}derecha"{} de la cámara. Este vector es calculado en función del eje \textquotesingle{}up\textquotesingle{} y \textquotesingle{}front\textquotesingle{}. \Hypertarget{class_camera_a3fe5f351380fb118ffc600591769f049}\index{Camera@{Camera}!up@{up}}
+\index{up@{up}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{up}{up}}
+{\footnotesize\ttfamily \label{class_camera_a3fe5f351380fb118ffc600591769f049} 
+glm\+::vec3 Camera\+::up}
+
+
+
+Vectores de orientación de la cámara en el eje Y (arriba). 
+
+Define la dirección del "{}arriba"{} de la cámara, utilizado para la orientación de la vista. \Hypertarget{class_camera_a6c577ae7b35ade655292bbe1f7c0b862}\index{Camera@{Camera}!world\_up@{world\_up}}
+\index{world\_up@{world\_up}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{world\_up}{world\_up}}
+{\footnotesize\ttfamily \label{class_camera_a6c577ae7b35ade655292bbe1f7c0b862} 
+glm\+::vec3 Camera\+::world\+\_\+up}
+
+
+
+Dirección "{}arriba"{} global. 
+
+Este es el vector global de "{}arriba"{} que se utiliza para la rotación de la cámara para mantener la orientación correcta de la cámara. \Hypertarget{class_camera_ad76701b22630f2df28a0ae15f0497a3a}\index{Camera@{Camera}!yaw@{yaw}}
+\index{yaw@{yaw}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{yaw}{yaw}}
+{\footnotesize\ttfamily \label{class_camera_ad76701b22630f2df28a0ae15f0497a3a} 
+float Camera\+::yaw}
+
+
+
+Ángulo de orientación de la cámara alrededor del eje Y. 
+
+El ángulo de giro (yaw) se utiliza para girar la cámara alrededor del eje vertical. \Hypertarget{class_camera_a21fc9e142b104d8e94126657abaa075f}\index{Camera@{Camera}!zoom@{zoom}}
+\index{zoom@{zoom}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{zoom}{zoom}}
+{\footnotesize\ttfamily \label{class_camera_a21fc9e142b104d8e94126657abaa075f} 
+float Camera\+::zoom}
+
+
+
+Nivel de zoom de la cámara. 
+
+Representa el zoom de la cámara, determinando el campo de visión (FOV). 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GL\+\_\+\+Scene/Camera.\+hpp\item 
+GL\+\_\+\+Scene/Camera.\+cpp\end{DoxyCompactItemize}

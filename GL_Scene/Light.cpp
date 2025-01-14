@@ -36,3 +36,10 @@ void Light::send_to_shader(GLuint program_id) const
     
     glUseProgram(0);
 }
+
+std::shared_ptr <Light> Light::make_light(const glm::vec3& pos, const glm::vec3& col, float ambient, float diffuse)
+{
+    auto light = std::make_shared < Light >(pos, col, ambient, diffuse);
+    
+    return light;
+}

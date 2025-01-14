@@ -1,0 +1,149 @@
+\doxysection{udit\+::Plane Class Reference}
+\hypertarget{classudit_1_1_plane}{}\label{classudit_1_1_plane}\index{udit::Plane@{udit::Plane}}
+
+
+Clase que representa un plano 3D.  
+
+
+
+
+{\ttfamily \#include $<$Plane.\+hpp$>$}
+
+Inheritance diagram for udit\+::Plane\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classudit_1_1_plane}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classudit_1_1_plane_abc1df60c4a2612a284465bc7f454b078}{Plane}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classudit_1_1_plane_aa5c80b69cf80ffe5828f562861aac03f}{Plane}} (float size)
+\begin{DoxyCompactList}\small\item\em Constructor que define el tamaño del plano. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classudit_1_1_plane_a7d90d744ea4a2d4dff6930059760d9de}{Plane}} (float width, float height, unsigned columns, unsigned rows)
+\begin{DoxyCompactList}\small\item\em Constructor que define el tamaño y la resolución del plano. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classudit_1_1_mesh}{udit\+::\+Mesh}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Mesh} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classudit_1_1_mesh_a1193efd64578b11074fec8e2c69b4ecb}{Mesh}} (std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Constructor que carga una malla desde un archivo. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classudit_1_1_mesh_ae00ad686a0c38972944f856a7d8a7682}{\texorpdfstring{$\sim$}{\string~}\+Mesh}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a9d4ae5952b212c449f87b0260d3d1a31}{translate}} (glm\+::vec3 translation)
+\begin{DoxyCompactList}\small\item\em Realiza una traslación de la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_ad14a128f7e0d698666906d4eadeb0c20}{rotate}} (glm\+::vec3 rotation, float angle)
+\begin{DoxyCompactList}\small\item\em Rota la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a8b7dd47cd13fb1c365f399cb7154ae9c}{scale}} (glm\+::vec3 scale)
+\begin{DoxyCompactList}\small\item\em Escala la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_ac5a0797ee60d3ec8d04972ed08fa462c}{update}} ()
+\begin{DoxyCompactList}\small\item\em Actualiza la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a90e71e2684566413839d77dd850fc66b}{render}} (glm\+::mat4 view\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em Renderiza la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a7a570c95db3ca097c30ae7dc30ac7055}{resize}} (glm\+::mat4 projection\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em Ajusta la matriz de proyección. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a29bc27b2ed670472856ca5c131aae307}{set\+\_\+shader}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classudit_1_1_shader}{udit\+::\+Shader}} $>$ shader)
+\begin{DoxyCompactList}\small\item\em Asocia un shader a la malla. \end{DoxyCompactList}\item 
+GLuint \mbox{\hyperlink{classudit_1_1_mesh_a8062022e28aef3a74ea8cf09440d8be2}{get\+\_\+shader\+\_\+program\+\_\+id}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el ID del programa del shader asociado. \end{DoxyCompactList}\item 
+std\+::vector$<$ GLint $>$ \mbox{\hyperlink{classudit_1_1_mesh_ad35d4c32e215bc29f2258e41760e8454}{get\+\_\+shader\+\_\+matrix\+\_\+ids}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene los IDs de las matrices del shader asociadas a la malla. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{classudit_1_1_mesh_a18ba797aeb3bc4fdd376df8cffe8fc73}{get\+\_\+model\+\_\+view\+\_\+matrix}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene la matriz de transformación del modelo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classudit_1_1_mesh_ad0e07608c3db6dd61c25594a09ea4a3c}{set\+\_\+model\+\_\+view\+\_\+matrix}} (glm\+::mat4 matrix)
+\begin{DoxyCompactList}\small\item\em Establece la matriz de transformación del modelo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classudit_1_1_mesh_a6184dedb3bf33f00358186100f085d18}{set\+\_\+mesh\+\_\+type}} (Mesh\+Type type)
+\begin{DoxyCompactList}\small\item\em Establece el tipo de malla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classudit_1_1_mesh}{udit\+::\+Mesh}}}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classudit_1_1_mesh}{Mesh}} $>$ \mbox{\hyperlink{classudit_1_1_mesh_a7c6a9492d0b27fbe8f81334392a56da9}{make\+\_\+mesh}} (Mesh\+Type type, const std\+::string \&path="{}"{})
+\begin{DoxyCompactList}\small\item\em Crea una malla de un tipo específico. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classudit_1_1_mesh}{udit\+::\+Mesh}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classudit_1_1_mesh_aa967111ab07d545be3b81320338e3a62}{create\+\_\+mesh}} (std\+::string mesh\+\_\+name="{}"{})
+\begin{DoxyCompactList}\small\item\em Crea los VBOs y el VAO necesarios para la malla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classudit_1_1_mesh}{udit\+::\+Mesh}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ glm\+::vec3 $>$ {\bfseries coordinates}
+\begin{DoxyCompactList}\small\item\em Vectores que almacenan las coordenadas de los vértices, colores, normales, índices y coordenadas de textura. \end{DoxyCompactList}\item 
+std\+::vector$<$ glm\+::vec3 $>$ {\bfseries colors}
+\item 
+std\+::vector$<$ glm\+::vec3 $>$ {\bfseries normals}
+\item 
+std\+::vector$<$ GLuint $>$ {\bfseries indices}
+\item 
+std\+::vector$<$ glm\+::vec2 $>$ {\bfseries texture\+\_\+uvs}
+\item 
+GLsizei {\bfseries number\+\_\+of\+\_\+vertices}
+\begin{DoxyCompactList}\small\item\em Número total de vértices de la malla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que representa un plano 3D. 
+
+La clase {\ttfamily \doxylink{classudit_1_1_plane}{Plane}} hereda de {\ttfamily \doxylink{classudit_1_1_mesh}{Mesh}} y está diseñada para representar un plano 3D en Open\+GL. El plano se define por su ancho, altura, y la cantidad de columnas y filas que tiene. Esta clase permite crear un plano con diferentes configuraciones, ya sea con un tamaño específico o con una distribución de vértices más compleja. El plano es útil para representar superficies planas, como terrenos o fondos. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classudit_1_1_plane_abc1df60c4a2612a284465bc7f454b078}\index{udit::Plane@{udit::Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!udit::Plane@{udit::Plane}}
+\doxysubsubsection{\texorpdfstring{Plane()}{Plane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classudit_1_1_plane_abc1df60c4a2612a284465bc7f454b078} 
+udit\+::\+Plane\+::\+Plane (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+Crea un plano con dimensiones predeterminadas. \Hypertarget{classudit_1_1_plane_aa5c80b69cf80ffe5828f562861aac03f}\index{udit::Plane@{udit::Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!udit::Plane@{udit::Plane}}
+\doxysubsubsection{\texorpdfstring{Plane()}{Plane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classudit_1_1_plane_aa5c80b69cf80ffe5828f562861aac03f} 
+udit\+::\+Plane\+::\+Plane (\begin{DoxyParamCaption}\item[{float}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Constructor que define el tamaño del plano. 
+
+Crea un plano cuadrado con el tamaño especificado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Tamaño del plano en ambas dimensiones (ancho y alto). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classudit_1_1_plane_a7d90d744ea4a2d4dff6930059760d9de}\index{udit::Plane@{udit::Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!udit::Plane@{udit::Plane}}
+\doxysubsubsection{\texorpdfstring{Plane()}{Plane()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classudit_1_1_plane_a7d90d744ea4a2d4dff6930059760d9de} 
+udit\+::\+Plane\+::\+Plane (\begin{DoxyParamCaption}\item[{float}]{width}{, }\item[{float}]{height}{, }\item[{unsigned}]{columns}{, }\item[{unsigned}]{rows}{}\end{DoxyParamCaption})}
+
+
+
+Constructor que define el tamaño y la resolución del plano. 
+
+Crea un plano con el tamaño y la cantidad de columnas y filas especificados.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Ancho del plano. \\
+\hline
+{\em height} & Alto del plano. \\
+\hline
+{\em columns} & Número de columnas del plano (resolución horizontal). \\
+\hline
+{\em rows} & Número de filas del plano (resolución vertical). \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GL\+\_\+\+Scene/Plane.\+hpp\item 
+GL\+\_\+\+Scene/Plane.\+cpp\end{DoxyCompactItemize}
