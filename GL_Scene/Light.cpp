@@ -20,7 +20,7 @@ void Light::send_to_shader(GLuint program_id, const std::string& uniformName) co
 {
     GLint material_color = glGetUniformLocation (program_id, "material_color");
 
-    glUniform3f (material_color, 0.f, 1.f, 0.f);
+    glUniform3f (material_color, 1.0f, 0.0f, 0.0f);
     
     GLint light_position    = glGetUniformLocation (program_id, "light.position");
     GLint light_color       = glGetUniformLocation (program_id, "light.color"   );

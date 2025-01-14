@@ -2995,6 +2995,67 @@
 			<key>uniqueIdentifier</key>
 			<string>702AB2D6-5AD4-47D0-AA71-F1F3FE45DAE7</string>
 		</dict>
+		<key>71BCBA82-B793-4E83-A59A-5BAB1841BC7C</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>0FE5213D-29AD-47EB-B7B4-A3932679C0C4</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>3</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-GL_Scene-2025.01.14_17-17-06-+0100.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>3</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GL_Scene project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GL_Scene</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run GL_Scene</string>
+			<key>timeStartedRecording</key>
+			<real>758564226.11125898</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run GL_Scene</string>
+			<key>uniqueIdentifier</key>
+			<string>71BCBA82-B793-4E83-A59A-5BAB1841BC7C</string>
+		</dict>
 		<key>71E82C60-C629-4F56-BAF5-B05594AB5E41</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -4275,6 +4336,67 @@
 			<string>Run GL_Scene</string>
 			<key>uniqueIdentifier</key>
 			<string>9CAD04AE-8D3B-4860-AB30-88BEAD118D2E</string>
+		</dict>
+		<key>A4A04608-3B41-4458-9B76-D08E1DA2E62F</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>14555F75-6596-4719-8E71-4D241DF87035</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>3</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-GL_Scene-2025.01.14_17-16-47-+0100.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>3</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GL_Scene project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GL_Scene</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run GL_Scene</string>
+			<key>timeStartedRecording</key>
+			<real>758564207.41244602</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run GL_Scene</string>
+			<key>uniqueIdentifier</key>
+			<string>A4A04608-3B41-4458-9B76-D08E1DA2E62F</string>
 		</dict>
 		<key>A76C543C-332D-4ABD-BEB4-F52DB52B9308</key>
 		<dict>
@@ -6227,6 +6349,67 @@
 			<string>Run GL_Scene</string>
 			<key>uniqueIdentifier</key>
 			<string>F3C7692D-AE16-4345-A96B-4F5F66EC1805</string>
+		</dict>
+		<key>F536115A-BF3C-448A-82BE-03E46DC2699C</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>9E961450-8EA0-43B2-9609-B2D097D847DC</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>3</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-GL_Scene-2025.01.14_17-17-23-+0100.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>3</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GL_Scene project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GL_Scene</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run GL_Scene</string>
+			<key>timeStartedRecording</key>
+			<real>758564243.35671699</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run GL_Scene</string>
+			<key>uniqueIdentifier</key>
+			<string>F536115A-BF3C-448A-82BE-03E46DC2699C</string>
 		</dict>
 		<key>F5BB7D38-572E-43EA-9AD1-479844ADDF4E</key>
 		<dict>

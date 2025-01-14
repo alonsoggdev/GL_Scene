@@ -66,7 +66,7 @@ namespace udit
      */
     void Scene::update()
     {
-        angle += 0.5f;
+        // angle += 0.5f;
     }
     
     /**
