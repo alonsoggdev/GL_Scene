@@ -24,7 +24,7 @@ namespace udit
     public:
         Light(const glm::vec3& pos, const glm::vec3& col, float ambient, float diffuse, float specular);
 
-        void send_to_shader(GLuint shaderProgram, const std::string& uniformName) const;
+        void send_to_shader(GLuint program_id, const std::string& uniformName) const;
     };
 }
 

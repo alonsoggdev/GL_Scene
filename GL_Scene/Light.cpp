@@ -16,12 +16,21 @@ Light::Light(const glm::vec3& pos, const glm::vec3& col, float ambient, float di
 }
 
 
-void Light::send_to_shader(GLuint shaderProgram, const std::string& uniformName) const
+void Light::send_to_shader(GLuint program_id, const std::string& uniformName) const
 {
-    // std::cout << "Sending light to shader " << shaderProgram << std::endl;
-    glUniform3fv(glGetUniformLocation(shaderProgram, (uniformName + ".position").c_str()), 1, &position[0]);
-    glUniform3fv(glGetUniformLocation(shaderProgram, (uniformName + ".color").c_str()), 1, &color[0]);
-    glUniform1f(glGetUniformLocation(shaderProgram, (uniformName + ".ambient_intensity").c_str()), ambientIntensity);
-    glUniform1f(glGetUniformLocation(shaderProgram, (uniformName + ".diffuse_intensity").c_str()), diffuseIntensity);
-    glUniform1f(glGetUniformLocation(shaderProgram, (uniformName + ".specular_intensity").c_str()), specularIntensity);
+    GLint material_color = glGetUniformLocation (program_id, "material_color");
+
+    glUniform3f (material_color, 0.f, 1.f, 0.f);
+    
+    GLint light_position    = glGetUniformLocation (program_id, "light.position");
+    GLint light_color       = glGetUniformLocation (program_id, "light.color"   );
+    GLint ambient_intensity = glGetUniformLocation (program_id, "ambient_intensity");
+    GLint diffuse_intensity = glGetUniformLocation (program_id, "diffuse_intensity");
+
+    glUniform4f (light_position,   10.0f, 10.f, 10.f, 1.f);
+    glUniform3f (light_color,       1.0f,  1.f,  1.f);
+    glUniform1f (ambient_intensity, 0.2f);
+    glUniform1f (diffuse_intensity, 0.8f);
+
+
 }
