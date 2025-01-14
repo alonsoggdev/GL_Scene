@@ -31,7 +31,7 @@ namespace udit
         std::shared_ptr<Plane> terrain;
         std::shared_ptr<Plane> floor;
         std::shared_ptr<Mesh> bull;
-        std::vector<std::shared_ptr<Light>> lights;
+        Light light;
                 
         glm::mat4 view_matrix;
         glm::mat4 projection_matrix;

@@ -214,8 +214,16 @@ namespace udit
         glUniformMatrix4fv(m_shader->get_model_view_matrix_id(), 1, GL_FALSE, glm::value_ptr(model_view_matrix));
         
         normal_matrix = glm::transpose(glm::inverse(model_view_matrix));
-        
         glUniformMatrix4fv(m_shader->get_normal_matrix_id(), 1, GL_FALSE, glm::value_ptr(normal_matrix));
+        
+        // Obtener la posición de la cámara (que ya debe ser calculada previamente)
+        glm::vec3 camera_position = glm::inverse(view_matrix)[3];  // La última columna de la matriz de vista es la posición de la cámara
+
+        // Pasar la posición de la cámara al shader
+        GLuint camera_position_location = glGetUniformLocation(m_shader->get_program_id(), "view_pos");
+        glUniform3fv(camera_position_location, 1, glm::value_ptr(camera_position));
+        
+
         
         glBindVertexArray (vao_id);
         

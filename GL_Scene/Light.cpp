@@ -9,19 +9,19 @@
 
 using namespace udit;
 
-
-std::shared_ptr<Light> Light::make_light(LightType type, const glm::vec3& color, const glm::vec3& vec1, const glm::vec3& vec2)
+Light::Light(const glm::vec3& pos, const glm::vec3& col, float ambient, float diffuse, float specular)
+    : position(pos), color(col), ambientIntensity(ambient), diffuseIntensity(diffuse), specularIntensity(specular)
 {
-    switch (type)
-    {
-    case LightType::DIRECTIONAL:
-        return std::make_shared<DirectionalLight>(color, vec1);
-    case LightType::POINT:
-        return std::make_shared<PointLight>(color, vec1);
-    case LightType::AREA:
-        return std::make_shared<AreaLight>(color, vec1, vec2);
-    default:
-        return nullptr;
-    }
+    std::cout << "Creating light in position -> " << position.x << ", " << position.y << ", " << position.z << std::endl;
+}
 
+
+void Light::send_to_shader(GLuint shaderProgram, const std::string& uniformName) const
+{
+    // std::cout << "Sending light to shader " << shaderProgram << std::endl;
+    glUniform3fv(glGetUniformLocation(shaderProgram, (uniformName + ".position").c_str()), 1, &position[0]);
+    glUniform3fv(glGetUniformLocation(shaderProgram, (uniformName + ".color").c_str()), 1, &color[0]);
+    glUniform1f(glGetUniformLocation(shaderProgram, (uniformName + ".ambient_intensity").c_str()), ambientIntensity);
+    glUniform1f(glGetUniformLocation(shaderProgram, (uniformName + ".diffuse_intensity").c_str()), diffuseIntensity);
+    glUniform1f(glGetUniformLocation(shaderProgram, (uniformName + ".specular_intensity").c_str()), specularIntensity);
 }

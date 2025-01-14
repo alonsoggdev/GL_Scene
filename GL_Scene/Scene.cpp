@@ -22,12 +22,10 @@ namespace udit
      *@param width Ancho de la escena
      *@param height Alto de la escena
      */
-    Scene::Scene(unsigned width, unsigned height)
+    Scene::Scene(unsigned width, unsigned height) : light(glm::vec3(0.0f, 2.0f, -5.0f), glm::vec3(1.0f, 1.0f, 1.0f), 0.2f, 0.8f, 1.0f)
     {
-        std::shared_ptr< PointLight > light = std::dynamic_pointer_cast< PointLight >(Light::make_light(LightType::POINT, glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(7.0f, 7.0f, 7.0f)));
-        lights.push_back(light);
-        std::cout << "Creating " << lights.size() << " lights." << std::endl;
         // std::cout << "Creating scene..." << std::endl;
+
         std::shared_ptr< Shader > default_shader_program = Shader::make_shader(udit::ShaderType::DEFAULT);
         /*
         
@@ -57,19 +55,9 @@ namespace udit
 
         //BULL
         bull = Mesh::make_mesh(udit::MeshType::MESH, "bull.obj");
-        
         bull->set_shader(default_shader_program);
-        
-        glUseProgram(bull->get_shader_program_id());
-        GLint material_color = glGetUniformLocation(bull->get_shader_program_id(), "material_color");
-        if (material_color == -1)
-        {
-            std::cout << "Material color not found in shader" << std::endl;
-        }
-        glUniform3f(material_color, 1.0f, 1.0f, 0.0f);
-
-        set_lights(bull->get_shader_program_id());
-        glUseProgram(0);
+        std::cout << "Bull has shader " << bull->get_shader_program_id() << std::endl;
+        light.send_to_shader(bull->get_shader_program_id(), "light");
         
         resize(width, height);
     }
@@ -115,6 +103,7 @@ namespace udit
         bull->rotate(glm::vec3(1.0f, 0.0f, 0.0f), -90.0f);
         bull->rotate(glm::vec3(0.0f, 0.0f, 1.0f), angle);
         bull->scale(glm::vec3(0.01f, 0.01f, 0.01f));
+        light.send_to_shader(bull->get_shader_program_id(), "light");
         bull->render(view_matrix);
     }
     
@@ -143,63 +132,6 @@ namespace udit
 
     void Scene::set_lights(GLuint shader_program_id)
     {
-        glUseProgram (shader_program_id);
-        for (size_t i = 0; i < lights.size(); ++i)
-        {
-            std::string light_index = "lights[" + std::to_string(i) + "]";
-            std::string aux_var;
-            aux_var = light_index +     ".color";
-            GLint light_color_id     = glGetUniformLocation (shader_program_id, aux_var.c_str());
-            
-            aux_var = light_index +  ".position";
-            GLint light_position_id  = glGetUniformLocation (shader_program_id, aux_var.c_str());
-            
-            aux_var = light_index +  ".constant";
-            GLint light_constant_id  = glGetUniformLocation (shader_program_id, aux_var.c_str());
-            
-            aux_var = light_index +    ".linear";
-            GLint light_linear_id    = glGetUniformLocation (shader_program_id, aux_var.c_str());
-            
-            aux_var = light_index + ".quadratic";
-            GLint light_quadratic_id = glGetUniformLocation (shader_program_id, aux_var.c_str());
-            
-            glUniform3fv (light_color_id, 1, glm::value_ptr(lights[i]->color));
-            
-            if (auto dir_light = std::dynamic_pointer_cast<DirectionalLight>(lights[i]))
-            {
-                glUniform4f (light_position_id, dir_light->direction.x, dir_light->direction.y, dir_light->direction.z, 0.0f);
-                glUniform1f (light_constant_id, 1.0f);
-                glUniform1f (light_linear_id, 0.0f);
-                glUniform1f (light_quadratic_id, 0.0f);
-            }
-            else
-            if (auto point_light = std::dynamic_pointer_cast<PointLight>(lights[i]))
-            {
-                std::cout << "Configuring point light at position: " << point_light->position.x << ", " << point_light->position.y << ", " << point_light->position.z << "." << std::endl;
-                glUniform4f(light_position_id, point_light->position.x, point_light->position.y, point_light->position.z, 1.0f);
-                glUniform1f(light_constant_id, 1.0f);
-                glUniform1f(light_linear_id, 0.09f);
-                glUniform1f(light_quadratic_id, 0.032f);
-            }
-            else
-            if (auto area_light = std::dynamic_pointer_cast<AreaLight>(lights[i]))
-            {
-                glUniform4f(light_position_id, area_light->position.x, area_light->position.y, area_light->position.z, 1.0f);
-                glUniform1f(light_constant_id, 1.0f);
-                glUniform1f(light_linear_id, 0.09f);
-                glUniform1f(light_quadratic_id, 0.032f);
-            }
-        }
         
-        GLint  ambient_intensity_id = glGetUniformLocation(shader_program_id, "ambient_intensity");
-        GLint  diffuse_intensity_id = glGetUniformLocation(shader_program_id,  "diffuse_intensity");
-        GLint specular_intensity_id = glGetUniformLocation(shader_program_id, "specular_intensity");
-        
-        glUniform1f ( ambient_intensity_id, 0.2f);
-        glUniform1f ( diffuse_intensity_id, 0.8f);
-        glUniform1f (specular_intensity_id, 1.0f);
-        
-        
-        glUseProgram (0);
     }
 }
