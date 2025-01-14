@@ -1,0 +1,53 @@
+\doxysection{/\+Users/alonsoggdev/\+UDIT/\+Asignaturas/\+Programacion\+\_\+\+Grafica/\+GL\+\_\+\+Scene/\+GL\+\_\+\+Scene/\+Texture.hpp File Reference}
+\hypertarget{_texture_8hpp}{}\label{_texture_8hpp}\index{/Users/alonsoggdev/UDIT/Asignaturas/Programacion\_Grafica/GL\_Scene/GL\_Scene/Texture.hpp@{/Users/alonsoggdev/UDIT/Asignaturas/Programacion\_Grafica/GL\_Scene/GL\_Scene/Texture.hpp}}
+
+
+Clase para gestionar las texturas en Open\+GL.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$glad.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classudit_1_1_texture}{udit\+::\+Texture}}
+\begin{DoxyCompactList}\small\item\em Representa una textura en Open\+GL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{_texture_8hpp_a5d05643d6fef9f5f2f3a06738872c62c}{udit\+::\+Texture\+\_\+\+Type}} \{ \mbox{\hyperlink{_texture_8hpp_a5d05643d6fef9f5f2f3a06738872c62ca04bd834032febb3fda8c6936ee140949}{COLOR}}
+, \mbox{\hyperlink{_texture_8hpp_a5d05643d6fef9f5f2f3a06738872c62cad770ba3ce18fa409965dfdf5e7c348e6}{HEIGHT}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum que define los tipos de texturas disponibles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase para gestionar las texturas en Open\+GL. 
+
+La clase {\ttfamily \doxylink{class_texture}{Texture}} permite la carga, enlace y liberación de texturas en Open\+GL. Se utiliza para manejar imágenes que se aplican a los objetos 3D en la escena, permitiendo efectos visuales como color, relieve, etc. 
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_texture_8hpp_a5d05643d6fef9f5f2f3a06738872c62c}\index{Texture.hpp@{Texture.hpp}!Texture\_Type@{Texture\_Type}}
+\index{Texture\_Type@{Texture\_Type}!Texture.hpp@{Texture.hpp}}
+\doxysubsubsection{\texorpdfstring{Texture\_Type}{Texture\_Type}}
+{\footnotesize\ttfamily \label{_texture_8hpp_a5d05643d6fef9f5f2f3a06738872c62c} 
+enum class \mbox{\hyperlink{_texture_8hpp_a5d05643d6fef9f5f2f3a06738872c62c}{udit\+::\+Texture\+\_\+\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enum que define los tipos de texturas disponibles. 
+
+Los tipos de texturas permiten diferenciar entre distintos tipos de efectos visuales\+:
+\begin{DoxyItemize}
+\item {\ttfamily COLOR}\+: Textura normal, utilizada para representar colores o imágenes en 3D.
+\item {\ttfamily HEIGHT}\+: Textura de altura, generalmente utilizada en mapas de relieve. 
+\end{DoxyItemize}\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COLOR@{COLOR}!Texture.hpp@{Texture.hpp}}\index{Texture.hpp@{Texture.hpp}!COLOR@{COLOR}}}\Hypertarget{_texture_8hpp_a5d05643d6fef9f5f2f3a06738872c62ca04bd834032febb3fda8c6936ee140949}\label{_texture_8hpp_a5d05643d6fef9f5f2f3a06738872c62ca04bd834032febb3fda8c6936ee140949} 
+COLOR&Textura de color (imagen normal). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HEIGHT@{HEIGHT}!Texture.hpp@{Texture.hpp}}\index{Texture.hpp@{Texture.hpp}!HEIGHT@{HEIGHT}}}\Hypertarget{_texture_8hpp_a5d05643d6fef9f5f2f3a06738872c62cad770ba3ce18fa409965dfdf5e7c348e6}\label{_texture_8hpp_a5d05643d6fef9f5f2f3a06738872c62cad770ba3ce18fa409965dfdf5e7c348e6} 
+HEIGHT&Textura de altura (mapa de relieve). \\
+\hline
+
+\end{DoxyEnumFields}

@@ -52,11 +52,15 @@ namespace udit
         std::shared_ptr< Shader > floor_shader_program = Shader::make_shader(udit::ShaderType::SINGLE_TEXTURE, "Shader_SingleTexture_Vertex.glsl", "Shader_SingleTexture_Fragment.glsl", {"snow.jpg"}, "Floor");
         floor->set_shader(floor_shader_program);
 
-        //BULL
+        // BULL
         bull = Mesh::make_mesh(udit::MeshType::MESH, "bull.obj");
         bull->set_shader(default_shader_program);
-        std::cout << "Bull has shader " << bull->get_shader_program_id() << std::endl;
         light->send_to_shader(bull->get_shader_program_id());
+        
+        // STATUE
+        statue = Mesh::make_mesh(udit::MeshType::MESH, "buda.obj");
+        statue->set_shader(default_shader_program);
+        light->send_to_shader(statue->get_shader_program_id());
         
         resize(width, height);
     }
@@ -94,13 +98,21 @@ namespace udit
         floor->rotate(glm::vec3(1.0f, 0.0f, 0.0f), 90.0f);
         floor->render(view_matrix);
 
+        //* Statue rendering
+        statue->set_model_view_matrix(glm::mat4(1.0f));
+        //statue->translate(glm::vec3(0.0f, 0.0f, 0.0f));
+        statue->scale(glm::vec3(30.0f, 30.0f, 30.0f));
+        statue->orbit(glm::vec3(0.0f, 0.0f, 0.0f), 0.5f, 1.0f);
+        statue->render(view_matrix);
+        
         //* Bull rendering
         bull->set_model_view_matrix(glm::mat4(1.0f));
         bull->translate(glm::vec3(0.0f, -2.0f, -5.0f));
         bull->rotate(glm::vec3(1.0f, 0.0f, 0.0f), -90.0f);
         bull->rotate(glm::vec3(0.0f, 0.0f, 1.0f), angle);
         bull->scale(glm::vec3(0.01f, 0.01f, 0.01f));
-        bull->render(view_matrix);        
+        bull->render(view_matrix);
+        
     }
     
     void Scene::resize (unsigned width, unsigned height)
@@ -111,6 +123,7 @@ namespace udit
         terrain->resize(projection_matrix);
         floor->resize(projection_matrix);
         bull->resize(projection_matrix);
+        statue->resize(projection_matrix);
 
         glViewport (0, 0, width, height);
     }

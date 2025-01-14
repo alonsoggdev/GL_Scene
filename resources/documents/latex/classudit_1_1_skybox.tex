@@ -1,0 +1,153 @@
+\doxysection{udit\+::Skybox Class Reference}
+\hypertarget{classudit_1_1_skybox}{}\label{classudit_1_1_skybox}\index{udit::Skybox@{udit::Skybox}}
+
+
+Representa un skybox, un cubo con texturas aplicadas en sus seis caras.  
+
+
+
+
+{\ttfamily \#include $<$Skybox.\+hpp$>$}
+
+Inheritance diagram for udit\+::Skybox\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classudit_1_1_skybox}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classudit_1_1_skybox_a7c429b2f9157eddd64ae9f8506caf7ef}{Skybox}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classudit_1_1_skybox_a9b69f7d426410428e2f4e5b897c7797f}{Skybox}} (float size, const std\+::vector$<$ std\+::string $>$ \&faces)
+\begin{DoxyCompactList}\small\item\em Constructor que permite especificar el tamaño y las texturas del skybox. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classudit_1_1_skybox_a5c2b4c4d5bdd2ff769d29348f58a1689}{get\+Cubemap\+Texture}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el identificador de la textura cubemap cargada para el skybox. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classudit_1_1_cube}{udit\+::\+Cube}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classudit_1_1_cube_a06f3d86fb63e3aad08623610aa3c17b4}{Cube}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classudit_1_1_cube_a7bd97e6a02aa5d570eece7bdb977652f}{Cube}} (bool inverted)
+\begin{DoxyCompactList}\small\item\em Constructor con opción de invertir las normales. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classudit_1_1_cube_aa5836d076d913d4272b8b1547d695df3}{Cube}} (float size)
+\begin{DoxyCompactList}\small\item\em Constructor con tamaño especificado. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classudit_1_1_cube_a961d94e1613193c1f29298c64e10499d}{Cube}} (float size, bool inverted)
+\begin{DoxyCompactList}\small\item\em Constructor con tamaño y opción de invertir las normales. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classudit_1_1_mesh}{udit\+::\+Mesh}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Mesh} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classudit_1_1_mesh_a1193efd64578b11074fec8e2c69b4ecb}{Mesh}} (std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Constructor que carga una malla desde un archivo. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classudit_1_1_mesh_ae00ad686a0c38972944f856a7d8a7682}{\texorpdfstring{$\sim$}{\string~}\+Mesh}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a9d4ae5952b212c449f87b0260d3d1a31}{translate}} (glm\+::vec3 translation)
+\begin{DoxyCompactList}\small\item\em Realiza una traslación de la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_ad14a128f7e0d698666906d4eadeb0c20}{rotate}} (glm\+::vec3 rotation, float angle)
+\begin{DoxyCompactList}\small\item\em Rota la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a8b7dd47cd13fb1c365f399cb7154ae9c}{scale}} (glm\+::vec3 scale)
+\begin{DoxyCompactList}\small\item\em Escala la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_ac5a0797ee60d3ec8d04972ed08fa462c}{update}} ()
+\begin{DoxyCompactList}\small\item\em Actualiza la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a90e71e2684566413839d77dd850fc66b}{render}} (glm\+::mat4 view\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em Renderiza la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a7a570c95db3ca097c30ae7dc30ac7055}{resize}} (glm\+::mat4 projection\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em Ajusta la matriz de proyección. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a29bc27b2ed670472856ca5c131aae307}{set\+\_\+shader}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classudit_1_1_shader}{udit\+::\+Shader}} $>$ shader)
+\begin{DoxyCompactList}\small\item\em Asocia un shader a la malla. \end{DoxyCompactList}\item 
+GLuint \mbox{\hyperlink{classudit_1_1_mesh_a8062022e28aef3a74ea8cf09440d8be2}{get\+\_\+shader\+\_\+program\+\_\+id}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el ID del programa del shader asociado. \end{DoxyCompactList}\item 
+std\+::vector$<$ GLint $>$ \mbox{\hyperlink{classudit_1_1_mesh_ad35d4c32e215bc29f2258e41760e8454}{get\+\_\+shader\+\_\+matrix\+\_\+ids}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene los IDs de las matrices del shader asociadas a la malla. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{classudit_1_1_mesh_a18ba797aeb3bc4fdd376df8cffe8fc73}{get\+\_\+model\+\_\+view\+\_\+matrix}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene la matriz de transformación del modelo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classudit_1_1_mesh_ad0e07608c3db6dd61c25594a09ea4a3c}{set\+\_\+model\+\_\+view\+\_\+matrix}} (glm\+::mat4 matrix)
+\begin{DoxyCompactList}\small\item\em Establece la matriz de transformación del modelo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classudit_1_1_mesh_a6184dedb3bf33f00358186100f085d18}{set\+\_\+mesh\+\_\+type}} (Mesh\+Type type)
+\begin{DoxyCompactList}\small\item\em Establece el tipo de malla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classudit_1_1_mesh}{udit\+::\+Mesh}}}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classudit_1_1_mesh}{Mesh}} $>$ \mbox{\hyperlink{classudit_1_1_mesh_a7c6a9492d0b27fbe8f81334392a56da9}{make\+\_\+mesh}} (Mesh\+Type type, const std\+::string \&path="{}"{})
+\begin{DoxyCompactList}\small\item\em Crea una malla de un tipo específico. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classudit_1_1_mesh}{udit\+::\+Mesh}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classudit_1_1_mesh_aa967111ab07d545be3b81320338e3a62}{create\+\_\+mesh}} (std\+::string mesh\+\_\+name="{}"{})
+\begin{DoxyCompactList}\small\item\em Crea los VBOs y el VAO necesarios para la malla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classudit_1_1_mesh}{udit\+::\+Mesh}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ glm\+::vec3 $>$ {\bfseries coordinates}
+\begin{DoxyCompactList}\small\item\em Vectores que almacenan las coordenadas de los vértices, colores, normales, índices y coordenadas de textura. \end{DoxyCompactList}\item 
+std\+::vector$<$ glm\+::vec3 $>$ {\bfseries colors}
+\item 
+std\+::vector$<$ glm\+::vec3 $>$ {\bfseries normals}
+\item 
+std\+::vector$<$ GLuint $>$ {\bfseries indices}
+\item 
+std\+::vector$<$ glm\+::vec2 $>$ {\bfseries texture\+\_\+uvs}
+\item 
+GLsizei {\bfseries number\+\_\+of\+\_\+vertices}
+\begin{DoxyCompactList}\small\item\em Número total de vértices de la malla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa un skybox, un cubo con texturas aplicadas en sus seis caras. 
+
+Un skybox es un cubo que rodea la escena y sirve como fondo inmersivo en un entorno 3D. La clase {\ttfamily \doxylink{classudit_1_1_skybox}{Skybox}} hereda de la clase {\ttfamily \doxylink{classudit_1_1_cube}{Cube}}, y se encarga de cargar las texturas y mostrar el cielo en una escena utilizando un cubo con caras texturizadas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classudit_1_1_skybox_a7c429b2f9157eddd64ae9f8506caf7ef}\index{udit::Skybox@{udit::Skybox}!Skybox@{Skybox}}
+\index{Skybox@{Skybox}!udit::Skybox@{udit::Skybox}}
+\doxysubsubsection{\texorpdfstring{Skybox()}{Skybox()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classudit_1_1_skybox_a7c429b2f9157eddd64ae9f8506caf7ef} 
+udit\+::\+Skybox\+::\+Skybox (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+Este constructor crea un skybox con un tamaño por defecto y sin texturas cargadas. \Hypertarget{classudit_1_1_skybox_a9b69f7d426410428e2f4e5b897c7797f}\index{udit::Skybox@{udit::Skybox}!Skybox@{Skybox}}
+\index{Skybox@{Skybox}!udit::Skybox@{udit::Skybox}}
+\doxysubsubsection{\texorpdfstring{Skybox()}{Skybox()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classudit_1_1_skybox_a9b69f7d426410428e2f4e5b897c7797f} 
+udit\+::\+Skybox\+::\+Skybox (\begin{DoxyParamCaption}\item[{float}]{size}{, }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{faces}{}\end{DoxyParamCaption})}
+
+
+
+Constructor que permite especificar el tamaño y las texturas del skybox. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Tamaño del cubo que representará el skybox. \\
+\hline
+{\em faces} & Vector de rutas a las texturas que serán aplicadas a las caras del skybox. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classudit_1_1_skybox_a5c2b4c4d5bdd2ff769d29348f58a1689}\index{udit::Skybox@{udit::Skybox}!getCubemapTexture@{getCubemapTexture}}
+\index{getCubemapTexture@{getCubemapTexture}!udit::Skybox@{udit::Skybox}}
+\doxysubsubsection{\texorpdfstring{getCubemapTexture()}{getCubemapTexture()}}
+{\footnotesize\ttfamily \label{classudit_1_1_skybox_a5c2b4c4d5bdd2ff769d29348f58a1689} 
+unsigned int udit\+::\+Skybox\+::get\+Cubemap\+Texture (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el identificador de la textura cubemap cargada para el skybox. 
+
+\begin{DoxyReturn}{Returns}
+Identificador de la textura cubemap. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alonsoggdev/\+UDIT/\+Asignaturas/\+Programacion\+\_\+\+Grafica/\+GL\+\_\+\+Scene/\+GL\+\_\+\+Scene/\mbox{\hyperlink{_skybox_8hpp}{Skybox.\+hpp}}\item 
+/\+Users/alonsoggdev/\+UDIT/\+Asignaturas/\+Programacion\+\_\+\+Grafica/\+GL\+\_\+\+Scene/\+GL\+\_\+\+Scene/Skybox.\+cpp\end{DoxyCompactItemize}

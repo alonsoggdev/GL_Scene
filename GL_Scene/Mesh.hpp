@@ -91,6 +91,11 @@ namespace udit
          */
         glm::mat4 model_view_matrix;
         glm::mat4 normal_matrix;
+        
+        /**
+         * @brief Angulo de rotacion.
+         */
+        float angle;
 
         /**
          * @brief Shader asociado a la malla.
@@ -150,6 +155,16 @@ namespace udit
          * @param angle Ángulo de rotación en grados.
          */
         virtual void rotate(glm::vec3 rotation, float angle);
+        /**
+         * @brief Orbita la malla alrededor de un punto.
+         *
+         * Aplica una trayectoria de orbita.
+         *
+         * @param center Punto central de orbita.
+         * @param distance Distancia al punto central.
+         * @param speed Velocidad de orbita
+         */
+        virtual void orbit(glm::vec3 center, float distance, float speed);
 
         /**
          * @brief Escala la malla.

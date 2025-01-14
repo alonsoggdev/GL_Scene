@@ -1,0 +1,71 @@
+\doxysection{Event\+Handler Class Reference}
+\hypertarget{class_event_handler}{}\label{class_event_handler}\index{EventHandler@{EventHandler}}
+
+
+Clase que maneja los eventos de entrada (teclado, ratón) en la escena.  
+
+
+
+
+{\ttfamily \#include $<$Event\+Handler.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_event_handler_aa01cde4c9c14ec9d70f378dc83a0b475}{Event\+Handler}} (\mbox{\hyperlink{class_camera}{Camera}} \&camera)
+\begin{DoxyCompactList}\small\item\em Constructor que inicializa el \doxylink{class_event_handler}{Event\+Handler} con una referencia a la cámara. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_handler_a8d8917acad4258ae9624ad1079f01021}{handle\+\_\+events}} (bool \&running, float delta\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Procesa los eventos de entrada y actualiza el estado de la cámara. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que maneja los eventos de entrada (teclado, ratón) en la escena. 
+
+La clase {\ttfamily \doxylink{class_event_handler}{Event\+Handler}} es responsable de gestionar los eventos de entrada provenientes de dispositivos como el teclado y el ratón. Se encarga de procesar dichos eventos y actualiza la cámara en consecuencia, permitiendo la navegación a través de la escena 3D. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_event_handler_aa01cde4c9c14ec9d70f378dc83a0b475}\index{EventHandler@{EventHandler}!EventHandler@{EventHandler}}
+\index{EventHandler@{EventHandler}!EventHandler@{EventHandler}}
+\doxysubsubsection{\texorpdfstring{EventHandler()}{EventHandler()}}
+{\footnotesize\ttfamily \label{class_event_handler_aa01cde4c9c14ec9d70f378dc83a0b475} 
+Event\+Handler\+::\+Event\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera}{Camera}} \&}]{camera}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor que inicializa el \doxylink{class_event_handler}{Event\+Handler} con una referencia a la cámara. 
+
+Este constructor inicializa el manejador de eventos con la cámara a la que se le enviarán las actualizaciones. También establece valores predeterminados para el seguimiento del ratón.
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & La cámara que se actualizará en respuesta a los eventos. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_event_handler_a8d8917acad4258ae9624ad1079f01021}\index{EventHandler@{EventHandler}!handle\_events@{handle\_events}}
+\index{handle\_events@{handle\_events}!EventHandler@{EventHandler}}
+\doxysubsubsection{\texorpdfstring{handle\_events()}{handle\_events()}}
+{\footnotesize\ttfamily \label{class_event_handler_a8d8917acad4258ae9624ad1079f01021} 
+void Event\+Handler\+::handle\+\_\+events (\begin{DoxyParamCaption}\item[{bool \&}]{running}{, }\item[{float}]{delta\+\_\+time}{}\end{DoxyParamCaption})}
+
+
+
+Procesa los eventos de entrada y actualiza el estado de la cámara. 
+
+Esta función maneja los eventos generados por el sistema (teclado, ratón) y, dependiendo del tipo de evento, realiza las actualizaciones necesarias en la cámara, como moverla o rotarla. Esta función debe ser llamada en cada ciclo del bucle de renderizado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em running} & Un parámetro que indica si el bucle de la aplicación sigue en ejecución. Si se establece a {\ttfamily false}, el bucle terminará. \\
+\hline
+{\em delta\+\_\+time} & El tiempo transcurrido entre el fotograma actual y el anterior. Se utiliza para asegurar un movimiento suave de la cámara. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alonsoggdev/\+UDIT/\+Asignaturas/\+Programacion\+\_\+\+Grafica/\+GL\+\_\+\+Scene/\+GL\+\_\+\+Scene/Event\+Handler.\+hpp\item 
+/\+Users/alonsoggdev/\+UDIT/\+Asignaturas/\+Programacion\+\_\+\+Grafica/\+GL\+\_\+\+Scene/\+GL\+\_\+\+Scene/Event\+Handler.\+cpp\end{DoxyCompactItemize}

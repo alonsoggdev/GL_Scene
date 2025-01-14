@@ -1,0 +1,150 @@
+\doxysection{udit\+::Cube Class Reference}
+\hypertarget{classudit_1_1_cube}{}\label{classudit_1_1_cube}\index{udit::Cube@{udit::Cube}}
+Inheritance diagram for udit\+::Cube\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classudit_1_1_cube}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classudit_1_1_cube_a06f3d86fb63e3aad08623610aa3c17b4}{Cube}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classudit_1_1_cube_a7bd97e6a02aa5d570eece7bdb977652f}{Cube}} (bool inverted)
+\begin{DoxyCompactList}\small\item\em Constructor con opción de invertir las normales. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classudit_1_1_cube_aa5836d076d913d4272b8b1547d695df3}{Cube}} (float size)
+\begin{DoxyCompactList}\small\item\em Constructor con tamaño especificado. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classudit_1_1_cube_a961d94e1613193c1f29298c64e10499d}{Cube}} (float size, bool inverted)
+\begin{DoxyCompactList}\small\item\em Constructor con tamaño y opción de invertir las normales. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classudit_1_1_mesh}{udit\+::\+Mesh}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Mesh} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classudit_1_1_mesh_a1193efd64578b11074fec8e2c69b4ecb}{Mesh}} (std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Constructor que carga una malla desde un archivo. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classudit_1_1_mesh_ae00ad686a0c38972944f856a7d8a7682}{\texorpdfstring{$\sim$}{\string~}\+Mesh}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a9d4ae5952b212c449f87b0260d3d1a31}{translate}} (glm\+::vec3 translation)
+\begin{DoxyCompactList}\small\item\em Realiza una traslación de la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_ad14a128f7e0d698666906d4eadeb0c20}{rotate}} (glm\+::vec3 rotation, float angle)
+\begin{DoxyCompactList}\small\item\em Rota la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a8b7dd47cd13fb1c365f399cb7154ae9c}{scale}} (glm\+::vec3 scale)
+\begin{DoxyCompactList}\small\item\em Escala la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_ac5a0797ee60d3ec8d04972ed08fa462c}{update}} ()
+\begin{DoxyCompactList}\small\item\em Actualiza la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a90e71e2684566413839d77dd850fc66b}{render}} (glm\+::mat4 view\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em Renderiza la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a7a570c95db3ca097c30ae7dc30ac7055}{resize}} (glm\+::mat4 projection\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em Ajusta la matriz de proyección. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a29bc27b2ed670472856ca5c131aae307}{set\+\_\+shader}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classudit_1_1_shader}{udit\+::\+Shader}} $>$ shader)
+\begin{DoxyCompactList}\small\item\em Asocia un shader a la malla. \end{DoxyCompactList}\item 
+GLuint \mbox{\hyperlink{classudit_1_1_mesh_a8062022e28aef3a74ea8cf09440d8be2}{get\+\_\+shader\+\_\+program\+\_\+id}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el ID del programa del shader asociado. \end{DoxyCompactList}\item 
+std\+::vector$<$ GLint $>$ \mbox{\hyperlink{classudit_1_1_mesh_ad35d4c32e215bc29f2258e41760e8454}{get\+\_\+shader\+\_\+matrix\+\_\+ids}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene los IDs de las matrices del shader asociadas a la malla. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{classudit_1_1_mesh_a18ba797aeb3bc4fdd376df8cffe8fc73}{get\+\_\+model\+\_\+view\+\_\+matrix}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene la matriz de transformación del modelo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classudit_1_1_mesh_ad0e07608c3db6dd61c25594a09ea4a3c}{set\+\_\+model\+\_\+view\+\_\+matrix}} (glm\+::mat4 matrix)
+\begin{DoxyCompactList}\small\item\em Establece la matriz de transformación del modelo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classudit_1_1_mesh_a6184dedb3bf33f00358186100f085d18}{set\+\_\+mesh\+\_\+type}} (Mesh\+Type type)
+\begin{DoxyCompactList}\small\item\em Establece el tipo de malla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classudit_1_1_mesh}{udit\+::\+Mesh}}}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classudit_1_1_mesh}{Mesh}} $>$ \mbox{\hyperlink{classudit_1_1_mesh_a7c6a9492d0b27fbe8f81334392a56da9}{make\+\_\+mesh}} (Mesh\+Type type, const std\+::string \&path="{}"{})
+\begin{DoxyCompactList}\small\item\em Crea una malla de un tipo específico. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classudit_1_1_mesh}{udit\+::\+Mesh}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classudit_1_1_mesh_aa967111ab07d545be3b81320338e3a62}{create\+\_\+mesh}} (std\+::string mesh\+\_\+name="{}"{})
+\begin{DoxyCompactList}\small\item\em Crea los VBOs y el VAO necesarios para la malla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classudit_1_1_mesh}{udit\+::\+Mesh}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ glm\+::vec3 $>$ {\bfseries coordinates}
+\begin{DoxyCompactList}\small\item\em Vectores que almacenan las coordenadas de los vértices, colores, normales, índices y coordenadas de textura. \end{DoxyCompactList}\item 
+std\+::vector$<$ glm\+::vec3 $>$ {\bfseries colors}
+\item 
+std\+::vector$<$ glm\+::vec3 $>$ {\bfseries normals}
+\item 
+std\+::vector$<$ GLuint $>$ {\bfseries indices}
+\item 
+std\+::vector$<$ glm\+::vec2 $>$ {\bfseries texture\+\_\+uvs}
+\item 
+GLsizei {\bfseries number\+\_\+of\+\_\+vertices}
+\begin{DoxyCompactList}\small\item\em Número total de vértices de la malla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classudit_1_1_cube_a06f3d86fb63e3aad08623610aa3c17b4}\index{udit::Cube@{udit::Cube}!Cube@{Cube}}
+\index{Cube@{Cube}!udit::Cube@{udit::Cube}}
+\doxysubsubsection{\texorpdfstring{Cube()}{Cube()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{classudit_1_1_cube_a06f3d86fb63e3aad08623610aa3c17b4} 
+Cube\+::\+Cube (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+Este constructor crea un cubo con un tamaño predeterminado y sin invertir las normales. \Hypertarget{classudit_1_1_cube_a7bd97e6a02aa5d570eece7bdb977652f}\index{udit::Cube@{udit::Cube}!Cube@{Cube}}
+\index{Cube@{Cube}!udit::Cube@{udit::Cube}}
+\doxysubsubsection{\texorpdfstring{Cube()}{Cube()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{classudit_1_1_cube_a7bd97e6a02aa5d570eece7bdb977652f} 
+Cube\+::\+Cube (\begin{DoxyParamCaption}\item[{bool}]{inverted}{}\end{DoxyParamCaption})}
+
+
+
+Constructor con opción de invertir las normales. 
+
+Este constructor crea un cubo con un tamaño predeterminado. La opción de invertir las normales puede ser útil para efectos especiales como la renderización por dentro del cubo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inverted} & Si es {\ttfamily true}, las normales del cubo se invierten. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classudit_1_1_cube_aa5836d076d913d4272b8b1547d695df3}\index{udit::Cube@{udit::Cube}!Cube@{Cube}}
+\index{Cube@{Cube}!udit::Cube@{udit::Cube}}
+\doxysubsubsection{\texorpdfstring{Cube()}{Cube()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{classudit_1_1_cube_aa5836d076d913d4272b8b1547d695df3} 
+Cube\+::\+Cube (\begin{DoxyParamCaption}\item[{float}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Constructor con tamaño especificado. 
+
+Este constructor crea un cubo con un tamaño determinado y sin invertir las normales.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & El tamaño de los lados del cubo. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classudit_1_1_cube_a961d94e1613193c1f29298c64e10499d}\index{udit::Cube@{udit::Cube}!Cube@{Cube}}
+\index{Cube@{Cube}!udit::Cube@{udit::Cube}}
+\doxysubsubsection{\texorpdfstring{Cube()}{Cube()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{classudit_1_1_cube_a961d94e1613193c1f29298c64e10499d} 
+Cube\+::\+Cube (\begin{DoxyParamCaption}\item[{float}]{size}{, }\item[{bool}]{inverted}{}\end{DoxyParamCaption})}
+
+
+
+Constructor con tamaño y opción de invertir las normales. 
+
+Este constructor permite crear un cubo de cualquier tamaño, con la opción de invertir las normales. La inversión de las normales puede ser útil para representar el cubo desde dentro.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & El tamaño de los lados del cubo. \\
+\hline
+{\em inverted} & Si es {\ttfamily true}, las normales del cubo se invierten. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alonsoggdev/\+UDIT/\+Asignaturas/\+Programacion\+\_\+\+Grafica/\+GL\+\_\+\+Scene/\+GL\+\_\+\+Scene/Cube.\+hpp\item 
+/\+Users/alonsoggdev/\+UDIT/\+Asignaturas/\+Programacion\+\_\+\+Grafica/\+GL\+\_\+\+Scene/\+GL\+\_\+\+Scene/Cube.\+cpp\end{DoxyCompactItemize}

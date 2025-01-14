@@ -1,0 +1,39 @@
+\doxysection{Skybox.\+hpp}
+\hypertarget{_skybox_8hpp_source}{}\label{_skybox_8hpp_source}\index{/Users/alonsoggdev/UDIT/Asignaturas/Programacion\_Grafica/GL\_Scene/GL\_Scene/Skybox.hpp@{/Users/alonsoggdev/UDIT/Asignaturas/Programacion\_Grafica/GL\_Scene/GL\_Scene/Skybox.hpp}}
+\mbox{\hyperlink{_skybox_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ Skybox.hpp}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ GL\_Scene}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Alonso\ García\ on\ 21/12/24.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}Cube.hpp"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{namespace\ }udit}
+\DoxyCodeLine{00023\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_skybox_a7c429b2f9157eddd64ae9f8506caf7ef}{Skybox}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classudit_1_1_cube_a06f3d86fb63e3aad08623610aa3c17b4}{Cube}}}
+\DoxyCodeLine{00033\ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ cubemapTexture;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ std::string\ filepath\ =\ \textcolor{stringliteral}{"{}/Users/alonsoggdev/UDIT/Asignaturas/Programacion\_Grafica/GL\_Scene/resources/skybox/"{}};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classudit_1_1_skybox_a7c429b2f9157eddd64ae9f8506caf7ef}{Skybox}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classudit_1_1_skybox_a7c429b2f9157eddd64ae9f8506caf7ef}{Skybox}}(\textcolor{keywordtype}{float}\ size,\ \textcolor{keyword}{const}\ std::vector<std::string>\&\ faces);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classudit_1_1_skybox_a5c2b4c4d5bdd2ff769d29348f58a1689}{getCubemapTexture}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ cubemapTexture;\ \}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ loadCubemap(\textcolor{keyword}{const}\ std::vector<std::string>\&\ faces);}
+\DoxyCodeLine{00075\ \ \ \ \ \};}
+\DoxyCodeLine{00076\ \}}
+
+\end{DoxyCode}

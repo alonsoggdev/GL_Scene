@@ -1,0 +1,101 @@
+\doxysection{Shader.\+hpp}
+\hypertarget{_shader_8hpp_source}{}\label{_shader_8hpp_source}\index{/Users/alonsoggdev/UDIT/Asignaturas/Programacion\_Grafica/GL\_Scene/GL\_Scene/Shader.hpp@{/Users/alonsoggdev/UDIT/Asignaturas/Programacion\_Grafica/GL\_Scene/GL\_Scene/Shader.hpp}}
+\mbox{\hyperlink{_shader_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ Shader.hpp}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ GL\_Geometry}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Alonso\ García\ on\ 11/12/24.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}glad.h"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_texture_8hpp}{Texture.hpp}}"{}}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{namespace\ }udit}
+\DoxyCodeLine{00023\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{_shader_8hpp_a9bb9f121559f5679c612512875688d17}{ShaderType}}}
+\DoxyCodeLine{00032\ \ \ \ \ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ SKYBOX,\ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_shader_8hpp_a9bb9f121559f5679c612512875688d17ab22957ad8078e8d73de61aef53d13a74}{GEOMETRY}},\ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_shader_8hpp_a9bb9f121559f5679c612512875688d17a12eb352270009dc59b1d195ef5c30d0a}{SINGLE\_TEXTURE}},\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ TERRAIN,\ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_shader_8hpp_a9bb9f121559f5679c612512875688d17a5b39c8b553c821e7cddc6da64b5bd2ee}{DEFAULT}}\ \ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_shader_a504c7a85d3e778b654a61c24f02b7d30}{Shader}}}
+\DoxyCodeLine{00050\ \ \ \ \ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ GLuint\ program\_id;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ ShaderType\ m\_type;}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ std::string\ m\_name;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ std::string\ absolute\_path\ =\ \textcolor{stringliteral}{"{}/Users/alonsoggdev/UDIT/Asignaturas/Programacion\_Grafica/GL\_Scene/GL\_Scene/"{}};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ std::string\ m\_vertex\_default\_source\ =\ absolute\_path\ +\ \textcolor{stringliteral}{"{}Shader\_Default\_Vertex.glsl"{}};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ std::string\ m\_fragment\_default\_source\ =\ absolute\_path\ +\ \textcolor{stringliteral}{"{}Shader\_Default\_Fragment.glsl"{}};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ std::string\ m\_vertex\_source;}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ std::string\ m\_fragment\_source;}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ GLint\ \ model\_view\_matrix\_id;}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ GLint\ \ projection\_matrix\_id;}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ GLint\ \ normal\_matrix\_id;}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::string\ \ \ \ default\_vertex\_shader\_code;}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::string\ \ \ \ default\_fragment\_shader\_code;}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ std::vector\ <std::shared\_ptr<Texture>>\ textures;}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classudit_1_1_shader_a504c7a85d3e778b654a61c24f02b7d30}{Shader}}();}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classudit_1_1_shader_a504c7a85d3e778b654a61c24f02b7d30}{Shader}}(ShaderType\ type,\ \textcolor{keyword}{const}\ std::string\ \&\ vertex\_source,\ \textcolor{keyword}{const}\ std::string\ \&\ fragment\_source,\ \textcolor{keyword}{const}\ std::string\ \&\ name);}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classudit_1_1_shader_a20e709cf752e749e9fa5231c24cdbc83}{\string~Shader}}();}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ std::shared\_ptr\ <\ Shader\ >\ \mbox{\hyperlink{classudit_1_1_shader_aaff09e57ec963c791a284d7c1904366a}{make\_shader}}(}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_shader_8hpp_a9bb9f121559f5679c612512875688d17}{udit::ShaderType}}\ type\ =\ \mbox{\hyperlink{_shader_8hpp_a9bb9f121559f5679c612512875688d17a5b39c8b553c821e7cddc6da64b5bd2ee}{udit::ShaderType::DEFAULT}},}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&\ vertex\_shader\ =\ \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&\ fragment\_shader\ =\ \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::string>\ \&\ texture\_paths\ =\ \{\textcolor{stringliteral}{"{}"{}}\},}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&\ name\ =\ \textcolor{stringliteral}{"{}"{}}}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ GLuint\ \mbox{\hyperlink{classudit_1_1_shader_a0fee7d07fad3aedb60ae8e5f81082ffe}{compile\_shaders}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ vertex\_shader\_code,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ fragment\_shader\_code);}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ GLint\ \mbox{\hyperlink{classudit_1_1_shader_ac6b5ee7b9ad01a0c5d9c6f0ddeeda7a7}{get\_model\_view\_matrix\_id}}()\ \{\ \textcolor{keywordflow}{return}\ model\_view\_matrix\_id;\ \}}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ GLint\ \mbox{\hyperlink{classudit_1_1_shader_a575d59a841cf007c9d031b4c357ad75e}{get\_projection\_matrix\_id}}()\ \{\ \textcolor{keywordflow}{return}\ projection\_matrix\_id;\ \}}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ GLint\ \mbox{\hyperlink{classudit_1_1_shader_a733f13b921cb46e00a19a49e50e5a94b}{get\_normal\_matrix\_id}}()\ \{\ \textcolor{keywordflow}{return}\ normal\_matrix\_id;\ \}}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ GLuint\ \mbox{\hyperlink{classudit_1_1_shader_a01a80991b1ef9215ca0b3537c020d904}{get\_program\_id}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ program\_id;\ \}}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_shader_a7df9e7d645135fdbb463eac322807a32}{set\_texture}}(\textcolor{keyword}{const}\ std::shared\_ptr<Texture>\ \&\ texture);}
+\DoxyCodeLine{00173\ }
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_shader_ab92a6c1c845d65e96cf5212f2a1c5a64}{use}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_shader_ab691074491374b383b99f64b51b28f77}{set\_texture\_scale}}(\textcolor{keywordtype}{float}\ scale);}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classudit_1_1_shader_a61067b60121d37c3bdca41a893e7df6c}{has\_textures}}()\ \{\ \textcolor{keywordflow}{return}\ !textures.empty();\ \}}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_shader_a8cfbb5ddea1cb5b25e28befb9f427540}{set\_name}}(\textcolor{keyword}{const}\ std::string\ \&\ name)\ \{\ m\_name\ =\ name;\ \}}
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classudit_1_1_shader_aa9430efabd927430efeb7ed9f808a0fb}{get\_name}}()\ \{\ \textcolor{keywordflow}{return}\ m\_name;\ \}}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ show\_compilation\_error(GLuint\ shader\_id);}
+\DoxyCodeLine{00211\ }
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ show\_linkage\_error(GLuint\ program\_id);}
+\DoxyCodeLine{00217\ \ \ \ \ \};}
+\DoxyCodeLine{00218\ \}}
+
+\end{DoxyCode}

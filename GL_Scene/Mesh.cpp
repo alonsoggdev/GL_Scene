@@ -52,9 +52,12 @@ namespace udit
             {
                 aiVector3D aiVertex = mesh->mVertices[j];
                 coordinates.push_back(glm::vec3(aiVertex.x, aiVertex.y, aiVertex.z));
-
-                aiVector3D aiNormal = mesh->mNormals[j];
-                normals.push_back(glm::vec3(aiNormal.x, aiNormal.y, aiNormal.z));
+                
+                if (mesh->HasNormals())
+                {
+                    aiVector3D aiNormal = mesh->mNormals[j];
+                    normals.push_back(glm::vec3(aiNormal.x, aiNormal.y, aiNormal.z));
+                }
 
                 // Los colores se mantienen por defecto a gris
                 colors.push_back(glm::vec3(0.5f, 0.5f, 0.5f));
@@ -214,6 +217,18 @@ namespace udit
     void Mesh::rotate(glm::vec3 rotation, float angle)
     {
         model_view_matrix = glm::rotate(model_view_matrix, glm::radians(angle), rotation);
+    }
+
+    void Mesh::orbit(glm::vec3 center, float distance, float speed)
+    {
+        angle += speed;
+        if (angle > 360.0f) angle -= 360.0f;
+        
+        float x = distance * cos(glm::radians(angle));
+        float z = distance * sin(glm::radians(angle));
+        
+        translate(glm::vec3(x, 0.0f, z));
+        rotate(glm::vec3(0.0f, 1.0f, 0.0f), angle);
     }
 
     void Mesh::scale(glm::vec3 scale)

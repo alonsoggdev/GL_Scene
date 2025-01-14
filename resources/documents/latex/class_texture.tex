@@ -1,0 +1,137 @@
+\doxysection{Texture Class Reference}
+\hypertarget{class_texture}{}\label{class_texture}\index{Texture@{Texture}}
+
+
+Representa una textura en Open\+GL.  
+
+
+
+
+{\ttfamily \#include $<$Texture.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_texture_ae992200b6fa02dda942d99305828c0c0}{Texture}} (const std\+::string \&path, GLenum \mbox{\hyperlink{class_texture_a6c7f1bf4b136a4bea0392a548822fc5f}{texture\+\_\+unit}}, Texture\+\_\+\+Type type=Texture\+\_\+\+Type\+::\+COLOR)
+\begin{DoxyCompactList}\small\item\em Constructor que crea la textura a partir de un archivo. \end{DoxyCompactList}\item 
+\Hypertarget{class_texture_a09c4bcb7462f64c1d20fa69dba3cee8a}\label{class_texture_a09c4bcb7462f64c1d20fa69dba3cee8a} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Texture} ()
+\begin{DoxyCompactList}\small\item\em Destructor que libera la textura cargada. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_texture_a4b85391c6e54686ec566ba38c62dde98}{bind}} () const
+\begin{DoxyCompactList}\small\item\em Enlaza la textura a la unidad de textura actual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_texture_a451d7afac3848417bb1007d39ee7d545}{unbind}} () const
+\begin{DoxyCompactList}\small\item\em Desenlaza la textura de la unidad de textura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_texture_a4961d9feaf30f7099257748f9d12032d}{load\+\_\+texture}} ()
+\begin{DoxyCompactList}\small\item\em Carga la textura desde el archivo especificado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_texture_ac2c582bf3de7e2257adcab51f4b618e8}{set\+\_\+type}} (Texture\+\_\+\+Type type)
+\begin{DoxyCompactList}\small\item\em Establece el tipo de la textura (COLOR o HEIGHT). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_texture_a4a9e1a40314e13f23aca2597953ce82f}{is\+\_\+loaded}} ()
+\begin{DoxyCompactList}\small\item\em Indica si la textura ha sido cargada exitosamente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_texture_ae709b512f045a1dfbb932487bc075783}\label{class_texture_ae709b512f045a1dfbb932487bc075783} 
+GLuint {\bfseries texture\+\_\+id}
+\begin{DoxyCompactList}\small\item\em Identificador de la textura cargada. \end{DoxyCompactList}\item 
+\Hypertarget{class_texture_a6c7f1bf4b136a4bea0392a548822fc5f}\label{class_texture_a6c7f1bf4b136a4bea0392a548822fc5f} 
+GLenum {\bfseries texture\+\_\+unit}
+\begin{DoxyCompactList}\small\item\em Unidad de textura a la que la textura está asignada. \end{DoxyCompactList}\item 
+\Hypertarget{class_texture_a5fc4b16fd445914330b33e186a421610}\label{class_texture_a5fc4b16fd445914330b33e186a421610} 
+std\+::string {\bfseries file\+\_\+path}
+\begin{DoxyCompactList}\small\item\em Ruta del archivo de la textura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa una textura en Open\+GL. 
+
+La clase {\ttfamily \doxylink{class_texture}{Texture}} permite la carga y manejo de texturas en Open\+GL. Estas texturas pueden ser utilizadas en diferentes tipos de materiales y objetos 3D dentro de la escena. La clase gestiona el enlace y des-\/enlace de texturas, permitiendo su uso en shaders. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_texture_ae992200b6fa02dda942d99305828c0c0}\index{Texture@{Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}}
+{\footnotesize\ttfamily \label{class_texture_ae992200b6fa02dda942d99305828c0c0} 
+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path}{, }\item[{GLenum}]{texture\+\_\+unit}{, }\item[{Texture\+\_\+\+Type}]{type}{ = {\ttfamily Texture\+\_\+Type\+:\+:COLOR}}\end{DoxyParamCaption})}
+
+
+
+Constructor que crea la textura a partir de un archivo. 
+
+Este constructor carga la textura desde una ruta de archivo específica. Se puede especificar el tipo de textura (por defecto es COLOR).
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Ruta al archivo de la textura (imagen). \\
+\hline
+{\em texture\+\_\+unit} & Unidad de textura (GL\+\_\+\+TEXTURE0, GL\+\_\+\+TEXTURE1, etc.). \\
+\hline
+{\em type} & Tipo de la textura (por defecto COLOR). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_texture_a4b85391c6e54686ec566ba38c62dde98}\index{Texture@{Texture}!bind@{bind}}
+\index{bind@{bind}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily \label{class_texture_a4b85391c6e54686ec566ba38c62dde98} 
+void Texture\+::bind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Enlaza la textura a la unidad de textura actual. 
+
+Este método enlaza la textura al contexto de Open\+GL, permitiendo que sea utilizada por los shaders para renderizar objetos con la textura aplicada. \Hypertarget{class_texture_a4a9e1a40314e13f23aca2597953ce82f}\index{Texture@{Texture}!is\_loaded@{is\_loaded}}
+\index{is\_loaded@{is\_loaded}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{is\_loaded()}{is\_loaded()}}
+{\footnotesize\ttfamily \label{class_texture_a4a9e1a40314e13f23aca2597953ce82f} 
+bool udit\+::\+Texture\+::is\+\_\+loaded (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indica si la textura ha sido cargada exitosamente. 
+
+\begin{DoxyReturn}{Returns}
+true si la textura ha sido cargada, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{class_texture_a4961d9feaf30f7099257748f9d12032d}\index{Texture@{Texture}!load\_texture@{load\_texture}}
+\index{load\_texture@{load\_texture}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{load\_texture()}{load\_texture()}}
+{\footnotesize\ttfamily \label{class_texture_a4961d9feaf30f7099257748f9d12032d} 
+void Texture\+::load\+\_\+texture (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Carga la textura desde el archivo especificado. 
+
+Este método lee el archivo de imagen y crea una textura en Open\+GL. Se encarga de configurar los parámetros y cargar la imagen a la memoria de GPU. \Hypertarget{class_texture_ac2c582bf3de7e2257adcab51f4b618e8}\index{Texture@{Texture}!set\_type@{set\_type}}
+\index{set\_type@{set\_type}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{set\_type()}{set\_type()}}
+{\footnotesize\ttfamily \label{class_texture_ac2c582bf3de7e2257adcab51f4b618e8} 
+void udit\+::\+Texture\+::set\+\_\+type (\begin{DoxyParamCaption}\item[{Texture\+\_\+\+Type}]{type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece el tipo de la textura (COLOR o HEIGHT). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Tipo de la textura a establecer. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_texture_a451d7afac3848417bb1007d39ee7d545}\index{Texture@{Texture}!unbind@{unbind}}
+\index{unbind@{unbind}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{unbind()}{unbind()}}
+{\footnotesize\ttfamily \label{class_texture_a451d7afac3848417bb1007d39ee7d545} 
+void Texture\+::unbind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Desenlaza la textura de la unidad de textura. 
+
+Este método desenlaza la textura, liberando la unidad de textura para ser utilizada por otras texturas. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alonsoggdev/\+UDIT/\+Asignaturas/\+Programacion\+\_\+\+Grafica/\+GL\+\_\+\+Scene/\+GL\+\_\+\+Scene/\mbox{\hyperlink{_texture_8hpp}{Texture.\+hpp}}\item 
+/\+Users/alonsoggdev/\+UDIT/\+Asignaturas/\+Programacion\+\_\+\+Grafica/\+GL\+\_\+\+Scene/\+GL\+\_\+\+Scene/Texture.\+cpp\end{DoxyCompactItemize}

@@ -58,8 +58,14 @@ namespace udit
         /** @brief Piso (plane) de la escena. */
         std::shared_ptr<Plane> floor;
         
-        /** @brief Malla (mesh) de un objeto, como un toro o figura 3D. */
+        /** @brief Malla (mesh) de un objeto, escultura de toro. */
         std::shared_ptr<Mesh> bull;
+        
+        /** @brief Malla (mesh) de un objeto, estatua de buda. */
+        std::shared_ptr<Mesh> statue;
+        
+        /** @brief Malla (mesh) de un objeto, coche */
+        std::shared_ptr<Mesh> car;
         
         /** @brief Luz de la escena. */
         std::shared_ptr<Light> light;

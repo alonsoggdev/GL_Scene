@@ -1,0 +1,352 @@
+\doxysection{udit\+::Mesh Class Reference}
+\hypertarget{classudit_1_1_mesh}{}\label{classudit_1_1_mesh}\index{udit::Mesh@{udit::Mesh}}
+
+
+Clase que representa una malla 3D.  
+
+
+
+
+{\ttfamily \#include $<$Mesh.\+hpp$>$}
+
+Inheritance diagram for udit\+::Mesh\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classudit_1_1_mesh}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classudit_1_1_mesh_a806cd0680dc3e9d08248e0d5d00e8513}\label{classudit_1_1_mesh_a806cd0680dc3e9d08248e0d5d00e8513} 
+{\bfseries Mesh} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classudit_1_1_mesh_a1193efd64578b11074fec8e2c69b4ecb}{Mesh}} (std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Constructor que carga una malla desde un archivo. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classudit_1_1_mesh_ae00ad686a0c38972944f856a7d8a7682}{\texorpdfstring{$\sim$}{\string~}\+Mesh}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a9d4ae5952b212c449f87b0260d3d1a31}{translate}} (glm\+::vec3 translation)
+\begin{DoxyCompactList}\small\item\em Realiza una traslación de la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_ad14a128f7e0d698666906d4eadeb0c20}{rotate}} (glm\+::vec3 rotation, float angle)
+\begin{DoxyCompactList}\small\item\em Rota la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a8b7dd47cd13fb1c365f399cb7154ae9c}{scale}} (glm\+::vec3 scale)
+\begin{DoxyCompactList}\small\item\em Escala la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_ac5a0797ee60d3ec8d04972ed08fa462c}{update}} ()
+\begin{DoxyCompactList}\small\item\em Actualiza la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a90e71e2684566413839d77dd850fc66b}{render}} (glm\+::mat4 view\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em Renderiza la malla. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a7a570c95db3ca097c30ae7dc30ac7055}{resize}} (glm\+::mat4 projection\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em Ajusta la matriz de proyección. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classudit_1_1_mesh_a29bc27b2ed670472856ca5c131aae307}{set\+\_\+shader}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classudit_1_1_shader}{udit\+::\+Shader}} $>$ shader)
+\begin{DoxyCompactList}\small\item\em Asocia un shader a la malla. \end{DoxyCompactList}\item 
+GLuint \mbox{\hyperlink{classudit_1_1_mesh_a8062022e28aef3a74ea8cf09440d8be2}{get\+\_\+shader\+\_\+program\+\_\+id}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el ID del programa del shader asociado. \end{DoxyCompactList}\item 
+std\+::vector$<$ GLint $>$ \mbox{\hyperlink{classudit_1_1_mesh_ad35d4c32e215bc29f2258e41760e8454}{get\+\_\+shader\+\_\+matrix\+\_\+ids}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene los IDs de las matrices del shader asociadas a la malla. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{classudit_1_1_mesh_a18ba797aeb3bc4fdd376df8cffe8fc73}{get\+\_\+model\+\_\+view\+\_\+matrix}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene la matriz de transformación del modelo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classudit_1_1_mesh_ad0e07608c3db6dd61c25594a09ea4a3c}{set\+\_\+model\+\_\+view\+\_\+matrix}} (glm\+::mat4 matrix)
+\begin{DoxyCompactList}\small\item\em Establece la matriz de transformación del modelo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classudit_1_1_mesh_a6184dedb3bf33f00358186100f085d18}{set\+\_\+mesh\+\_\+type}} (Mesh\+Type type)
+\begin{DoxyCompactList}\small\item\em Establece el tipo de malla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classudit_1_1_mesh}{Mesh}} $>$ \mbox{\hyperlink{classudit_1_1_mesh_a7c6a9492d0b27fbe8f81334392a56da9}{make\+\_\+mesh}} (Mesh\+Type type, const std\+::string \&path="{}"{})
+\begin{DoxyCompactList}\small\item\em Crea una malla de un tipo específico. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classudit_1_1_mesh_aa967111ab07d545be3b81320338e3a62}{create\+\_\+mesh}} (std\+::string mesh\+\_\+name="{}"{})
+\begin{DoxyCompactList}\small\item\em Crea los VBOs y el VAO necesarios para la malla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classudit_1_1_mesh_a3852dc96f3b35397c3469d5c06f8d424}\label{classudit_1_1_mesh_a3852dc96f3b35397c3469d5c06f8d424} 
+std\+::vector$<$ glm\+::vec3 $>$ {\bfseries coordinates}
+\begin{DoxyCompactList}\small\item\em Vectores que almacenan las coordenadas de los vértices, colores, normales, índices y coordenadas de textura. \end{DoxyCompactList}\item 
+\Hypertarget{classudit_1_1_mesh_a79880ef10c1018acaf5c3be10a27a01f}\label{classudit_1_1_mesh_a79880ef10c1018acaf5c3be10a27a01f} 
+std\+::vector$<$ glm\+::vec3 $>$ {\bfseries colors}
+\item 
+\Hypertarget{classudit_1_1_mesh_ae7bc89bf8e31dffe81b6e0cd1c85b3a1}\label{classudit_1_1_mesh_ae7bc89bf8e31dffe81b6e0cd1c85b3a1} 
+std\+::vector$<$ glm\+::vec3 $>$ {\bfseries normals}
+\item 
+\Hypertarget{classudit_1_1_mesh_a0a75a374f11005490ccd33d0fefe7e8b}\label{classudit_1_1_mesh_a0a75a374f11005490ccd33d0fefe7e8b} 
+std\+::vector$<$ GLuint $>$ {\bfseries indices}
+\item 
+\Hypertarget{classudit_1_1_mesh_a5fbb643ac6710c392e78c98cbe4f4e97}\label{classudit_1_1_mesh_a5fbb643ac6710c392e78c98cbe4f4e97} 
+std\+::vector$<$ glm\+::vec2 $>$ {\bfseries texture\+\_\+uvs}
+\item 
+\Hypertarget{classudit_1_1_mesh_ac1cbf9b80a419524bc5dde1a0c67e4ad}\label{classudit_1_1_mesh_ac1cbf9b80a419524bc5dde1a0c67e4ad} 
+GLsizei {\bfseries number\+\_\+of\+\_\+vertices}
+\begin{DoxyCompactList}\small\item\em Número total de vértices de la malla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que representa una malla 3D. 
+
+La clase {\ttfamily \doxylink{classudit_1_1_mesh}{Mesh}} es la base para representar mallas 3D en Open\+GL. Contiene todos los atributos y funciones necesarias para cargar, gestionar y renderizar mallas con vértices, normales, colores, coordenadas de textura y los índices que definen la topología de la malla. Esta clase también incluye funciones para transformar la malla (traslación, rotación, escala) y para actualizar y renderizar la malla en la escena. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classudit_1_1_mesh_a1193efd64578b11074fec8e2c69b4ecb}\index{udit::Mesh@{udit::Mesh}!Mesh@{Mesh}}
+\index{Mesh@{Mesh}!udit::Mesh@{udit::Mesh}}
+\doxysubsubsection{\texorpdfstring{Mesh()}{Mesh()}}
+{\footnotesize\ttfamily \label{classudit_1_1_mesh_a1193efd64578b11074fec8e2c69b4ecb} 
+udit\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{std\+::string \&}]{path}{}\end{DoxyParamCaption})}
+
+
+
+Constructor que carga una malla desde un archivo. 
+
+Este constructor carga los datos de la malla (coordenadas, normales, colores, etc.) desde un archivo y los almacena en los atributos correspondientes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Ruta al archivo que contiene la malla. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classudit_1_1_mesh_ae00ad686a0c38972944f856a7d8a7682}\index{udit::Mesh@{udit::Mesh}!````~Mesh@{\texorpdfstring{$\sim$}{\string~}Mesh}}
+\index{````~Mesh@{\texorpdfstring{$\sim$}{\string~}Mesh}!udit::Mesh@{udit::Mesh}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Mesh()}{\string~Mesh()}}
+{\footnotesize\ttfamily \label{classudit_1_1_mesh_ae00ad686a0c38972944f856a7d8a7682} 
+udit\+::\+Mesh\+::\texorpdfstring{$\sim$}{\string~}\+Mesh (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor de la clase. 
+
+El destructor limpia los recursos de Open\+GL, como los buffers y el VAO. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classudit_1_1_mesh_aa967111ab07d545be3b81320338e3a62}\index{udit::Mesh@{udit::Mesh}!create\_mesh@{create\_mesh}}
+\index{create\_mesh@{create\_mesh}!udit::Mesh@{udit::Mesh}}
+\doxysubsubsection{\texorpdfstring{create\_mesh()}{create\_mesh()}}
+{\footnotesize\ttfamily \label{classudit_1_1_mesh_aa967111ab07d545be3b81320338e3a62} 
+void udit\+::\+Mesh\+::create\+\_\+mesh (\begin{DoxyParamCaption}\item[{std\+::string}]{mesh\+\_\+name}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Crea los VBOs y el VAO necesarios para la malla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh\+\_\+name} & Nombre de la malla a crear. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classudit_1_1_mesh_a18ba797aeb3bc4fdd376df8cffe8fc73}\index{udit::Mesh@{udit::Mesh}!get\_model\_view\_matrix@{get\_model\_view\_matrix}}
+\index{get\_model\_view\_matrix@{get\_model\_view\_matrix}!udit::Mesh@{udit::Mesh}}
+\doxysubsubsection{\texorpdfstring{get\_model\_view\_matrix()}{get\_model\_view\_matrix()}}
+{\footnotesize\ttfamily \label{classudit_1_1_mesh_a18ba797aeb3bc4fdd376df8cffe8fc73} 
+glm\+::mat4 udit\+::\+Mesh\+::get\+\_\+model\+\_\+view\+\_\+matrix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene la matriz de transformación del modelo. 
+
+\begin{DoxyReturn}{Returns}
+La matriz de transformación del modelo. 
+\end{DoxyReturn}
+\Hypertarget{classudit_1_1_mesh_ad35d4c32e215bc29f2258e41760e8454}\index{udit::Mesh@{udit::Mesh}!get\_shader\_matrix\_ids@{get\_shader\_matrix\_ids}}
+\index{get\_shader\_matrix\_ids@{get\_shader\_matrix\_ids}!udit::Mesh@{udit::Mesh}}
+\doxysubsubsection{\texorpdfstring{get\_shader\_matrix\_ids()}{get\_shader\_matrix\_ids()}}
+{\footnotesize\ttfamily \label{classudit_1_1_mesh_ad35d4c32e215bc29f2258e41760e8454} 
+std\+::vector$<$ GLint $>$ udit\+::\+Mesh\+::get\+\_\+shader\+\_\+matrix\+\_\+ids (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene los IDs de las matrices del shader asociadas a la malla. 
+
+Devuelve los IDs de las matrices necesarias para renderizar la malla en el shader.
+
+\begin{DoxyReturn}{Returns}
+Un vector con los IDs de las matrices. 
+\end{DoxyReturn}
+\Hypertarget{classudit_1_1_mesh_a8062022e28aef3a74ea8cf09440d8be2}\index{udit::Mesh@{udit::Mesh}!get\_shader\_program\_id@{get\_shader\_program\_id}}
+\index{get\_shader\_program\_id@{get\_shader\_program\_id}!udit::Mesh@{udit::Mesh}}
+\doxysubsubsection{\texorpdfstring{get\_shader\_program\_id()}{get\_shader\_program\_id()}}
+{\footnotesize\ttfamily \label{classudit_1_1_mesh_a8062022e28aef3a74ea8cf09440d8be2} 
+GLuint udit\+::\+Mesh\+::get\+\_\+shader\+\_\+program\+\_\+id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el ID del programa del shader asociado. 
+
+\begin{DoxyReturn}{Returns}
+El ID del programa de shader asociado a la malla. 
+\end{DoxyReturn}
+\Hypertarget{classudit_1_1_mesh_a7c6a9492d0b27fbe8f81334392a56da9}\index{udit::Mesh@{udit::Mesh}!make\_mesh@{make\_mesh}}
+\index{make\_mesh@{make\_mesh}!udit::Mesh@{udit::Mesh}}
+\doxysubsubsection{\texorpdfstring{make\_mesh()}{make\_mesh()}}
+{\footnotesize\ttfamily \label{classudit_1_1_mesh_a7c6a9492d0b27fbe8f81334392a56da9} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classudit_1_1_mesh}{Mesh}} $>$ udit\+::\+Mesh\+::make\+\_\+mesh (\begin{DoxyParamCaption}\item[{Mesh\+Type}]{type}{, }\item[{const std\+::string \&}]{path}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crea una malla de un tipo específico. 
+
+Este método estático permite crear una malla de un tipo específico, como terreno, malla básica, o malla cargada desde un archivo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Tipo de malla a crear. \\
+\hline
+{\em path} & Ruta al archivo de la malla (solo relevante si el tipo es MESH). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un puntero compartido a la malla creada. 
+\end{DoxyReturn}
+\Hypertarget{classudit_1_1_mesh_a90e71e2684566413839d77dd850fc66b}\index{udit::Mesh@{udit::Mesh}!render@{render}}
+\index{render@{render}!udit::Mesh@{udit::Mesh}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{classudit_1_1_mesh_a90e71e2684566413839d77dd850fc66b} 
+void udit\+::\+Mesh\+::render (\begin{DoxyParamCaption}\item[{glm\+::mat4}]{view\+\_\+matrix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Renderiza la malla. 
+
+Función de renderizado de la malla en el bucle principal.
+
+Utiliza el shader asociado y la matriz de vista para renderizar la malla.
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+\_\+matrix} & Matriz de vista. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classudit_1_1_mesh_a7a570c95db3ca097c30ae7dc30ac7055}\index{udit::Mesh@{udit::Mesh}!resize@{resize}}
+\index{resize@{resize}!udit::Mesh@{udit::Mesh}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily \label{classudit_1_1_mesh_a7a570c95db3ca097c30ae7dc30ac7055} 
+void udit\+::\+Mesh\+::resize (\begin{DoxyParamCaption}\item[{glm\+::mat4}]{projection\+\_\+matrix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Ajusta la matriz de proyección. 
+
+Establece la matriz de proyección en el shader para la correcta visualización.
+
+
+\begin{DoxyParams}{Parameters}
+{\em projection\+\_\+matrix} & Matriz de proyección. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classudit_1_1_mesh_ad14a128f7e0d698666906d4eadeb0c20}\index{udit::Mesh@{udit::Mesh}!rotate@{rotate}}
+\index{rotate@{rotate}!udit::Mesh@{udit::Mesh}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily \label{classudit_1_1_mesh_ad14a128f7e0d698666906d4eadeb0c20} 
+void udit\+::\+Mesh\+::rotate (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{rotation}{, }\item[{float}]{angle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Rota la malla. 
+
+Aplica una rotación a la matriz de transformación de la malla.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rotation} & Eje de rotación. \\
+\hline
+{\em angle} & Ángulo de rotación en grados. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classudit_1_1_mesh_a8b7dd47cd13fb1c365f399cb7154ae9c}\index{udit::Mesh@{udit::Mesh}!scale@{scale}}
+\index{scale@{scale}!udit::Mesh@{udit::Mesh}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily \label{classudit_1_1_mesh_a8b7dd47cd13fb1c365f399cb7154ae9c} 
+void udit\+::\+Mesh\+::scale (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{scale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Escala la malla. 
+
+Aplica una escala a la matriz de transformación de la malla.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & Factor de escala. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classudit_1_1_mesh_a6184dedb3bf33f00358186100f085d18}\index{udit::Mesh@{udit::Mesh}!set\_mesh\_type@{set\_mesh\_type}}
+\index{set\_mesh\_type@{set\_mesh\_type}!udit::Mesh@{udit::Mesh}}
+\doxysubsubsection{\texorpdfstring{set\_mesh\_type()}{set\_mesh\_type()}}
+{\footnotesize\ttfamily \label{classudit_1_1_mesh_a6184dedb3bf33f00358186100f085d18} 
+void udit\+::\+Mesh\+::set\+\_\+mesh\+\_\+type (\begin{DoxyParamCaption}\item[{Mesh\+Type}]{type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece el tipo de malla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Tipo de malla. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classudit_1_1_mesh_ad0e07608c3db6dd61c25594a09ea4a3c}\index{udit::Mesh@{udit::Mesh}!set\_model\_view\_matrix@{set\_model\_view\_matrix}}
+\index{set\_model\_view\_matrix@{set\_model\_view\_matrix}!udit::Mesh@{udit::Mesh}}
+\doxysubsubsection{\texorpdfstring{set\_model\_view\_matrix()}{set\_model\_view\_matrix()}}
+{\footnotesize\ttfamily \label{classudit_1_1_mesh_ad0e07608c3db6dd61c25594a09ea4a3c} 
+void udit\+::\+Mesh\+::set\+\_\+model\+\_\+view\+\_\+matrix (\begin{DoxyParamCaption}\item[{glm\+::mat4}]{matrix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece la matriz de transformación del modelo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Nueva matriz de transformación del modelo. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classudit_1_1_mesh_a29bc27b2ed670472856ca5c131aae307}\index{udit::Mesh@{udit::Mesh}!set\_shader@{set\_shader}}
+\index{set\_shader@{set\_shader}!udit::Mesh@{udit::Mesh}}
+\doxysubsubsection{\texorpdfstring{set\_shader()}{set\_shader()}}
+{\footnotesize\ttfamily \label{classudit_1_1_mesh_a29bc27b2ed670472856ca5c131aae307} 
+void udit\+::\+Mesh\+::set\+\_\+shader (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classudit_1_1_shader}{udit\+::\+Shader}} $>$}]{shader}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Asocia un shader a la malla. 
+
+Permite asociar un shader para ser usado al renderizar la malla.
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & Puntero al shader a asociar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classudit_1_1_mesh_a9d4ae5952b212c449f87b0260d3d1a31}\index{udit::Mesh@{udit::Mesh}!translate@{translate}}
+\index{translate@{translate}!udit::Mesh@{udit::Mesh}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily \label{classudit_1_1_mesh_a9d4ae5952b212c449f87b0260d3d1a31} 
+void udit\+::\+Mesh\+::translate (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{translation}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Realiza una traslación de la malla. 
+
+Aplica una traslación a la matriz de transformación de la malla.
+
+
+\begin{DoxyParams}{Parameters}
+{\em translation} & Vector de traslación. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classudit_1_1_mesh_ac5a0797ee60d3ec8d04972ed08fa462c}\index{udit::Mesh@{udit::Mesh}!update@{update}}
+\index{update@{update}!udit::Mesh@{udit::Mesh}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classudit_1_1_mesh_ac5a0797ee60d3ec8d04972ed08fa462c} 
+void udit\+::\+Mesh\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Actualiza la malla. 
+
+Función de actualizacion de la malla en el bucle principal.
+
+Esta función puede ser utilizada para actualizar los datos de la malla, si es necesario. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alonsoggdev/\+UDIT/\+Asignaturas/\+Programacion\+\_\+\+Grafica/\+GL\+\_\+\+Scene/\+GL\+\_\+\+Scene/Mesh.\+hpp\item 
+/\+Users/alonsoggdev/\+UDIT/\+Asignaturas/\+Programacion\+\_\+\+Grafica/\+GL\+\_\+\+Scene/\+GL\+\_\+\+Scene/Mesh.\+cpp\end{DoxyCompactItemize}

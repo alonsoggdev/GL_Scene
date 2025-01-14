@@ -1,0 +1,157 @@
+\doxysection{udit\+::Scene Class Reference}
+\hypertarget{classudit_1_1_scene}{}\label{classudit_1_1_scene}\index{udit::Scene@{udit::Scene}}
+
+
+Representa una escena 3D con un skybox, terreno, luz y otros elementos.  
+
+
+
+
+{\ttfamily \#include $<$Scene.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classudit_1_1_scene_ae1140680bbef0fc44b6f9ea8349e1a45}{Scene}} (unsigned width, unsigned height)
+\begin{DoxyCompactList}\small\item\em Constructor de la escena. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classudit_1_1_scene_a03e281c23d0e567ee5e953d423988656}{update}} ()
+\begin{DoxyCompactList}\small\item\em Actualiza la escena. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classudit_1_1_scene_ad9a399c0646c049a107e0f094ff3b961}{render}} ()
+\begin{DoxyCompactList}\small\item\em Renderiza la escena. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classudit_1_1_scene_af96df08fac8334941d8b3c0edf4d786a}{resize}} (unsigned width, unsigned height)
+\begin{DoxyCompactList}\small\item\em Redimensiona la escena. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classudit_1_1_scene_a80ba37bc7b0f37ecd8280b7a0efec4dc}{set\+\_\+view\+\_\+matrix}} (const glm\+::mat4 \&view)
+\begin{DoxyCompactList}\small\item\em Establece la matriz de vista para la cámara. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classudit_1_1_scene_a97f81040918793c0817082cb60830bda}{set\+\_\+projection\+\_\+matrix}} (const glm\+::mat4 \&projection)
+\begin{DoxyCompactList}\small\item\em Establece la matriz de proyección para la cámara. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classudit_1_1_scene_a0348a5a32f7f07de916b082373b7fd79}{set\+\_\+lights}} (GLuint shader\+\_\+program\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Establece las luces en el shader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa una escena 3D con un skybox, terreno, luz y otros elementos. 
+
+La clase {\ttfamily \doxylink{classudit_1_1_scene}{Scene}} es responsable de gestionar la representación de una escena 3D, incluyendo los objetos gráficos principales y la iluminación. Los métodos permiten actualizar la escena, renderizarla y ajustar su tamaño. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classudit_1_1_scene_ae1140680bbef0fc44b6f9ea8349e1a45}\index{udit::Scene@{udit::Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!udit::Scene@{udit::Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}}
+{\footnotesize\ttfamily \label{classudit_1_1_scene_ae1140680bbef0fc44b6f9ea8349e1a45} 
+udit\+::\+Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{unsigned}]{width}{, }\item[{unsigned}]{height}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de la escena. 
+
+Constructor.
+
+Inicializa una nueva escena con el ancho y alto especificados. 
+\begin{DoxyParams}{Parameters}
+{\em width} & Ancho de la ventana de renderizado. \\
+\hline
+{\em height} & Alto de la ventana de renderizado.\\
+\hline
+\end{DoxyParams}
+Inicializa una escena 
+\begin{DoxyParams}{Parameters}
+{\em width} & Ancho de la escena \\
+\hline
+{\em height} & Alto de la escena \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classudit_1_1_scene_ad9a399c0646c049a107e0f094ff3b961}\index{udit::Scene@{udit::Scene}!render@{render}}
+\index{render@{render}!udit::Scene@{udit::Scene}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{classudit_1_1_scene_ad9a399c0646c049a107e0f094ff3b961} 
+void udit\+::\+Scene\+::render (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Renderiza la escena. 
+
+Renderiza los elementos de la escena.
+
+Dibuja todos los elementos de la escena (skybox, terreno, objetos, luz) en la ventana de renderizado. Este método debe ser llamado en cada ciclo de renderizado. \Hypertarget{classudit_1_1_scene_af96df08fac8334941d8b3c0edf4d786a}\index{udit::Scene@{udit::Scene}!resize@{resize}}
+\index{resize@{resize}!udit::Scene@{udit::Scene}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily \label{classudit_1_1_scene_af96df08fac8334941d8b3c0edf4d786a} 
+void udit\+::\+Scene\+::resize (\begin{DoxyParamCaption}\item[{unsigned}]{width}{, }\item[{unsigned}]{height}{}\end{DoxyParamCaption})}
+
+
+
+Redimensiona la escena. 
+
+Ajusta la escena al nuevo tamaño de la ventana. 
+\begin{DoxyParams}{Parameters}
+{\em width} & Nuevo ancho de la ventana. \\
+\hline
+{\em height} & Nuevo alto de la ventana. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classudit_1_1_scene_a0348a5a32f7f07de916b082373b7fd79}\index{udit::Scene@{udit::Scene}!set\_lights@{set\_lights}}
+\index{set\_lights@{set\_lights}!udit::Scene@{udit::Scene}}
+\doxysubsubsection{\texorpdfstring{set\_lights()}{set\_lights()}}
+{\footnotesize\ttfamily \label{classudit_1_1_scene_a0348a5a32f7f07de916b082373b7fd79} 
+void udit\+::\+Scene\+::set\+\_\+lights (\begin{DoxyParamCaption}\item[{GLuint}]{shader\+\_\+program\+\_\+id}{}\end{DoxyParamCaption})}
+
+
+
+Establece las luces en el shader. 
+
+Configura las luces de la escena dentro del shader, enviando los parámetros necesarios al programa de sombreado. 
+\begin{DoxyParams}{Parameters}
+{\em shader\+\_\+program\+\_\+id} & Identificador del programa de sombreado (shader). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classudit_1_1_scene_a97f81040918793c0817082cb60830bda}\index{udit::Scene@{udit::Scene}!set\_projection\_matrix@{set\_projection\_matrix}}
+\index{set\_projection\_matrix@{set\_projection\_matrix}!udit::Scene@{udit::Scene}}
+\doxysubsubsection{\texorpdfstring{set\_projection\_matrix()}{set\_projection\_matrix()}}
+{\footnotesize\ttfamily \label{classudit_1_1_scene_a97f81040918793c0817082cb60830bda} 
+void udit\+::\+Scene\+::set\+\_\+projection\+\_\+matrix (\begin{DoxyParamCaption}\item[{const glm\+::mat4 \&}]{projection}{}\end{DoxyParamCaption})}
+
+
+
+Establece la matriz de proyección para la cámara. 
+
+Establece la matriz de proyección que será usada para renderizar la escena. 
+\begin{DoxyParams}{Parameters}
+{\em projection} & Matriz de proyección. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classudit_1_1_scene_a80ba37bc7b0f37ecd8280b7a0efec4dc}\index{udit::Scene@{udit::Scene}!set\_view\_matrix@{set\_view\_matrix}}
+\index{set\_view\_matrix@{set\_view\_matrix}!udit::Scene@{udit::Scene}}
+\doxysubsubsection{\texorpdfstring{set\_view\_matrix()}{set\_view\_matrix()}}
+{\footnotesize\ttfamily \label{classudit_1_1_scene_a80ba37bc7b0f37ecd8280b7a0efec4dc} 
+void udit\+::\+Scene\+::set\+\_\+view\+\_\+matrix (\begin{DoxyParamCaption}\item[{const glm\+::mat4 \&}]{view}{}\end{DoxyParamCaption})}
+
+
+
+Establece la matriz de vista para la cámara. 
+
+Establece la matriz de vista que será usada para renderizar la escena. 
+\begin{DoxyParams}{Parameters}
+{\em view} & Matriz de vista. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classudit_1_1_scene_a03e281c23d0e567ee5e953d423988656}\index{udit::Scene@{udit::Scene}!update@{update}}
+\index{update@{update}!udit::Scene@{udit::Scene}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classudit_1_1_scene_a03e281c23d0e567ee5e953d423988656} 
+void udit\+::\+Scene\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Actualiza la escena. 
+
+Actualiza ciertos valores dentro del bucle principal.
+
+Llama a las funciones necesarias para actualizar los objetos en la escena. Este método debe ser llamado cada vez que se desea actualizar el estado de la escena. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alonsoggdev/\+UDIT/\+Asignaturas/\+Programacion\+\_\+\+Grafica/\+GL\+\_\+\+Scene/\+GL\+\_\+\+Scene/\mbox{\hyperlink{_scene_8hpp}{Scene.\+hpp}}\item 
+/\+Users/alonsoggdev/\+UDIT/\+Asignaturas/\+Programacion\+\_\+\+Grafica/\+GL\+\_\+\+Scene/\+GL\+\_\+\+Scene/Scene.\+cpp\end{DoxyCompactItemize}

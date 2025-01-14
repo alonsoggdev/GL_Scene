@@ -1,0 +1,2855 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.14)  14 JAN 2025 23:01
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**refman
+(./refman.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count188
+\c@chapter=\count189
+\c@section=\count190
+\c@subsection=\count191
+\c@subsubsection=\count192
+\c@paragraph=\count193
+\c@subparagraph=\count194
+\c@figure=\count195
+\c@table=\count196
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
+Rollback for package 'array' requested -> date 2016-10-06.
+         Best approximation is the release introduced on 2016-10-06.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/array-2016-10-06.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen141
+\extrarowheight=\dimen142
+\NC@list=\toks17
+\extratabsurround=\skip50
+\backup@length=\skip51
+))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+package info suppressed
+)
+(./doxygen.sty
+Package: doxygen 
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 2021/01/29 v2.0g defines alltt environment
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count197
+\calc@Bcount=\count198
+\calc@Adimen=\dimen143
+\calc@Bdimen=\dimen144
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count199
+\calc@Cskip=\skip54
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count266
+\float@exts=\toks18
+\float@box=\box51
+\@float@everytoks=\toks19
+\@floatcapt=\box52
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks20
+\verbatim@line=\toks21
+\verbatim@in@stream=\read2
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/02/20 v1.0g Color table columns (DPC)
+\everycr=\toks22
+\minrowclearance=\skip55
+\rownum=\count267
+)
+(./longtable_doxygen.sty
+Package: longtable_doxygen 2014/10/28 v4.11 Multi-page Table package (DPC) - fr
+ozen version for doxygen
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
+\LTchunksize=\count268
+\LTcapwidth=\dimen145
+\LT@head=\box53
+\LT@firsthead=\box54
+\LT@foot=\box55
+\LT@lastfoot=\box56
+\LT@cols=\count269
+\LT@rows=\count270
+\c@LT@tables=\count271
+\c@LT@chunks=\count272
+\LT@p@ftn=\toks23
+) (./tabu_doxygen.sty
+Package: tabu_doxygen 2011/02/26 v2.8 - flexible LaTeX tabulars (FC), frozen ve
+rsion for doxygen
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box57
+\sift@deathcycles=\count273
+\@vwid@loff=\dimen146
+\@vwid@roff=\dimen147
+)
+\c@taburow=\count274
+\tabu@nbcols=\count275
+\tabu@cnt=\count276
+\tabu@Xcol=\count277
+\tabu@alloc=\count278
+\tabu@nested=\count279
+\tabu@target=\dimen148
+\tabu@spreadtarget=\dimen149
+\tabu@naturalX=\dimen150
+\tabucolX=\dimen151
+\tabu@Xsum=\dimen152
+\extrarowdepth=\dimen153
+\abovetabulinesep=\dimen154
+\belowtabulinesep=\dimen155
+\tabustrutrule=\dimen156
+\tabu@thebody=\toks24
+\tabu@footnotes=\toks25
+\tabu@box=\box58
+\tabu@arstrutbox=\box59
+\tabu@hleads=\box60
+\tabu@vleads=\box61
+\tabu@cellskip=\skip60
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks26
+)
+\FV@CodeLineNo=\count280
+\FV@InFile=\read3
+\FV@TabBox=\box62
+\c@FancyVerbLine=\count281
+\FV@StepNumber=\count282
+\FV@OutFile=\write3
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen157
+\TX@old@table=\dimen158
+\TX@old@col=\dimen159
+\TX@target=\dimen160
+\TX@delta=\dimen161
+\TX@cols=\count283
+\TX@ftn=\toks27
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count284
+\mult@box=\box63
+\multicol@leftmargin=\dimen162
+\c@unbalance=\count285
+\c@collectmore=\count286
+\doublecol@number=\count287
+\multicoltolerance=\count288
+\multicolpretolerance=\count289
+\full@width=\dimen163
+\page@free=\dimen164
+\premulticols=\dimen165
+\postmulticols=\dimen166
+\multicolsep=\skip61
+\multicolbaselineskip=\skip62
+\partial@page=\box64
+\last@line=\box65
+\mc@boxedresult=\box66
+\maxbalancingoverflow=\dimen167
+\mult@rightbox=\box67
+\mult@grightbox=\box68
+\mult@firstbox=\box69
+\mult@gfirstbox=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\c@minrows=\count290
+\c@columnbadness=\count291
+\c@finalcolumnbadness=\count292
+\last@try=\dimen168
+\multicolovershoot=\dimen169
+\multicolundershoot=\dimen170
+\mult@nat@firstbox=\box107
+\colbreak@box=\box108
+\mc@col@check@num=\count293
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip63
+\multirow@cntb=\count294
+\multirow@dima=\skip64
+\bigstrutjot=\dimen171
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hanging/hanging.sty
+Package: hanging 2009/09/02 v1.2b hanging paragraphs and punctuation
+\h@ngcommawd=\skip65
+\h@ngfstopwd=\skip66
+\h@ngquotewd=\skip67
+\h@ngdquotewd=\skip68
+\h@ngquerywd=\skip69
+\h@ngexclwd=\skip70
+\h@ngcolonwd=\skip71
+\h@ngscolonwd=\skip72
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks28
+\XKV@tempa@toks=\toks29
+)
+\XKV@depth=\count295
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen172
+\Gin@req@width=\dimen173
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box109
+)
+\tc@llx=\dimen174
+\tc@lly=\dimen175
+\tc@urx=\dimen176
+\tc@ury=\dimen177
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen178
+\adjbox@Height=\dimen179
+\adjbox@Depth=\dimen180
+\adjbox@Totalheight=\dimen181
+\adjbox@pwidth=\dimen182
+\adjbox@pheight=\dimen183
+\adjbox@pdepth=\dimen184
+\adjbox@ptotalheight=\dimen185
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count296
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks30
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/stackengine/stackengine.sty
+Package: stackengine 2021/07/22 v4.11\ Stacking text and objects in convenient 
+ways
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count297
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/listofitems/listofitems.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/listofitems/listofitems.tex
+\loi_cnt_foreach_nest=\count298
+\loi_nestcnt=\count299
+)
+Package: listofitems 2024/03/09 v1.65 Grab items in lists using user-specified 
+sep char (CT)
+)
+\c@@stackindex=\count300
+\@boxshift=\skip73
+\stack@tmplength=\skip74
+\temp@stkl=\skip75
+\@stackedboxwidth=\skip76
+\@addedbox=\box110
+\@anchorbox=\box111
+\@insetbox=\box112
+\se@backgroundbox=\box113
+\stackedbox=\box114
+\@centerbox=\box115
+\c@ROWcellindex@=\count301
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip77
+\enit@outerparindent=\dimen186
+\enit@toks=\toks31
+\enit@inbox=\box116
+\enit@count@id=\count302
+\enitdp@description=\count303
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/alphalph/alphalph.sty
+Package: alphalph 2019/12/09 v2.6 Convert numbers to letters (HO)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box117
+\UL@hyphenbox=\box118
+\UL@skip=\skip78
+\UL@hook=\toks32
+\UL@height=\dimen187
+\UL@pe=\count304
+\UL@pixel=\dimen188
+\ULC@box=\box119
+Package: ulem 2019/11/18
+\ULdepth=\dimen189
+)
+\xrefbox=\box120
+\xreflength=\skip79
+\CodeWidthChar=\skip80
+\CodeHeightChar=\skip81
+\DoxyCodeWidth=\skip82
+\c@DoxyEnumeratei=\count305
+\c@DoxyEnumerateii=\count306
+\c@DoxyEnumerateiii=\count307
+\c@DoxyEnumerateiv=\count308
+\c@DoxyEnumeratev=\count309
+\c@DoxyEnumeratevi=\count310
+\c@DoxyEnumeratevii=\count311
+\c@DoxyEnumerateviii=\count312
+\c@DoxyEnumerateix=\count313
+\c@DoxyEnumeratex=\count314
+\c@DoxyEnumeratexi=\count315
+\c@DoxyEnumeratexii=\count316
+\enitdp@DoxyEnumerate=\count317
+\enitdp@DoxyItemize=\count318
+\c@subsubsubsection=\count319
+\c@subsubsubsubsection=\count320
+\c@subsubsubsubsubsection=\count321
+\c@subsubsubsubsubsubsection=\count322
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks33
+\inpenc@posthook=\toks34
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count323
+\Gm@cntv=\count324
+\c@Gm@tempcnt=\count325
+\Gm@bindingoffset=\dimen190
+\Gm@wd@mp=\dimen191
+\Gm@odd@mp=\dimen192
+\Gm@even@mp=\dimen193
+\Gm@layoutwidth=\dimen194
+\Gm@layoutheight=\dimen195
+\Gm@layouthoffset=\dimen196
+\Gm@layoutvoffset=\dimen197
+\Gm@dimlist=\toks35
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count326
+\cp@tempcnt=\count327
+LaTeX Info: Redefining \checkoddpage on input line 59.
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip83
+\f@nch@O@elh=\skip84
+\f@nch@O@erh=\skip85
+\f@nch@O@olh=\skip86
+\f@nch@O@orh=\skip87
+\f@nch@O@elf=\skip88
+\f@nch@O@erf=\skip89
+\f@nch@O@olf=\skip90
+\f@nch@O@orf=\skip91
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip92
+\bibsep=\skip93
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count328
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip94
+\cftbeforetoctitleskip=\skip95
+\cftaftertoctitleskip=\skip96
+\cftbeforepartskip=\skip97
+\cftpartnumwidth=\skip98
+\cftpartindent=\skip99
+\cftbeforechapskip=\skip100
+\cftchapindent=\skip101
+\cftchapnumwidth=\skip102
+\cftbeforesecskip=\skip103
+\cftsecindent=\skip104
+\cftsecnumwidth=\skip105
+\cftbeforesubsecskip=\skip106
+\cftsubsecindent=\skip107
+\cftsubsecnumwidth=\skip108
+\cftbeforesubsubsecskip=\skip109
+\cftsubsubsecindent=\skip110
+\cftsubsubsecnumwidth=\skip111
+\cftbeforeparaskip=\skip112
+\cftparaindent=\skip113
+\cftparanumwidth=\skip114
+\cftbeforesubparaskip=\skip115
+\cftsubparaindent=\skip116
+\cftsubparanumwidth=\skip117
+\cftbeforeloftitleskip=\skip118
+\cftafterloftitleskip=\skip119
+\cftbeforefigskip=\skip120
+\cftfigindent=\skip121
+\cftfignumwidth=\skip122
+\c@lofdepth=\count329
+\c@lotdepth=\count330
+\cftbeforelottitleskip=\skip123
+\cftafterlottitleskip=\skip124
+\cftbeforetabskip=\skip125
+\cfttabindent=\skip126
+\cfttabnumwidth=\skip127
+)
+\@indexfile=\write4
+\openout4 = `refman.idx'.
+
+
+Writing index file refman.idx
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/newunicodechar/newunicodechar.sty
+Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count331
+)
+\@linkdim=\dimen198
+\Hy@linkcounter=\count332
+\Hy@pagecounter=\count333
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count334
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing ON on input line 4197.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2023-11-26 v1.44 Bibliographical back referencing
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+))
+\c@Hy@tempcnt=\count335
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen199
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+)
+\Fld@menulength=\count336
+\Field@Width=\dimen256
+\Fld@charsize=\dimen257
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing ON on input line 6076.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count337
+\c@Item=\count338
+\c@Hfootnote=\count339
+)
+Package hyperref Info: Driver: hpdftex.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+\Fld@listcount=\count340
+\c@bookmark@seq@number=\count341
+\Hy@SectionHShift=\skip128
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 187.
+Package hyperref Info: Option `unicode' set `true' on input line 187.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen258
+\captionmargin=\dimen259
+\caption@leftmargin=\dimen260
+\caption@rightmargin=\dimen261
+\caption@width=\dimen262
+\caption@indent=\dimen263
+\caption@parindent=\dimen264
+\caption@hangindent=\dimen265
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count342
+\c@continuedfloat=\count343
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen266
+\caption@adjustwidth@linewidth=\dimen267
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/etoc/etoc.sty
+Package: etoc 2023/10/29 v1.2d Completely customisable TOCs (JFB)
+\Etoc@toctoks=\toks36
+\c@etoc@tocid=\count344
+\etoc@framed@titlebox=\box121
+\etoc@framed@contentsbox=\box122
+)
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 20
+9.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 209.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count345
+\l__pdf_internal_box=\box123
+)
+(./refman.aux
+
+LaTeX Warning: Label `structhalf__float_1_1detail_1_1bits_a6087f39bed27f25b3be9
+1078a4a6dbdc' multiply defined.
+
+
+LaTeX Warning: Label `structhalf__float_1_1detail_1_1bits_a6087f39bed27f25b3be9
+1078a4a6dbdc' multiply defined.
+
+
+LaTeX Warning: Label `structhalf__float_1_1detail_1_1bits_a6087f39bed27f25b3be9
+1078a4a6dbdc' multiply defined.
+
+
+LaTeX Warning: Label `structhalf__float_1_1detail_1_1bits_a6087f39bed27f25b3be9
+1078a4a6dbdc' multiply defined.
+
+
+LaTeX Warning: Label `structhalf__float_1_1detail_1_1bits_a6087f39bed27f25b3be9
+1078a4a6dbdc' multiply defined.
+
+
+LaTeX Warning: Label `structhalf__float_1_1detail_1_1conditional_ace7680db9fa44
+adf899e0133f39a43b6' multiply defined.
+
+
+LaTeX Warning: Label `namespacehalf__float_compop' multiply defined.
+
+
+LaTeX Warning: Label `namespacehalf__float_arithmetics' multiply defined.
+
+
+LaTeX Warning: Label `namespacehalf__float_streaming' multiply defined.
+
+
+LaTeX Warning: Label `namespacehalf__float_basic' multiply defined.
+
+
+LaTeX Warning: Label `namespacehalf__float_exponential' multiply defined.
+
+
+LaTeX Warning: Label `namespacehalf__float_power' multiply defined.
+
+
+LaTeX Warning: Label `namespacehalf__float_trigonometric' multiply defined.
+
+
+LaTeX Warning: Label `namespacehalf__float_hyperbolic' multiply defined.
+
+
+LaTeX Warning: Label `namespacehalf__float_special' multiply defined.
+
+
+LaTeX Warning: Label `namespacehalf__float_rounding' multiply defined.
+
+
+LaTeX Warning: Label `namespacehalf__float_float' multiply defined.
+
+
+LaTeX Warning: Label `namespacehalf__float_classification' multiply defined.
+
+
+LaTeX Warning: Label `namespacehalf__float_compfunc' multiply defined.
+
+
+LaTeX Warning: Label `namespacehalf__float_casting' multiply defined.
+
+
+LaTeX Warning: Label `namespacehalf__float_errors' multiply defined.
+
+)
+\openout1 = `refman.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 209.
+LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 209.
+LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 209.
+LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 209.
+LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 209.
+LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 209.
+LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 209.
+LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 209.
+LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 209.
+LaTeX Font Info:    ... okay on input line 209.
+ (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count346
+\scratchdimen=\dimen268
+\scratchbox=\box124
+\nofMPsegments=\count347
+\nofMParguments=\count348
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count349
+\MPscratchDim=\dimen269
+\MPnumerator=\count350
+\makeMPintoPDFobject=\count351
+\everyMPtoPDFconversion=\toks38
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-31.2056pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package backref Info: ** backref set up for natbib ** on input line 209.
+Package hyperref Info: Link coloring ON on input line 209.
+(./refman.out) (./refman.out)
+\@outlinefile=\write5
+\openout5 = `refman.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\Etoc@tf=\read4
+Package hyperref Info: Option `pageanchor' set `false' on input line 217.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 217.
+
+Package hyperref Info: Option `unicode' set `true' on input line 217.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 222.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 222.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 222
+.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 222
+.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 22
+2.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 224.
+ [1
+
+
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
+al/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2
+
+]
+\tf@toc=\write6
+\openout6 = `refman.toc'.
+
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 230.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 230.
+ [1]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 230.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 23
+0.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [2] [3] [4]
+[5] [6] [7] [8] [9] [10] [11] [12] [13] [14
+
+]
+Package hyperref Info: Option `pageanchor' set `true' on input line 233.
+
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 18.66588pt on input line 235.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 235.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 235.
+(./namespaces.tex
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 1.
+) [1
+
+] [2
+
+]
+Chapter 2.
+(./hierarchy.tex [3]) [4]
+Chapter 3.
+(./annotated.tex [5
+
+]) [6]
+Chapter 4.
+(./files.tex) [7
+
+] [8
+
+]
+Chapter 5.
+(./namespacehalf__float.tex
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6
+.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 6.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 10.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.99994pt on input line 10.
+ [9] [10]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 287.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 295.
+
+[11] [12]
+Underfull \hbox (badness 10000) detected at line 302
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 318
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 341
+[][][]
+ []
+
+[13]
+Underfull \hbox (badness 10000) detected at line 364
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 387
+[][][]
+ []
+
+[14]
+Underfull \hbox (badness 10000) detected at line 410
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 435
+[][][]
+ []
+
+[15]
+Underfull \hbox (badness 10000) detected at line 458
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 483
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 504
+[][][]
+ []
+
+[16]
+Underfull \hbox (badness 10000) detected at line 527
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 543
+[][][]
+ []
+
+[17]
+Underfull \hbox (badness 10000) detected at line 566
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 589
+[][][]
+ []
+
+[18]
+Underfull \hbox (badness 10000) detected at line 612
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 635
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 658
+[][][]
+ []
+
+[19]
+Underfull \hbox (badness 10000) detected at line 681
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 702
+[][][]
+ []
+
+[20]
+Underfull \hbox (badness 10000) detected at line 720
+[][][]
+ []
+
+[21] [22]
+Underfull \hbox (badness 10000) detected at line 817
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 855
+[][][]
+ []
+
+[23]
+Underfull \hbox (badness 10000) detected at line 882
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 905
+[][][]
+ []
+
+[24]
+Underfull \hbox (badness 10000) detected at line 926
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 947
+[][][]
+ []
+
+[25]
+Underfull \hbox (badness 10000) detected at line 992
+[][][]
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 7.19995pt on input line 1002.
+[26]
+Underfull \hbox (badness 10000) detected at line 1021
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1054
+[][][]
+ []
+
+[27]
+Underfull \hbox (badness 10000) detected at line 1079
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1106
+[][][]
+ []
+
+[28]
+Underfull \hbox (badness 10000) detected at line 1127
+[][][]
+ []
+
+[29] [30] [31] [32]
+Underfull \hbox (badness 10000) detected at line 1351
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1374
+[][][]
+ []
+
+[33]
+Underfull \hbox (badness 10000) detected at line 1399
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1424
+[][][]
+ []
+
+[34]
+Underfull \hbox (badness 10000) detected at line 1449
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1474
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1497
+[][][]
+ []
+
+[35]
+Underfull \hbox (badness 10000) detected at line 1518
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1539
+[][][]
+ []
+
+[36]
+Underfull \hbox (badness 10000) detected at line 1560
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1579
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1593
+[][][]
+ []
+
+[37]
+Underfull \hbox (badness 10000) detected at line 1614
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1639
+[][][]
+ []
+
+[38]
+Underfull \hbox (badness 10000) detected at line 1689
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1710
+[][][]
+ []
+
+[39]
+Underfull \hbox (badness 10000) detected at line 1726
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1747
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1763
+[][][]
+ []
+
+[40]
+Underfull \hbox (badness 10000) detected at line 1786
+[][][]
+ []
+
+[41]
+Underfull \hbox (badness 10000) detected at line 1837
+[][][]
+ []
+
+[42] [43]
+Underfull \hbox (badness 10000) detected at line 1954
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1977
+[][][]
+ []
+
+[44]
+Underfull \hbox (badness 10000) detected at line 2002
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 2025
+[][][]
+ []
+
+[45]
+Underfull \hbox (badness 10000) detected at line 2044
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 2065
+[][][]
+ []
+
+[46]
+Underfull \hbox (badness 10000) detected at line 2086
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 2111
+[][][]
+ []
+
+[47]
+Underfull \hbox (badness 10000) detected at line 2136
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 2177
+[][][]
+ []
+
+[48]
+Underfull \hbox (badness 10000) detected at line 2224
+[][][]
+ []
+
+[49]
+Underfull \hbox (badness 10000) detected at line 2247
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 2270
+[][][]
+ []
+
+[50]
+Underfull \hbox (badness 10000) detected at line 2293
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 2316
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 2339
+[][][]
+ []
+
+[51]) (./namespacestd.tex) [52]
+Chapter 6.
+(./structhalf__float_1_1detail_1_1binary__t.tex)
+(./structhalf__float_1_1detail_1_1bits.tex
+Package epstopdf Info: Source file: <structhalf__float_1_1detail_1_1bits.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 4193 bytes
+(epstopdf)             Output file: <structhalf__float_1_1detail_1_1bits-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:43
+(epstopdf)                    size: 5475 bytes
+(epstopdf)             Command: <repstopdf --outfile=structhalf__float_1_1detai
+l_1_1bits-eps-converted-to.pdf structhalf__float_1_1detail_1_1bits.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+ <./structhalf__float_1_1detail_1_1bits-eps-converted-to.pdf>
+<structhalf__float_1_1detail_1_1bits-eps-converted-to.pdf, id=4051, 501.875pt x
+ 54.8449pt>
+File: structhalf__float_1_1detail_1_1bits-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use structhalf__float_1_1detail_1_1bits-eps-converted-to.pdf>
+Package pdftex.def Info: structhalf__float_1_1detail_1_1bits-eps-converted-to.p
+df  used on input line 15.
+(pdftex.def)             Requested size: 398.37608pt x 43.53441pt.
+)
+(./structhalf__float_1_1detail_1_1bits_3_01const_01_t_01_4.tex
+Package epstopdf Info: Source file: <structhalf__float_1_1detail_1_1bits_3_01co
+nst_01_t_01_4.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 3870 bytes
+(epstopdf)             Output file: <structhalf__float_1_1detail_1_1bits_3_01co
+nst_01_t_01_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:43
+(epstopdf)                    size: 5255 bytes
+(epstopdf)             Command: <repstopdf --outfile=structhalf__float_1_1detai
+l_1_1bits_3_01const_01_t_01_4-eps-converted-to.pdf structhalf__float_1_1detail_
+1_1bits_3_01const_01_t_01_4.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+ <./structhalf__float_1_1detail_1_1bits_3_01const_01_t_01_4-eps-converted-to.pd
+f>
+<structhalf__float_1_1detail_1_1bits_3_01const_01_t_01_4-eps-converted-to.pdf, 
+id=4059, 501.875pt x 201.76378pt>
+File: structhalf__float_1_1detail_1_1bits_3_01const_01_t_01_4-eps-converted-to.
+pdf Graphic file (type pdf)
+<use structhalf__float_1_1detail_1_1bits_3_01const_01_t_01_4-eps-converted-to.p
+df>
+Package pdftex.def Info: structhalf__float_1_1detail_1_1bits_3_01const_01_t_01_
+4-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 141.54254pt x 56.9055pt.
+ [53
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{structhalf__f
+loat_1_1detail_1_1bits_a6087f39bed27f25b3be91078a4a6dbdc}) has been already use
+d, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12 ...1_1bits_a6087f39bed27f25b3be91078a4a6dbdc}
+                                                  \label{structhalf__float_1...
+) (./structhalf__float_1_1detail_1_1bits_3_01const_01volatile_01_t_01_4.tex
+Package epstopdf Info: Source file: <structhalf__float_1_1detail_1_1bits_3_01co
+nst_01volatile_01_t_01_4.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 3888 bytes
+(epstopdf)             Output file: <structhalf__float_1_1detail_1_1bits_3_01co
+nst_01volatile_01_t_01_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:43
+(epstopdf)                    size: 5370 bytes
+(epstopdf)             Command: <repstopdf --outfile=structhalf__float_1_1detai
+l_1_1bits_3_01const_01volatile_01_t_01_4-eps-converted-to.pdf structhalf__float
+_1_1detail_1_1bits_3_01const_01volatile_01_t_01_4.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+ <./structhalf__float_1_1detail_1_1bits_3_01const_01volatile_01_t_01_4-eps-conv
+erted-to.pdf>
+<structhalf__float_1_1detail_1_1bits_3_01const_01volatile_01_t_01_4-eps-convert
+ed-to.pdf, id=4076, 501.875pt x 164.54472pt>
+File: structhalf__float_1_1detail_1_1bits_3_01const_01volatile_01_t_01_4-eps-co
+nverted-to.pdf Graphic file (type pdf)
+<use structhalf__float_1_1detail_1_1bits_3_01const_01volatile_01_t_01_4-eps-con
+verted-to.pdf>
+Package pdftex.def Info: structhalf__float_1_1detail_1_1bits_3_01const_01volati
+le_01_t_01_4-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 173.56058pt x 56.9055pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{structhalf__f
+loat_1_1detail_1_1bits_a6087f39bed27f25b3be91078a4a6dbdc}) has been already use
+d, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12 ...1_1bits_a6087f39bed27f25b3be91078a4a6dbdc}
+                                                  \label{structhalf__float_1...
+) (./structhalf__float_1_1detail_1_1bits_3_01double_01_4.tex [54]
+pdfTeX warning (ext4): destination with the same identifier (name{structhalf__f
+loat_1_1detail_1_1bits_a6087f39bed27f25b3be91078a4a6dbdc}) has been already use
+d, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 ...1_1bits_a6087f39bed27f25b3be91078a4a6dbdc}
+                                                  \label{structhalf__float_1...
+) (./structhalf__float_1_1detail_1_1bits_3_01float_01_4.tex
+Package epstopdf Info: Source file: <structhalf__float_1_1detail_1_1bits_3_01fl
+oat_01_4.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 4174 bytes
+(epstopdf)             Output file: <structhalf__float_1_1detail_1_1bits_3_01fl
+oat_01_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:43
+(epstopdf)                    size: 5922 bytes
+(epstopdf)             Command: <repstopdf --outfile=structhalf__float_1_1detai
+l_1_1bits_3_01float_01_4-eps-converted-to.pdf structhalf__float_1_1detail_1_1bi
+ts_3_01float_01_4.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+ <./structhalf__float_1_1detail_1_1bits_3_01float_01_4-eps-converted-to.pdf>
+<structhalf__float_1_1detail_1_1bits_3_01float_01_4-eps-converted-to.pdf, id=40
+96, 501.875pt x 31.26682pt>
+File: structhalf__float_1_1detail_1_1bits_3_01float_01_4-eps-converted-to.pdf G
+raphic file (type pdf)
+<use structhalf__float_1_1detail_1_1bits_3_01float_01_4-eps-converted-to.pdf>
+Package pdftex.def Info: structhalf__float_1_1detail_1_1bits_3_01float_01_4-eps
+-converted-to.pdf  used on input line 15.
+(pdftex.def)             Requested size: 398.38373pt x 24.81844pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{structhalf__f
+loat_1_1detail_1_1bits_a6087f39bed27f25b3be91078a4a6dbdc}) has been already use
+d, duplicate ignored
+<to be read again> 
+                   \relax 
+l.21 ...1_1bits_a6087f39bed27f25b3be91078a4a6dbdc}
+                                                  \label{structhalf__float_1...
+) (./structhalf__float_1_1detail_1_1bits_3_01volatile_01_t_01_4.tex
+Package epstopdf Info: Source file: <structhalf__float_1_1detail_1_1bits_3_01vo
+latile_01_t_01_4.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 3876 bytes
+(epstopdf)             Output file: <structhalf__float_1_1detail_1_1bits_3_01vo
+latile_01_t_01_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:44
+(epstopdf)                    size: 5137 bytes
+(epstopdf)             Command: <repstopdf --outfile=structhalf__float_1_1detai
+l_1_1bits_3_01volatile_01_t_01_4-eps-converted-to.pdf structhalf__float_1_1deta
+il_1_1bits_3_01volatile_01_t_01_4.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+ <./structhalf__float_1_1detail_1_1bits_3_01volatile_01_t_01_4-eps-converted-to
+.pdf>
+<structhalf__float_1_1detail_1_1bits_3_01volatile_01_t_01_4-eps-converted-to.pd
+f, id=4105, 501.875pt x 192.10771pt>
+File: structhalf__float_1_1detail_1_1bits_3_01volatile_01_t_01_4-eps-converted-
+to.pdf Graphic file (type pdf)
+<use structhalf__float_1_1detail_1_1bits_3_01volatile_01_t_01_4-eps-converted-t
+o.pdf>
+Package pdftex.def Info: structhalf__float_1_1detail_1_1bits_3_01volatile_01_t_
+01_4-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 148.66447pt x 56.9055pt.
+
+[55]
+pdfTeX warning (ext4): destination with the same identifier (name{structhalf__f
+loat_1_1detail_1_1bits_a6087f39bed27f25b3be91078a4a6dbdc}) has been already use
+d, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12 ...1_1bits_a6087f39bed27f25b3be91078a4a6dbdc}
+                                                  \label{structhalf__float_1...
+) (./structhalf__float_1_1detail_1_1bool__type.tex) (./class_camera.tex
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 16.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 16.
+
+[56]
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 58.
+ [57]
+Underfull \hbox (badness 10000) detected at line 92
+[][][]
+ []
+
+[58] [59]) (./structhalf__float_1_1detail_1_1conditional.tex [60])
+(./structhalf__float_1_1detail_1_1conditional_3_01false_00_01_t_00_01_f_01_4.te
+x) (./class_cube.tex) (./classudit_1_1_cube.tex
+Package epstopdf Info: Source file: <classudit_1_1_cube.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 3897 bytes
+(epstopdf)             Output file: <classudit_1_1_cube-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:44
+(epstopdf)                    size: 5473 bytes
+(epstopdf)             Command: <repstopdf --outfile=classudit_1_1_cube-eps-con
+verted-to.pdf classudit_1_1_cube.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+ <./classudit_1_1_cube-eps-converted-to.pdf>
+<classudit_1_1_cube-eps-converted-to.pdf, id=4191, 501.875pt x 692.2462pt>
+File: classudit_1_1_cube-eps-converted-to.pdf Graphic file (type pdf)
+<use classudit_1_1_cube-eps-converted-to.pdf>
+Package pdftex.def Info: classudit_1_1_cube-eps-converted-to.pdf  used on input
+ line 6.
+(pdftex.def)             Requested size: 61.88417pt x 85.35826pt.
+ [61
+pdfTeX warning (ext4): destination with the same identifier (name{structhalf__f
+loat_1_1detail_1_1conditional_ace7680db9fa44adf899e0133f\ETC.}) has been alread
+y used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.9 \doxysubsubsection
+                      *{Public Member Functions}] [62] [63])
+(./class_event_handler.tex [64] [65]) (./structhalf__float_1_1detail_1_1f31.tex
+[66]
+Underfull \hbox (badness 10000) detected at line 85
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 101
+[][][]
+ []
+
+[67]
+Underfull \hbox (badness 10000) detected at line 117
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 133
+[][][]
+ []
+
+) (./classhalf__float_1_1half.tex [68] [69] [70]
+Underfull \hbox (badness 10000) detected at line 262
+[][][]
+ []
+
+[71]
+Underfull \hbox (badness 10000) detected at line 276
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 300
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 314
+[][][]
+ []
+
+[72]
+Underfull \hbox (badness 10000) detected at line 328
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 347
+[][][]
+ []
+
+[73]
+Underfull \hbox (badness 10000) detected at line 371
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 385
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 399
+[][][]
+ []
+
+[74]
+Underfull \hbox (badness 10000) detected at line 418
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 442
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 461
+[][][]
+ []
+
+[75]
+Underfull \hbox (badness 10000) detected at line 485
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 504
+[][][]
+ []
+
+[76]
+Underfull \hbox (badness 10000) detected at line 528
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 551
+[][][]
+ []
+
+[77]
+Underfull \hbox (badness 10000) detected at line 574
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 597
+[][][]
+ []
+
+[78]
+Underfull \hbox (badness 10000) detected at line 620
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 645
+[][][]
+ []
+
+[79]
+Underfull \hbox (badness 10000) detected at line 668
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 693
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 714
+[][][]
+ []
+
+[80]
+Underfull \hbox (badness 10000) detected at line 737
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 753
+[][][]
+ []
+
+[81]
+Underfull \hbox (badness 10000) detected at line 776
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 799
+[][][]
+ []
+
+[82]
+Underfull \hbox (badness 10000) detected at line 822
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 845
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 868
+[][][]
+ []
+
+[83]
+Underfull \hbox (badness 10000) detected at line 891
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 912
+[][][]
+ []
+
+[84]
+Underfull \hbox (badness 10000) detected at line 930
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 949
+[][][]
+ []
+
+[85]
+Underfull \hbox (badness 10000) detected at line 976
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 999
+[][][]
+ []
+
+[86]
+Underfull \hbox (badness 10000) detected at line 1020
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1041
+[][][]
+ []
+
+[87]
+Underfull \hbox (badness 10000) detected at line 1086
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1109
+[][][]
+ []
+
+[88]
+Underfull \hbox (badness 10000) detected at line 1136
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1157
+[][][]
+ []
+
+[89] [90] [91] [92]
+Underfull \hbox (badness 10000) detected at line 1359
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1384
+[][][]
+ []
+
+[93]
+Underfull \hbox (badness 10000) detected at line 1409
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1434
+[][][]
+ []
+
+[94]
+Underfull \hbox (badness 10000) detected at line 1459
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1482
+[][][]
+ []
+
+[95]
+Underfull \hbox (badness 10000) detected at line 1503
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1524
+[][][]
+ []
+
+[96]
+Underfull \hbox (badness 10000) detected at line 1545
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1564
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1578
+[][][]
+ []
+
+[97]
+Underfull \hbox (badness 10000) detected at line 1599
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1624
+[][][]
+ []
+
+[98]
+Underfull \hbox (badness 10000) detected at line 1674
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1697
+[][][]
+ []
+
+[99]
+Underfull \hbox (badness 10000) detected at line 1718
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1734
+[][][]
+ []
+
+[100]
+Underfull \hbox (badness 10000) detected at line 1757
+[][][]
+ []
+
+[101]
+Underfull \hbox (badness 10000) detected at line 1808
+[][][]
+ []
+
+[102] [103]
+Underfull \hbox (badness 10000) detected at line 1925
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1948
+[][][]
+ []
+
+[104]
+Underfull \hbox (badness 10000) detected at line 1973
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1996
+[][][]
+ []
+
+[105]
+Underfull \hbox (badness 10000) detected at line 2015
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 2036
+[][][]
+ []
+
+[106]
+Underfull \hbox (badness 10000) detected at line 2057
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 2082
+[][][]
+ []
+
+[107]
+Underfull \hbox (badness 10000) detected at line 2123
+[][][]
+ []
+
+[108]
+Underfull \hbox (badness 10000) detected at line 2170
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 2193
+[][][]
+ []
+
+[109]
+Underfull \hbox (badness 10000) detected at line 2216
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 2239
+[][][]
+ []
+
+[110]
+Underfull \hbox (badness 10000) detected at line 2262
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 2285
+[][][]
+ []
+
+) (./structhalf__float_1_1detail_1_1half__caster.tex [111])
+(./structhalf__float_1_1detail_1_1half__caster_3_01half_00_01half_00_01_r_01_4.
+tex)
+(./structhalf__float_1_1detail_1_1half__caster_3_01half_00_01_u_00_01_r_01_4.te
+x)
+(./structhalf__float_1_1detail_1_1half__caster_3_01_t_00_01half_00_01_r_01_4.te
+x) (./structhalf__float_1_1detail_1_1is__float.tex
+Package epstopdf Info: Source file: <structhalf__float_1_1detail_1_1is__float.e
+ps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 3898 bytes
+(epstopdf)             Output file: <structhalf__float_1_1detail_1_1is__float-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:44
+(epstopdf)                    size: 5511 bytes
+(epstopdf)             Command: <repstopdf --outfile=structhalf__float_1_1detai
+l_1_1is__float-eps-converted-to.pdf structhalf__float_1_1detail_1_1is__float.ep
+s>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+ <./structhalf__float_1_1detail_1_1is__float-eps-converted-to.pdf>
+<structhalf__float_1_1detail_1_1is__float-eps-converted-to.pdf, id=5434, 501.87
+5pt x 173.05653pt>
+File: structhalf__float_1_1detail_1_1is__float-eps-converted-to.pdf Graphic fil
+e (type pdf)
+<use structhalf__float_1_1detail_1_1is__float-eps-converted-to.pdf>
+Package pdftex.def Info: structhalf__float_1_1detail_1_1is__float-eps-converted
+-to.pdf  used on input line 15.
+(pdftex.def)             Requested size: 165.02959pt x 56.9055pt.
+ [112])
+(./structhalf__float_1_1detail_1_1is__float_3_01const_01_t_01_4.tex
+Package epstopdf Info: Source file: <structhalf__float_1_1detail_1_1is__float_3
+_01const_01_t_01_4.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 4228 bytes
+(epstopdf)             Output file: <structhalf__float_1_1detail_1_1is__float_3
+_01const_01_t_01_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:45
+(epstopdf)                    size: 5676 bytes
+(epstopdf)             Command: <repstopdf --outfile=structhalf__float_1_1detai
+l_1_1is__float_3_01const_01_t_01_4-eps-converted-to.pdf structhalf__float_1_1de
+tail_1_1is__float_3_01const_01_t_01_4.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+ <./structhalf__float_1_1detail_1_1is__float_3_01const_01_t_01_4-eps-converted-
+to.pdf>
+<structhalf__float_1_1detail_1_1is__float_3_01const_01_t_01_4-eps-converted-to.
+pdf, id=5453, 501.875pt x 136.87135pt>
+File: structhalf__float_1_1detail_1_1is__float_3_01const_01_t_01_4-eps-converte
+d-to.pdf Graphic file (type pdf)
+<use structhalf__float_1_1detail_1_1is__float_3_01const_01_t_01_4-eps-converted
+-to.pdf>
+Package pdftex.def Info: structhalf__float_1_1detail_1_1is__float_3_01const_01_
+t_01_4-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 312.9972pt x 85.35826pt.
+)
+(./structhalf__float_1_1detail_1_1is__float_3_01const_01volatile_01_t_01_4.tex
+Package epstopdf Info: Source file: <structhalf__float_1_1detail_1_1is__float_3
+_01const_01volatile_01_t_01_4.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 4246 bytes
+(epstopdf)             Output file: <structhalf__float_1_1detail_1_1is__float_3
+_01const_01volatile_01_t_01_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:45
+(epstopdf)                    size: 5804 bytes
+(epstopdf)             Command: <repstopdf --outfile=structhalf__float_1_1detai
+l_1_1is__float_3_01const_01volatile_01_t_01_4-eps-converted-to.pdf structhalf__
+float_1_1detail_1_1is__float_3_01const_01volatile_01_t_01_4.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+ <./structhalf__float_1_1detail_1_1is__float_3_01const_01volatile_01_t_01_4-eps
+-converted-to.pdf>
+<structhalf__float_1_1detail_1_1is__float_3_01const_01volatile_01_t_01_4-eps-co
+nverted-to.pdf, id=5461, 501.875pt x 113.63454pt>
+File: structhalf__float_1_1detail_1_1is__float_3_01const_01volatile_01_t_01_4-e
+ps-converted-to.pdf Graphic file (type pdf)
+<use structhalf__float_1_1detail_1_1is__float_3_01const_01volatile_01_t_01_4-ep
+s-converted-to.pdf>
+Package pdftex.def Info: structhalf__float_1_1detail_1_1is__float_3_01const_01v
+olatile_01_t_01_4-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 376.99498pt x 85.35826pt.
+ [113])
+(./structhalf__float_1_1detail_1_1is__float_3_01double_01_4.tex
+Package epstopdf Info: Source file: <structhalf__float_1_1detail_1_1is__float_3
+_01double_01_4.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 4066 bytes
+(epstopdf)             Output file: <structhalf__float_1_1detail_1_1is__float_3
+_01double_01_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:45
+(epstopdf)                    size: 5505 bytes
+(epstopdf)             Command: <repstopdf --outfile=structhalf__float_1_1detai
+l_1_1is__float_3_01double_01_4-eps-converted-to.pdf structhalf__float_1_1detail
+_1_1is__float_3_01double_01_4.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+ <./structhalf__float_1_1detail_1_1is__float_3_01double_01_4-eps-converted-to.p
+df>
+<structhalf__float_1_1detail_1_1is__float_3_01double_01_4-eps-converted-to.pdf,
+ id=5476, 501.875pt x 91.25092pt>
+File: structhalf__float_1_1detail_1_1is__float_3_01double_01_4-eps-converted-to
+.pdf Graphic file (type pdf)
+<use structhalf__float_1_1detail_1_1is__float_3_01double_01_4-eps-converted-to.
+pdf>
+Package pdftex.def Info: structhalf__float_1_1detail_1_1is__float_3_01double_01
+_4-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 312.97421pt x 56.9055pt.
+)
+(./structhalf__float_1_1detail_1_1is__float_3_01float_01_4.tex
+Package epstopdf Info: Source file: <structhalf__float_1_1detail_1_1is__float_3
+_01float_01_4.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 4064 bytes
+(epstopdf)             Output file: <structhalf__float_1_1detail_1_1is__float_3
+_01float_01_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:45
+(epstopdf)                    size: 5501 bytes
+(epstopdf)             Command: <repstopdf --outfile=structhalf__float_1_1detai
+l_1_1is__float_3_01float_01_4-eps-converted-to.pdf structhalf__float_1_1detail_
+1_1is__float_3_01float_01_4.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+ <./structhalf__float_1_1detail_1_1is__float_3_01float_01_4-eps-converted-to.pd
+f>
+<structhalf__float_1_1detail_1_1is__float_3_01float_01_4-eps-converted-to.pdf, 
+id=5484, 501.875pt x 91.25092pt>
+File: structhalf__float_1_1detail_1_1is__float_3_01float_01_4-eps-converted-to.
+pdf Graphic file (type pdf)
+<use structhalf__float_1_1detail_1_1is__float_3_01float_01_4-eps-converted-to.p
+df>
+Package pdftex.def Info: structhalf__float_1_1detail_1_1is__float_3_01float_01_
+4-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 312.97421pt x 56.9055pt.
+)
+(./structhalf__float_1_1detail_1_1is__float_3_01long_01double_01_4.tex
+Package epstopdf Info: Source file: <structhalf__float_1_1detail_1_1is__float_3
+_01long_01double_01_4.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 4076 bytes
+(epstopdf)             Output file: <structhalf__float_1_1detail_1_1is__float_3
+_01long_01double_01_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:45
+(epstopdf)                    size: 5848 bytes
+(epstopdf)             Command: <repstopdf --outfile=structhalf__float_1_1detai
+l_1_1is__float_3_01long_01double_01_4-eps-converted-to.pdf structhalf__float_1_
+1detail_1_1is__float_3_01long_01double_01_4.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+ <./structhalf__float_1_1detail_1_1is__float_3_01long_01double_01_4-eps-convert
+ed-to.pdf>
+<structhalf__float_1_1detail_1_1is__float_3_01long_01double_01_4-eps-converted-
+to.pdf, id=5492, 501.875pt x 81.93611pt>
+File: structhalf__float_1_1detail_1_1is__float_3_01long_01double_01_4-eps-conve
+rted-to.pdf Graphic file (type pdf)
+<use structhalf__float_1_1detail_1_1is__float_3_01long_01double_01_4-eps-conver
+ted-to.pdf>
+Package pdftex.def Info: structhalf__float_1_1detail_1_1is__float_3_01long_01do
+uble_01_4-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 348.56088pt x 56.9055pt.
+ [114]) (./structhalf__float_1_1detail_1_1is__float_3_01volatile_01_t_01_4.tex
+Package epstopdf Info: Source file: <structhalf__float_1_1detail_1_1is__float_3
+_01volatile_01_t_01_4.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 4234 bytes
+(epstopdf)             Output file: <structhalf__float_1_1detail_1_1is__float_3
+_01volatile_01_t_01_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:46
+(epstopdf)                    size: 5576 bytes
+(epstopdf)             Command: <repstopdf --outfile=structhalf__float_1_1detai
+l_1_1is__float_3_01volatile_01_t_01_4-eps-converted-to.pdf structhalf__float_1_
+1detail_1_1is__float_3_01volatile_01_t_01_4.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+ <./structhalf__float_1_1detail_1_1is__float_3_01volatile_01_t_01_4-eps-convert
+ed-to.pdf>
+<structhalf__float_1_1detail_1_1is__float_3_01volatile_01_t_01_4-eps-converted-
+to.pdf, id=5507, 501.875pt x 130.9191pt>
+File: structhalf__float_1_1detail_1_1is__float_3_01volatile_01_t_01_4-eps-conve
+rted-to.pdf Graphic file (type pdf)
+<use structhalf__float_1_1detail_1_1is__float_3_01volatile_01_t_01_4-eps-conver
+ted-to.pdf>
+Package pdftex.def Info: structhalf__float_1_1detail_1_1is__float_3_01volatile_
+01_t_01_4-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 327.22572pt x 85.35826pt.
+) (./classudit_1_1_light.tex [115] [116]
+Underfull \hbox (badness 10000) detected at line 81
+[][][]
+ []
+
+) (./class_mesh.tex
+Package epstopdf Info: Source file: <class_mesh.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 4006 bytes
+(epstopdf)             Output file: <class_mesh-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:46
+(epstopdf)                    size: 5998 bytes
+(epstopdf)             Command: <repstopdf --outfile=class_mesh-eps-converted-t
+o.pdf class_mesh.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+ <./class_mesh-eps-converted-to.pdf>
+<class_mesh-eps-converted-to.pdf, id=5542, 501.875pt x 346.1231pt>
+File: class_mesh-eps-converted-to.pdf Graphic file (type pdf)
+<use class_mesh-eps-converted-to.pdf>
+Package pdftex.def Info: class_mesh-eps-converted-to.pdf  used on input line 15
+.
+(pdftex.def)             Requested size: 123.76836pt x 85.35826pt.
+ [117] [118]
+Underfull \hbox (badness 10000) detected at line 146
+[][][]
+ []
+
+[119]
+Underfull \hbox (badness 10000) detected at line 161
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 174
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 196
+[][][]
+ []
+
+[120] [121]) (./classudit_1_1_mesh.tex [122]
+Package epstopdf Info: Source file: <classudit_1_1_mesh.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 4018 bytes
+(epstopdf)             Output file: <classudit_1_1_mesh-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:46
+(epstopdf)                    size: 5995 bytes
+(epstopdf)             Command: <repstopdf --outfile=classudit_1_1_mesh-eps-con
+verted-to.pdf classudit_1_1_mesh.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+ <./classudit_1_1_mesh-eps-converted-to.pdf>
+<classudit_1_1_mesh-eps-converted-to.pdf, id=5637, 501.875pt x 346.1231pt>
+File: classudit_1_1_mesh-eps-converted-to.pdf Graphic file (type pdf)
+<use classudit_1_1_mesh-eps-converted-to.pdf>
+Package pdftex.def Info: classudit_1_1_mesh-eps-converted-to.pdf  used on input
+ line 15.
+(pdftex.def)             Requested size: 123.76836pt x 85.35826pt.
+ [123] [124]
+Underfull \hbox (badness 10000) detected at line 146
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 161
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 174
+[][][]
+ []
+
+[125]
+Underfull \hbox (badness 10000) detected at line 196
+[][][]
+ []
+
+[126] [127]) (./classstd_1_1numeric__limits_3_01half__float_1_1half_01_4.tex
+[128]
+LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 54.
+LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 54.
+ [129]) (./structudit_1_1_window_1_1_open_g_l___context___settings.tex)
+(./struct_window_1_1_open_g_l___context___settings.tex) (./class_plane.tex
+[130]
+Package epstopdf Info: Source file: <class_plane.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 3772 bytes
+(epstopdf)             Output file: <class_plane-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:46
+(epstopdf)                    size: 4944 bytes
+(epstopdf)             Command: <repstopdf --outfile=class_plane-eps-converted-
+to.pdf class_plane.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+ <./class_plane-eps-converted-to.pdf>
+<class_plane-eps-converted-to.pdf, id=5776, 501.875pt x 521.42802pt>
+File: class_plane-eps-converted-to.pdf Graphic file (type pdf)
+<use class_plane-eps-converted-to.pdf>
+Package pdftex.def Info: class_plane-eps-converted-to.pdf  used on input line 1
+5.
+(pdftex.def)             Requested size: 54.76991pt x 56.9055pt.
+ [131] [132] [133])
+(./classudit_1_1_plane.tex
+Package epstopdf Info: Source file: <classudit_1_1_plane.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 3784 bytes
+(epstopdf)             Output file: <classudit_1_1_plane-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:47
+(epstopdf)                    size: 4951 bytes
+(epstopdf)             Command: <repstopdf --outfile=classudit_1_1_plane-eps-co
+nverted-to.pdf classudit_1_1_plane.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+ <./classudit_1_1_plane-eps-converted-to.pdf>
+<classudit_1_1_plane-eps-converted-to.pdf, id=5840, 501.875pt x 514.74309pt>
+File: classudit_1_1_plane-eps-converted-to.pdf Graphic file (type pdf)
+<use classudit_1_1_plane-eps-converted-to.pdf>
+Package pdftex.def Info: classudit_1_1_plane-eps-converted-to.pdf  used on inpu
+t line 15.
+(pdftex.def)             Requested size: 55.4821pt x 56.9055pt.
+
+[134] [135]) (./class_scene.tex [136] [137] [138]) (./classudit_1_1_scene.tex
+[139] [140]) (./class_shader.tex [141]
+Underfull \hbox (badness 1043) in paragraph at lines 46--47
+\T1/phv/m/n/10 std[]::string &vertex[]_[]shader="", const std[]::string &fragme
+nt[]_[]shader="", const std[]::vector$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 std[]:
+:string $\OML/cmm/m/it/10 >$
+ []
+
+[142] [143]
+Underfull \hbox (badness 10000) detected at line 119
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 132
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 145
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 158
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 171
+[][][]
+ []
+
+[144]
+Underfull \hbox (badness 10000) detected at line 184
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 197
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 223
+[][][]
+ []
+
+[145] [146]) (./classudit_1_1_shader.tex [147]
+Underfull \hbox (badness 1043) in paragraph at lines 46--47
+\T1/phv/m/n/10 std[]::string &vertex[]_[]shader="", const std[]::string &fragme
+nt[]_[]shader="", const std[]::vector$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 std[]:
+:string $\OML/cmm/m/it/10 >$
+ []
+
+[148] [149]
+Underfull \hbox (badness 10000) detected at line 119
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 132
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 145
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 158
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 171
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 184
+[][][]
+ []
+
+[150]
+Underfull \hbox (badness 10000) detected at line 197
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 223
+[][][]
+ []
+
+[151]) (./class_skybox.tex
+Package epstopdf Info: Source file: <class_skybox.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 3885 bytes
+(epstopdf)             Output file: <class_skybox-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-14 22:50:47
+(epstopdf)                    size: 5481 bytes
+(epstopdf)             Command: <repstopdf --outfile=class_skybox-eps-converted
+-to.pdf class_skybox.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+ <./class_skybox-eps-converted-to.pdf>
+<class_skybox-eps-converted-to.pdf, id=6112, 501.875pt x 782.14204pt>
+File: class_skybox-eps-converted-to.pdf Graphic file (type pdf)
+<use class_skybox-eps-converted-to.pdf>
+Package pdftex.def Info: class_skybox-eps-converted-to.pdf  used on input line 
+15.
+(pdftex.def)             Requested size: 54.76991pt x 85.35826pt.
+ [152] [153]
+[154]
+Underfull \hbox (badness 10000) detected at line 145
+[][][]
+ []
+
+) (./classudit_1_1_skybox.tex
+Package epstopdf Info: Source file: <classudit_1_1_skybox.eps>
+(epstopdf)                    date: 2025-01-14 20:33:01
+(epstopdf)                    size: 3897 bytes
+(epstopdf)             Output file: <classudit_1_1_skybox-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2025-01-14 22:50:47
+(epstopdf)                    size: 5473 bytes
+(epstopdf)             Command: <repstopdf --outfile=classudit_1_1_skybox-eps-c
+onverted-to.pdf classudit_1_1_skybox.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+ <./classudit_1_1_skybox-eps-converted-to.pdf>
+<classudit_1_1_skybox-eps-converted-to.pdf, id=6180, 501.875pt x 692.2462pt>
+File: classudit_1_1_skybox-eps-converted-to.pdf Graphic file (type pdf)
+<use classudit_1_1_skybox-eps-converted-to.pdf>
+Package pdftex.def Info: classudit_1_1_skybox-eps-converted-to.pdf  used on inp
+ut line 15.
+(pdftex.def)             Requested size: 61.88417pt x 85.35826pt.
+
+[155] [156]
+Underfull \hbox (badness 10000) detected at line 145
+[][][]
+ []
+
+[157]) (./class_texture.tex [158]
+Underfull \hbox (badness 10000) detected at line 94
+[][][]
+ []
+
+[159]) (./classudit_1_1_texture.tex [160]
+Underfull \hbox (badness 10000) detected at line 94
+[][][]
+ []
+
+[161]) (./classudit_1_1_window.tex
+Underfull \hbox (badness 4072) in paragraph at lines 20--22
+[]\T1/phv/b/n/10 Window \T1/phv/m/n/10 (const std[]::string &ti-tle, int left[]
+_[]x, int top[]_[]y, un-signed width, un-signed height, const
+ []
+
+[162]) (./class_window.tex [163]
+Underfull \hbox (badness 4072) in paragraph at lines 20--22
+[]\T1/phv/b/n/10 Window \T1/phv/m/n/10 (const std[]::string &ti-tle, int left[]
+_[]x, int top[]_[]y, un-signed width, un-signed height, const
+ []
+
+) [164]
+Chapter 7.
+(./_camera_8hpp_source.tex) (./_cube_8hpp_source.tex [165
+
+])
+(./_event_handler_8hpp_source.tex) (./half_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--13
+
+ []
+
+[166] [167]
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+[]\T1/phv/m/n/10 #define \T1/phv/b/n/10 FE[]_[][]ALL[]_[][]EXCEPT \T1/phv/m/n/1
+0 (FE[]_[][]INVALID$\OMS/cmsy/m/n/10 j$\T1/phv/m/n/10 FE[]_[][]DIVBYZERO$\OMS/c
+msy/m/n/10 j$\T1/phv/m/n/10 FE[]_[][]OVERFLOW$\OMS/cmsy/m/n/10 j$\T1/phv/m/n/10
+ FE[]_[][]UNDERFLOW$\OMS/cmsy/m/n/10 j$\T1/phv/m/n/10 FE[]_[][]
+ []
+
+[168] [169]
+pdfTeX warning (ext4): destination with the same identifier (name{namespacehalf
+__float_compop}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.292 \Hypertarget{namespacehalf__float_compop}
+                                               %
+pdfTeX warning (ext4): destination with the same identifier (name{namespacehalf
+__float_arithmetics}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.310 ...rtarget{namespacehalf__float_arithmetics}
+                                                  %
+pdfTeX warning (ext4): destination with the same identifier (name{namespacehalf
+__float_streaming}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.328 \Hypertarget{namespacehalf__float_streaming}
+                                                  %
+pdfTeX warning (ext4): destination with the same identifier (name{namespacehalf
+__float_basic}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.338 \Hypertarget{namespacehalf__float_basic}
+                                              % [170]
+pdfTeX warning (ext4): destination with the same identifier (name{namespacehalf
+__float_exponential}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.364 ...rtarget{namespacehalf__float_exponential}
+                                                  %
+pdfTeX warning (ext4): destination with the same identifier (name{namespacehalf
+__float_power}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.384 \Hypertarget{namespacehalf__float_power}
+                                              %
+pdfTeX warning (ext4): destination with the same identifier (name{namespacehalf
+__float_trigonometric}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.402 ...arget{namespacehalf__float_trigonometric}
+                                                  %
+pdfTeX warning (ext4): destination with the same identifier (name{namespacehalf
+__float_hyperbolic}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.424 ...ertarget{namespacehalf__float_hyperbolic}
+                                                  %
+pdfTeX warning (ext4): destination with the same identifier (name{namespacehalf
+__float_special}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.442 \Hypertarget{namespacehalf__float_special}
+                                                %
+pdfTeX warning (ext4): destination with the same identifier (name{namespacehalf
+__float_rounding}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.456 \Hypertarget{namespacehalf__float_rounding}
+                                                 %
+pdfTeX warning (ext4): destination with the same identifier (name{namespacehalf
+__float_float}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.478 \Hypertarget{namespacehalf__float_float}
+                                              % [171]
+pdfTeX warning (ext4): destination with the same identifier (name{namespacehalf
+__float_classification}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.504 ...rget{namespacehalf__float_classification}
+                                                  %
+pdfTeX warning (ext4): destination with the same identifier (name{namespacehalf
+__float_compfunc}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.522 \Hypertarget{namespacehalf__float_compfunc}
+                                                 %
+pdfTeX warning (ext4): destination with the same identifier (name{namespacehalf
+__float_casting}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.540 \Hypertarget{namespacehalf__float_casting}
+                                                %
+pdfTeX warning (ext4): destination with the same identifier (name{namespacehalf
+__float_errors}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.550 \Hypertarget{namespacehalf__float_errors}
+                                               % [172] [173]
+Underfull \hbox (badness 10000) detected at line 666
+[][][]
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 676--677
+[]\T1/phv/m/n/10 Area func-tion and post-pro-cess-ing. This com-putes the value
+ di-rectly in Q2.[]30 us-ing the rep-re-sen-ta-tion
+ []
+
+[174]
+Underfull \hbox (badness 10000) detected at line 688
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 713
+[][][]
+ []
+
+[175]
+Underfull \hbox (badness 10000) detected at line 731
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 745
+[][][]
+ []
+
+[176]
+Underfull \hbox (badness 10000) detected at line 831
+[][][]
+ []
+
+[177]
+Underfull \hbox (badness 10000) detected at line 879
+[][][]
+ []
+
+[178]
+Underfull \hbox (badness 10000) detected at line 901
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 919
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 935
+[][][]
+ []
+
+[179] [180]
+Underfull \hbox (badness 10000) detected at line 963
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1006
+[][][]
+ []
+
+[181]
+Underfull \hbox (badness 10000) detected at line 1037
+[][][]
+ []
+
+[182]
+Underfull \hbox (badness 10000) detected at line 1066
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1095
+[][][]
+ []
+
+[183]
+Underfull \hbox (badness 10000) detected at line 1126
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1157
+[][][]
+ []
+
+[184] [185]
+Underfull \hbox (badness 10000) detected at line 1186
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1200
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1214
+[][][]
+ []
+
+[186]
+Underfull \hbox (badness 10000) detected at line 1234
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1260
+[][][]
+ []
+
+[187]
+Underfull \hbox (badness 10000) detected at line 1285
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1307
+[][][]
+ []
+
+[188]
+Underfull \hbox (badness 10000) detected at line 1338
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1369
+[][][]
+ []
+
+[189]
+Underfull \hbox (badness 10000) detected at line 1403
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1431
+[][][]
+ []
+
+[190]
+Underfull \hbox (badness 10000) detected at line 1466
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1488
+[][][]
+ []
+
+[191]
+Underfull \hbox (badness 10000) detected at line 1504
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1524
+[][][]
+ []
+
+[192]
+Underfull \hbox (badness 10000) detected at line 1543
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1587
+[][][]
+ []
+
+[193]
+Underfull \hbox (badness 10000) detected at line 1612
+[][][]
+ []
+
+[194]
+Underfull \hbox (badness 10000) detected at line 1649
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1670
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1693
+[][][]
+ []
+
+[195]
+Underfull \hbox (badness 10000) detected at line 1714
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1736
+[][][]
+ []
+
+[196]
+Underfull \hbox (badness 10000) detected at line 1762
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1791
+[][][]
+ []
+
+) (./half_8hpp_source.tex [197] [198] [199] [200] [201] [202] [203] [204]
+[205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215] [216]
+[217] [218] [219] [220] [221] [222] [223]
+Overfull \hbox (141.15546pt too wide) in paragraph at lines 1911--1911
+[]\T1/pcr/m/n/7 ([](x.data_)+[](y.data_)));  
+ []
+
+[224]
+Overfull \hbox (141.15546pt too wide) in paragraph at lines 1954--1954
+[]\T1/pcr/m/n/7 ([](x.data_)-[](y.data_)));  
+ []
+
+
+Overfull \hbox (141.15546pt too wide) in paragraph at lines 1963--1963
+[]\T1/pcr/m/n/7 ([](x.data_)*[](y.data_)));  
+ []
+
+
+Overfull \hbox (141.15546pt too wide) in paragraph at lines 1988--1988
+[]\T1/pcr/m/n/7 ([](x.data_)/[](y.data_)));  
+ []
+
+[225] [226] [227] [228] [229] [230]
+Overfull \hbox (86.5555pt too wide) in paragraph at lines 2396--2396
+[]\T1/pcr/m/n/7 (detail::internal_t(1)/std::sqrt([](arg.data_))));  
+ []
+
+[231] [232] [233]
+Overfull \hbox (27.75554pt too wide) in paragraph at lines 2658--2658
+[]\T1/pcr/m/n/7 ((sc.first^-[]static_cast<[][][]>[](sign))+sign));  
+ []
+
+[234] [235] [236] [237] [238] [239] [240] [241]) (./_light_8hpp_source.tex)
+(./_mesh_8hpp_source.tex [242] [243]) (./_plane_8hpp_source.tex)
+(./_scene_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--13
+
+ []
+
+[244]) (./_scene_8hpp_source.tex) (./_shader_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--11
+
+ []
+
+[245]) (./_shader_8hpp_source.tex [246] [247]) (./_skybox_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--11
+
+ []
+
+) (./_skybox_8hpp_source.tex [248]) (./_texture_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+[249]) (./_texture_8hpp_source.tex) (./_window_8hpp_source.tex [250]) [251]
+[252
+
+] (./refman.ind
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 22.39185pt on input line 1.
+ [253
+
+
+] [254]
+Overfull \hbox (17.00162pt too wide) in paragraph at lines 271--273
+[]| \T1/phv/m/n/10 HALF_ERRHANDLING_UNDERFLOW_TO_INEXACT,
+ []
+
+[255] [256] [257] [258] [259] [260] [261]) (./refman.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `refman.out' has not changed.
+(rerunfilecheck)             Checksum: BC3464FD8A0C22BB6926AC9C93E9CF6E;107128.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 22638 strings out of 474116
+ 434868 string characters out of 5743682
+ 1967187 words of memory out of 5000000
+ 42467 multiletter control sequences out of 15000+600000
+ 620643 words of font info for 125 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 101i,16n,117p,1214b,744s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/l
+ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
+al/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texli
+ve/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2024/
+texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2024/texmf-d
+ist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fon
+ts/type1/urw/helvetic/uhvb8ac.pfb></usr/local/texlive/2024/texmf-dist/fonts/typ
+e1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/
+helvetic/uhvro8a.pfb>
+Output written on refman.pdf (277 pages, 956458 bytes).
+PDF statistics:
+ 11624 PDF objects out of 12825 (max. 8388607)
+ 11102 compressed objects within 112 object streams
+ 2063 named destinations out of 2073 (max. 500000)
+ 4336 words of extra memory for PDF output out of 10000 (max. 10000000)
+

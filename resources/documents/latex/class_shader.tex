@@ -1,0 +1,286 @@
+\doxysection{Shader Class Reference}
+\hypertarget{class_shader}{}\label{class_shader}\index{Shader@{Shader}}
+
+
+Representa un shader program en Open\+GL.  
+
+
+
+
+{\ttfamily \#include $<$Shader.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shader_a504c7a85d3e778b654a61c24f02b7d30}{Shader}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shader_ae352ce6f486cf4353e49324373bab633}{Shader}} (Shader\+Type type, const std\+::string \&vertex\+\_\+source, const std\+::string \&fragment\+\_\+source, const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Constructor para crear un shader con tipos y fuentes especificadas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shader_a20e709cf752e749e9fa5231c24cdbc83}{\texorpdfstring{$\sim$}{\string~}\+Shader}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+GLuint \mbox{\hyperlink{class_shader_a0fee7d07fad3aedb60ae8e5f81082ffe}{compile\+\_\+shaders}} (const char \texorpdfstring{$\ast$}{*}vertex\+\_\+shader\+\_\+code, const char \texorpdfstring{$\ast$}{*}fragment\+\_\+shader\+\_\+code)
+\begin{DoxyCompactList}\small\item\em Compila los shaders. \end{DoxyCompactList}\item 
+GLint \mbox{\hyperlink{class_shader_ac6b5ee7b9ad01a0c5d9c6f0ddeeda7a7}{get\+\_\+model\+\_\+view\+\_\+matrix\+\_\+id}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el identificador de la matriz de modelo-\/vista. \end{DoxyCompactList}\item 
+GLint \mbox{\hyperlink{class_shader_a575d59a841cf007c9d031b4c357ad75e}{get\+\_\+projection\+\_\+matrix\+\_\+id}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el identificador de la matriz de proyección. \end{DoxyCompactList}\item 
+GLint \mbox{\hyperlink{class_shader_a733f13b921cb46e00a19a49e50e5a94b}{get\+\_\+normal\+\_\+matrix\+\_\+id}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el identificador de la matriz de normales. \end{DoxyCompactList}\item 
+GLuint \mbox{\hyperlink{class_shader_a01a80991b1ef9215ca0b3537c020d904}{get\+\_\+program\+\_\+id}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el identificador del programa de shader. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_a7df9e7d645135fdbb463eac322807a32}{set\+\_\+texture}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&texture)
+\begin{DoxyCompactList}\small\item\em Establece una textura para el shader. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_ab92a6c1c845d65e96cf5212f2a1c5a64}{use}} () const
+\begin{DoxyCompactList}\small\item\em Activa y usa el programa de shader. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_ab691074491374b383b99f64b51b28f77}{set\+\_\+texture\+\_\+scale}} (float scale)
+\begin{DoxyCompactList}\small\item\em Establece la escala de las texturas asociadas al shader. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_shader_a61067b60121d37c3bdca41a893e7df6c}{has\+\_\+textures}} ()
+\begin{DoxyCompactList}\small\item\em Verifica si el shader tiene texturas asociadas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_a8cfbb5ddea1cb5b25e28befb9f427540}{set\+\_\+name}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Establece el nombre del shader. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_shader_aa9430efabd927430efeb7ed9f808a0fb}{get\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el nombre del shader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classudit_1_1_shader}{Shader}} $>$ \mbox{\hyperlink{class_shader_aaff09e57ec963c791a284d7c1904366a}{make\+\_\+shader}} (\mbox{\hyperlink{_shader_8hpp_a9bb9f121559f5679c612512875688d17}{udit\+::\+Shader\+Type}} type=\mbox{\hyperlink{_shader_8hpp_a9bb9f121559f5679c612512875688d17a5b39c8b553c821e7cddc6da64b5bd2ee}{udit\+::\+Shader\+Type\+::\+DEFAULT}}, const std\+::string \&vertex\+\_\+shader="{}"{}, const std\+::string \&fragment\+\_\+shader="{}"{}, const std\+::vector$<$ std\+::string $>$ \&texture\+\_\+paths=\{"{}"{}\}, const std\+::string \&name="{}"{})
+\begin{DoxyCompactList}\small\item\em Crea un shader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa un shader program en Open\+GL. 
+
+La clase {\ttfamily \doxylink{class_shader}{Shader}} gestiona la creación y uso de programas de sombreado en Open\+GL. Permite compilar los shaders, vincularlos en un programa y usarlos para renderizar objetos en la escena. También proporciona funciones para gestionar texturas y matrices de transformación, como la matriz de modelo-\/vista, proyección y normales. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shader_a504c7a85d3e778b654a61c24f02b7d30}\index{Shader@{Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_shader_a504c7a85d3e778b654a61c24f02b7d30} 
+udit\+::\+Shader\+::\+Shader (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+Crea un objeto {\ttfamily \doxylink{class_shader}{Shader}} sin especificar un tipo o fuentes de shader. Este constructor generalmente se usa para crear shaders más tarde con la función {\ttfamily make\+\_\+shader}. \Hypertarget{class_shader_ae352ce6f486cf4353e49324373bab633}\index{Shader@{Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_shader_ae352ce6f486cf4353e49324373bab633} 
+udit\+::\+Shader\+::\+Shader (\begin{DoxyParamCaption}\item[{Shader\+Type}]{type}{, }\item[{const std\+::string \&}]{vertex\+\_\+source}{, }\item[{const std\+::string \&}]{fragment\+\_\+source}{, }\item[{const std\+::string \&}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Constructor para crear un shader con tipos y fuentes especificadas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Tipo de shader (e.\+g., SKYBOX, GEOMETRY). \\
+\hline
+{\em vertex\+\_\+source} & Código fuente para el vertex shader. \\
+\hline
+{\em fragment\+\_\+source} & Código fuente para el fragment shader. \\
+\hline
+{\em name} & Nombre del shader. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shader_a20e709cf752e749e9fa5231c24cdbc83}\index{Shader@{Shader}!````~Shader@{\texorpdfstring{$\sim$}{\string~}Shader}}
+\index{````~Shader@{\texorpdfstring{$\sim$}{\string~}Shader}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Shader()}{\string~Shader()}}
+{\footnotesize\ttfamily \label{class_shader_a20e709cf752e749e9fa5231c24cdbc83} 
+udit\+::\+Shader\+::\texorpdfstring{$\sim$}{\string~}\+Shader (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Libera los recursos asociados al shader. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shader_a0fee7d07fad3aedb60ae8e5f81082ffe}\index{Shader@{Shader}!compile\_shaders@{compile\_shaders}}
+\index{compile\_shaders@{compile\_shaders}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{compile\_shaders()}{compile\_shaders()}}
+{\footnotesize\ttfamily \label{class_shader_a0fee7d07fad3aedb60ae8e5f81082ffe} 
+GLuint udit\+::\+Shader\+::compile\+\_\+shaders (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{vertex\+\_\+shader\+\_\+code}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{fragment\+\_\+shader\+\_\+code}{}\end{DoxyParamCaption})}
+
+
+
+Compila los shaders. 
+
+Compilador de los shaders construidos.
+
+Compila un vertex shader y un fragment shader usando el código fuente proporcionado. 
+\begin{DoxyParams}{Parameters}
+{\em vertex\+\_\+shader\+\_\+code} & Código fuente del vertex shader. \\
+\hline
+{\em fragment\+\_\+shader\+\_\+code} & Código fuente del fragment shader. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Identificador del programa de shader compilado. 
+\end{DoxyReturn}
+\Hypertarget{class_shader_ac6b5ee7b9ad01a0c5d9c6f0ddeeda7a7}\index{Shader@{Shader}!get\_model\_view\_matrix\_id@{get\_model\_view\_matrix\_id}}
+\index{get\_model\_view\_matrix\_id@{get\_model\_view\_matrix\_id}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{get\_model\_view\_matrix\_id()}{get\_model\_view\_matrix\_id()}}
+{\footnotesize\ttfamily \label{class_shader_ac6b5ee7b9ad01a0c5d9c6f0ddeeda7a7} 
+GLint udit\+::\+Shader\+::get\+\_\+model\+\_\+view\+\_\+matrix\+\_\+id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el identificador de la matriz de modelo-\/vista. 
+
+\begin{DoxyReturn}{Returns}
+Identificador de la matriz de modelo-\/vista. 
+\end{DoxyReturn}
+\Hypertarget{class_shader_aa9430efabd927430efeb7ed9f808a0fb}\index{Shader@{Shader}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily \label{class_shader_aa9430efabd927430efeb7ed9f808a0fb} 
+std\+::string udit\+::\+Shader\+::get\+\_\+name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el nombre del shader. 
+
+\begin{DoxyReturn}{Returns}
+Nombre del shader. 
+\end{DoxyReturn}
+\Hypertarget{class_shader_a733f13b921cb46e00a19a49e50e5a94b}\index{Shader@{Shader}!get\_normal\_matrix\_id@{get\_normal\_matrix\_id}}
+\index{get\_normal\_matrix\_id@{get\_normal\_matrix\_id}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{get\_normal\_matrix\_id()}{get\_normal\_matrix\_id()}}
+{\footnotesize\ttfamily \label{class_shader_a733f13b921cb46e00a19a49e50e5a94b} 
+GLint udit\+::\+Shader\+::get\+\_\+normal\+\_\+matrix\+\_\+id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el identificador de la matriz de normales. 
+
+\begin{DoxyReturn}{Returns}
+Identificador de la matriz de normales. 
+\end{DoxyReturn}
+\Hypertarget{class_shader_a01a80991b1ef9215ca0b3537c020d904}\index{Shader@{Shader}!get\_program\_id@{get\_program\_id}}
+\index{get\_program\_id@{get\_program\_id}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{get\_program\_id()}{get\_program\_id()}}
+{\footnotesize\ttfamily \label{class_shader_a01a80991b1ef9215ca0b3537c020d904} 
+GLuint udit\+::\+Shader\+::get\+\_\+program\+\_\+id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el identificador del programa de shader. 
+
+\begin{DoxyReturn}{Returns}
+Identificador del programa de shader. 
+\end{DoxyReturn}
+\Hypertarget{class_shader_a575d59a841cf007c9d031b4c357ad75e}\index{Shader@{Shader}!get\_projection\_matrix\_id@{get\_projection\_matrix\_id}}
+\index{get\_projection\_matrix\_id@{get\_projection\_matrix\_id}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{get\_projection\_matrix\_id()}{get\_projection\_matrix\_id()}}
+{\footnotesize\ttfamily \label{class_shader_a575d59a841cf007c9d031b4c357ad75e} 
+GLint udit\+::\+Shader\+::get\+\_\+projection\+\_\+matrix\+\_\+id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el identificador de la matriz de proyección. 
+
+\begin{DoxyReturn}{Returns}
+Identificador de la matriz de proyección. 
+\end{DoxyReturn}
+\Hypertarget{class_shader_a61067b60121d37c3bdca41a893e7df6c}\index{Shader@{Shader}!has\_textures@{has\_textures}}
+\index{has\_textures@{has\_textures}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{has\_textures()}{has\_textures()}}
+{\footnotesize\ttfamily \label{class_shader_a61067b60121d37c3bdca41a893e7df6c} 
+bool udit\+::\+Shader\+::has\+\_\+textures (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Verifica si el shader tiene texturas asociadas. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si el shader tiene texturas asociadas, {\ttfamily false} en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{class_shader_aaff09e57ec963c791a284d7c1904366a}\index{Shader@{Shader}!make\_shader@{make\_shader}}
+\index{make\_shader@{make\_shader}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{make\_shader()}{make\_shader()}}
+{\footnotesize\ttfamily \label{class_shader_aaff09e57ec963c791a284d7c1904366a} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classudit_1_1_shader}{Shader}} $>$ udit\+::\+Shader\+::make\+\_\+shader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_shader_8hpp_a9bb9f121559f5679c612512875688d17}{udit\+::\+Shader\+Type}}}]{type}{ = {\ttfamily \mbox{\hyperlink{_shader_8hpp_a9bb9f121559f5679c612512875688d17a5b39c8b553c821e7cddc6da64b5bd2ee}{udit\+::\+Shader\+Type\+::\+DEFAULT}}}, }\item[{const std\+::string \&}]{vertex\+\_\+shader}{ = {\ttfamily "{}"{}}, }\item[{const std\+::string \&}]{fragment\+\_\+shader}{ = {\ttfamily "{}"{}}, }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{texture\+\_\+paths}{ = {\ttfamily \{"{}"{}\}}, }\item[{const std\+::string \&}]{name}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crea un shader. 
+
+Función estática para crear un shader con un tipo específico y fuentes de shader opcionales. 
+\begin{DoxyParams}{Parameters}
+{\em type} & Tipo de shader. \\
+\hline
+{\em vertex\+\_\+shader} & Código fuente del vertex shader. \\
+\hline
+{\em fragment\+\_\+shader} & Código fuente del fragment shader. \\
+\hline
+{\em texture\+\_\+paths} & Rutas a las texturas asociadas. \\
+\hline
+{\em name} & Nombre del shader. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Objeto {\ttfamily \doxylink{class_shader}{Shader}} creado. 
+\end{DoxyReturn}
+\Hypertarget{class_shader_a8cfbb5ddea1cb5b25e28befb9f427540}\index{Shader@{Shader}!set\_name@{set\_name}}
+\index{set\_name@{set\_name}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{set\_name()}{set\_name()}}
+{\footnotesize\ttfamily \label{class_shader_a8cfbb5ddea1cb5b25e28befb9f427540} 
+void udit\+::\+Shader\+::set\+\_\+name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece el nombre del shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Nombre del shader. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shader_a7df9e7d645135fdbb463eac322807a32}\index{Shader@{Shader}!set\_texture@{set\_texture}}
+\index{set\_texture@{set\_texture}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{set\_texture()}{set\_texture()}}
+{\footnotesize\ttfamily \label{class_shader_a7df9e7d645135fdbb463eac322807a32} 
+void udit\+::\+Shader\+::set\+\_\+texture (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&}]{texture}{}\end{DoxyParamCaption})}
+
+
+
+Establece una textura para el shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & Puntero a la textura que será asignada al shader. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shader_ab691074491374b383b99f64b51b28f77}\index{Shader@{Shader}!set\_texture\_scale@{set\_texture\_scale}}
+\index{set\_texture\_scale@{set\_texture\_scale}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{set\_texture\_scale()}{set\_texture\_scale()}}
+{\footnotesize\ttfamily \label{class_shader_ab691074491374b383b99f64b51b28f77} 
+void udit\+::\+Shader\+::set\+\_\+texture\+\_\+scale (\begin{DoxyParamCaption}\item[{float}]{scale}{}\end{DoxyParamCaption})}
+
+
+
+Establece la escala de las texturas asociadas al shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & Factor de escala para las texturas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_shader_ab92a6c1c845d65e96cf5212f2a1c5a64}\index{Shader@{Shader}!use@{use}}
+\index{use@{use}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily \label{class_shader_ab92a6c1c845d65e96cf5212f2a1c5a64} 
+void udit\+::\+Shader\+::use (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Activa y usa el programa de shader. 
+
+Hace que el programa de shader sea el activo para su uso en la siguiente operación de renderizado. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alonsoggdev/\+UDIT/\+Asignaturas/\+Programacion\+\_\+\+Grafica/\+GL\+\_\+\+Scene/\+GL\+\_\+\+Scene/\mbox{\hyperlink{_shader_8hpp}{Shader.\+hpp}}\item 
+/\+Users/alonsoggdev/\+UDIT/\+Asignaturas/\+Programacion\+\_\+\+Grafica/\+GL\+\_\+\+Scene/\+GL\+\_\+\+Scene/Shader.\+cpp\end{DoxyCompactItemize}

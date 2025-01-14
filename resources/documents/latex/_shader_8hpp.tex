@@ -1,0 +1,67 @@
+\doxysection{/\+Users/alonsoggdev/\+UDIT/\+Asignaturas/\+Programacion\+\_\+\+Grafica/\+GL\+\_\+\+Scene/\+GL\+\_\+\+Scene/\+Shader.hpp File Reference}
+\hypertarget{_shader_8hpp}{}\label{_shader_8hpp}\index{/Users/alonsoggdev/UDIT/Asignaturas/Programacion\_Grafica/GL\_Scene/GL\_Scene/Shader.hpp@{/Users/alonsoggdev/UDIT/Asignaturas/Programacion\_Grafica/GL\_Scene/GL\_Scene/Shader.hpp}}
+
+
+Clase que representa un shader en Open\+GL, gestionando la compilación y uso de programas de sombreado.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}glad.\+h"{}}\newline
+{\ttfamily \#include "{}Texture.\+hpp"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classudit_1_1_shader}{udit\+::\+Shader}}
+\begin{DoxyCompactList}\small\item\em Representa un shader program en Open\+GL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{_shader_8hpp_a9bb9f121559f5679c612512875688d17}{udit\+::\+Shader\+Type}} \{ \newline
+\mbox{\hyperlink{_shader_8hpp_a9bb9f121559f5679c612512875688d17ae3d53ff832d50102618d4fd24ca85a85}{SKYBOX}}
+, \mbox{\hyperlink{_shader_8hpp_a9bb9f121559f5679c612512875688d17ab22957ad8078e8d73de61aef53d13a74}{GEOMETRY}}
+, \mbox{\hyperlink{_shader_8hpp_a9bb9f121559f5679c612512875688d17a12eb352270009dc59b1d195ef5c30d0a}{SINGLE\+\_\+\+TEXTURE}}
+, \mbox{\hyperlink{_shader_8hpp_a9bb9f121559f5679c612512875688d17abdfa171c5b4d44824eec5798556eef32}{TERRAIN}}
+, \newline
+\mbox{\hyperlink{_shader_8hpp_a9bb9f121559f5679c612512875688d17a5b39c8b553c821e7cddc6da64b5bd2ee}{DEFAULT}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeración que define los diferentes tipos de shaders. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que representa un shader en Open\+GL, gestionando la compilación y uso de programas de sombreado. 
+
+La clase {\ttfamily \doxylink{class_shader}{Shader}} gestiona la creación, compilación y uso de shaders en Open\+GL, incluyendo tanto el vertex shader como el fragment shader. Además, permite la gestión de texturas asociadas al shader y la configuración de matrices para la proyección, vista y normales en el contexto de la cámara. 
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_shader_8hpp_a9bb9f121559f5679c612512875688d17}\index{Shader.hpp@{Shader.hpp}!ShaderType@{ShaderType}}
+\index{ShaderType@{ShaderType}!Shader.hpp@{Shader.hpp}}
+\doxysubsubsection{\texorpdfstring{ShaderType}{ShaderType}}
+{\footnotesize\ttfamily \label{_shader_8hpp_a9bb9f121559f5679c612512875688d17} 
+enum class \mbox{\hyperlink{_shader_8hpp_a9bb9f121559f5679c612512875688d17}{udit\+::\+Shader\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumeración que define los diferentes tipos de shaders. 
+
+Define los tipos de shaders que la clase {\ttfamily \doxylink{class_shader}{Shader}} puede usar para diferentes efectos visuales, como el skybox, geometría, textura única, terreno y por defecto. \begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SKYBOX@{SKYBOX}!Shader.hpp@{Shader.hpp}}\index{Shader.hpp@{Shader.hpp}!SKYBOX@{SKYBOX}}}\Hypertarget{_shader_8hpp_a9bb9f121559f5679c612512875688d17ae3d53ff832d50102618d4fd24ca85a85}\label{_shader_8hpp_a9bb9f121559f5679c612512875688d17ae3d53ff832d50102618d4fd24ca85a85} 
+SKYBOX&\doxylink{classudit_1_1_shader}{Shader} para el skybox. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GEOMETRY@{GEOMETRY}!Shader.hpp@{Shader.hpp}}\index{Shader.hpp@{Shader.hpp}!GEOMETRY@{GEOMETRY}}}\Hypertarget{_shader_8hpp_a9bb9f121559f5679c612512875688d17ab22957ad8078e8d73de61aef53d13a74}\label{_shader_8hpp_a9bb9f121559f5679c612512875688d17ab22957ad8078e8d73de61aef53d13a74} 
+GEOMETRY&\doxylink{classudit_1_1_shader}{Shader} para la geometría. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SINGLE\_TEXTURE@{SINGLE\_TEXTURE}!Shader.hpp@{Shader.hpp}}\index{Shader.hpp@{Shader.hpp}!SINGLE\_TEXTURE@{SINGLE\_TEXTURE}}}\Hypertarget{_shader_8hpp_a9bb9f121559f5679c612512875688d17a12eb352270009dc59b1d195ef5c30d0a}\label{_shader_8hpp_a9bb9f121559f5679c612512875688d17a12eb352270009dc59b1d195ef5c30d0a} 
+SINGLE\+\_\+\+TEXTURE&\doxylink{classudit_1_1_shader}{Shader} para una textura única. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TERRAIN@{TERRAIN}!Shader.hpp@{Shader.hpp}}\index{Shader.hpp@{Shader.hpp}!TERRAIN@{TERRAIN}}}\Hypertarget{_shader_8hpp_a9bb9f121559f5679c612512875688d17abdfa171c5b4d44824eec5798556eef32}\label{_shader_8hpp_a9bb9f121559f5679c612512875688d17abdfa171c5b4d44824eec5798556eef32} 
+TERRAIN&\doxylink{classudit_1_1_shader}{Shader} para el terreno. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEFAULT@{DEFAULT}!Shader.hpp@{Shader.hpp}}\index{Shader.hpp@{Shader.hpp}!DEFAULT@{DEFAULT}}}\Hypertarget{_shader_8hpp_a9bb9f121559f5679c612512875688d17a5b39c8b553c821e7cddc6da64b5bd2ee}\label{_shader_8hpp_a9bb9f121559f5679c612512875688d17a5b39c8b553c821e7cddc6da64b5bd2ee} 
+DEFAULT&\doxylink{classudit_1_1_shader}{Shader} por defecto. \\
+\hline
+
+\end{DoxyEnumFields}

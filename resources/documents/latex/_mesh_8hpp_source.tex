@@ -1,0 +1,104 @@
+\doxysection{Mesh.\+hpp}
+\hypertarget{_mesh_8hpp_source}{}\label{_mesh_8hpp_source}\index{/Users/alonsoggdev/UDIT/Asignaturas/Programacion\_Grafica/GL\_Scene/GL\_Scene/Mesh.hpp@{/Users/alonsoggdev/UDIT/Asignaturas/Programacion\_Grafica/GL\_Scene/GL\_Scene/Mesh.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ Mesh.hpp}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ GL\_Geometry}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Alonso\ García\ on\ 11/12/24.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}glm.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <gtc/matrix\_transform.hpp>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <gtc/type\_ptr.hpp>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}glad.h"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_shader_8hpp}{Shader.hpp}}"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{namespace\ }udit}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{enum\ class}\ MeshType}
+\DoxyCodeLine{00022\ \ \ \ \ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ BASIC,}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ MESH,}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ TERRAIN,}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ SKYBOX}
+\DoxyCodeLine{00027\ \ \ \ \ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_mesh_a806cd0680dc3e9d08248e0d5d00e8513}{Mesh}}}
+\DoxyCodeLine{00040\ \ \ \ \ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ COORDINATES\_VBO,\ \ \ \ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ COLORS\_VBO,\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ NORMALS\_VBO,\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ INDEXES\_VBO,\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ TEXTURE\_UV\_VBO,\ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ VBO\_COUNT\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ MeshType\ m\_mesh\_type;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ std::vector<glm::vec3>\ \mbox{\hyperlink{classudit_1_1_mesh_a3852dc96f3b35397c3469d5c06f8d424}{coordinates}};}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ std::vector<glm::vec3>\ colors;}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ std::vector<glm::vec3>\ normals;}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ std::vector<GLuint>\ indices;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ std::vector<glm::vec2>\ texture\_uvs;}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ GLsizei\ \mbox{\hyperlink{classudit_1_1_mesh_ac1cbf9b80a419524bc5dde1a0c67e4ad}{number\_of\_vertices}};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_mesh_aa967111ab07d545be3b81320338e3a62}{create\_mesh}}(std::string\ mesh\_name\ =\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ GLuint\ vbo\_ids[VBO\_COUNT];}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ GLuint\ vao\_id;}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ glm::mat4\ model\_view\_matrix;}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ glm::mat4\ normal\_matrix;}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ std::shared\_ptr\ <\ udit::Shader\ >\ m\_shader;}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classudit_1_1_mesh_a806cd0680dc3e9d08248e0d5d00e8513}{Mesh}}();}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classudit_1_1_mesh_a806cd0680dc3e9d08248e0d5d00e8513}{Mesh}}(std::string\ \&\ path);}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ std::shared\_ptr\ <Mesh>\ \mbox{\hyperlink{classudit_1_1_mesh_a7c6a9492d0b27fbe8f81334392a56da9}{make\_mesh}}(MeshType\ type,\ \textcolor{keyword}{const}\ std::string\ \&path\ =\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classudit_1_1_mesh_ae00ad686a0c38972944f856a7d8a7682}{\string~Mesh}}();}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_mesh_a9d4ae5952b212c449f87b0260d3d1a31}{translate}}(glm::vec3\ translation);}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_mesh_ad14a128f7e0d698666906d4eadeb0c20}{rotate}}(glm::vec3\ rotation,\ \textcolor{keywordtype}{float}\ angle);}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_mesh_a8b7dd47cd13fb1c365f399cb7154ae9c}{scale}}(glm::vec3\ \mbox{\hyperlink{classudit_1_1_mesh_a8b7dd47cd13fb1c365f399cb7154ae9c}{scale}});}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_mesh_ac5a0797ee60d3ec8d04972ed08fa462c}{update}}();}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_mesh_a90e71e2684566413839d77dd850fc66b}{render}}(glm::mat4\ view\_matrix);}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_mesh_a7a570c95db3ca097c30ae7dc30ac7055}{resize}}(glm::mat4\ projection\_matrix);}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_mesh_a29bc27b2ed670472856ca5c131aae307}{set\_shader}}(std::shared\_ptr\ <\ udit::Shader\ >\ shader);}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ GLuint\ \mbox{\hyperlink{classudit_1_1_mesh_a8062022e28aef3a74ea8cf09440d8be2}{get\_shader\_program\_id}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ std::vector\ <\ GLint\ >\ \mbox{\hyperlink{classudit_1_1_mesh_ad35d4c32e215bc29f2258e41760e8454}{get\_shader\_matrix\_ids}}();}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ glm::mat4\ \mbox{\hyperlink{classudit_1_1_mesh_a18ba797aeb3bc4fdd376df8cffe8fc73}{get\_model\_view\_matrix}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ model\_view\_matrix;\ \}}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_mesh_ad0e07608c3db6dd61c25594a09ea4a3c}{set\_model\_view\_matrix}}(glm::mat4\ matrix)\ \{\ model\_view\_matrix\ =\ matrix;\ \}}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_mesh_a6184dedb3bf33f00358186100f085d18}{set\_mesh\_type}}(MeshType\ type)\ \{\ m\_mesh\_type\ =\ type;\ \}}
+\DoxyCodeLine{00233\ \ \ \ \ \};}
+\DoxyCodeLine{00234\ }
+\DoxyCodeLine{00235\ \}}
+
+\end{DoxyCode}
