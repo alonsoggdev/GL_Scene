@@ -22,20 +22,6 @@ Texture::Texture(const std::string & path, GLenum texture_unit, Texture_Type typ
     
     load_texture();
     
-    if (m_type == Texture_Type::HEIGHT)
-    {
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-    }
-    else
-    {
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    }
-    
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    
     unbind();
 }
 
@@ -68,6 +54,8 @@ void Texture::load_texture()
         std::cerr << "Error loading image: " << SOIL_last_result() << std::endl;
         return;
     }
+    
+    std::cerr << "Load image result: " << SOIL_last_result() << std::endl;
 
     GLenum format = GL_RGB;
     
@@ -79,6 +67,20 @@ void Texture::load_texture()
     {
         format = GL_RED;
     }
+    
+    if (m_type == Texture_Type::HEIGHT)
+    {
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    }
+    else
+    {
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    }
+    
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
     if (m_type == Texture_Type::COLOR)
     {

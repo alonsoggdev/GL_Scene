@@ -4,7 +4,7 @@ uniform mat4 model_view_matrix;
 uniform mat4 projection_matrix;
 
 layout (location = 0) in vec2 vertex_xz;
-layout (location = 1) in vec2 vertex_uv;
+layout (location = 4) in vec2 vertex_uv;
 
 uniform sampler2D texture0;
 uniform float     max_height;

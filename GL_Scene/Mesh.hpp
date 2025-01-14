@@ -33,7 +33,9 @@ namespace udit
         {
             COORDINATES_VBO,
             COLORS_VBO,
+            NORMALS_VBO,
             INDEXES_VBO,
+            TEXTURE_UV_VBO,
             VBO_COUNT
         };
         
@@ -42,7 +44,9 @@ namespace udit
     protected:
         std::vector<glm::vec3> coordinates;
         std::vector<glm::vec3> colors;
+        std::vector<glm::vec3> normals;
         std::vector<GLuint> indices;
+        std::vector<glm::vec2> texture_uvs;
         
         GLsizei number_of_vertices;
 

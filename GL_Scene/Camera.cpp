@@ -15,7 +15,7 @@ Camera::Camera(glm::vec3 start_position, glm::vec3 up_direction, float start_yaw
         yaw(start_yaw),
         pitch(start_pitch),
         front(glm::vec3(0.0f, 0.0f, -1.0f)),
-        movement_speed(2.5f),
+        movement_speed(25.f),
         mouse_sensitivity(0.1f),
         zoom(45.0f)
 {
@@ -61,7 +61,7 @@ void Camera::process_keyboard(CameraMovement direction, float delta_time)
         position -= up * velocity;
     }
     
-    position.y = 0.0f;
+    // position.y = 0.0f;
 }
 
 void Camera::process_mouse_movement(float x_offset, float y_offset, bool constraint_pitch)

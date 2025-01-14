@@ -20,11 +20,10 @@ namespace udit
         glm::vec3 color;
         float ambientIntensity;
         float diffuseIntensity;
-        float specularIntensity;
     public:
-        Light(const glm::vec3& pos, const glm::vec3& col, float ambient, float diffuse, float specular);
+        Light(const glm::vec3& pos, const glm::vec3& col, float ambient, float diffuse);
 
-        void send_to_shader(GLuint program_id, const std::string& uniformName) const;
+        void send_to_shader(GLuint program_id) const;
     };
 }
 

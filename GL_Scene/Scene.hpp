@@ -32,6 +32,8 @@ namespace udit
         std::shared_ptr<Plane> floor;
         std::shared_ptr<Mesh> bull;
         Light light;
+        
+        unsigned width, height;
                 
         glm::mat4 view_matrix;
         glm::mat4 projection_matrix;

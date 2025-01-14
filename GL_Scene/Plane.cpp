@@ -33,8 +33,10 @@ namespace udit
         coordinates.clear();
         colors.clear();
         indices.clear();
+        texture_uvs.clear();
         
         coordinates.reserve((columns + 1) * (rows + 1));
+        texture_uvs.reserve((columns + 1) * (rows + 1));
         
         glm::vec3 vertex = glm::vec3(- width / 2.0f, -height / 2.0f, 0);
         
@@ -48,6 +50,11 @@ namespace udit
                 coordinates.push_back(vertex);
                 glm::vec3 color = glm::vec3(float(j) / float(columns), float(i) / float(rows), 1.0f);
                 colors.push_back(color);
+                
+                float u = float(j) / float(columns);
+                float v = float(i) / float(rows);
+                texture_uvs.push_back(glm::vec2(u, v));
+                
                 vertex.x += tile_width;
             }
             vertex.x = - width / 2.0f;

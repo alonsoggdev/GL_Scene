@@ -15,6 +15,8 @@
 #include "Plane.hpp"
 #include "Skybox.hpp"
 
+#include <cassert>
+
 using udit::Mesh;
 
 namespace udit
@@ -44,38 +46,33 @@ namespace udit
         {
             aiMesh * mesh = scene->mMeshes[i];
             
+            // Cargar la información del mesh (coordenadas, normales, etc.)
             size_t number_of_vertices = mesh->mNumVertices;
-            
-            glGenBuffers(VBO_COUNT, vbo_ids);
-            glGenVertexArrays(1, &vao_id);
-            
-            glBindVertexArray(vao_id);
-            
-            static_assert(sizeof(aiVector3D) == sizeof(glm::fvec3), "aiVector3D deberia tener tres floats");
-            
-            glBindBuffer(GL_ARRAY_BUFFER, vbo_ids[COORDINATES_VBO]);
-            glBufferData(GL_ARRAY_BUFFER, number_of_vertices * sizeof(aiVector3D), mesh->mVertices, GL_STATIC_DRAW);
-            
-            glEnableVertexAttribArray(0);
-            glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
-            
-            for (size_t i = 0; i < number_of_vertices; ++i)
-            {
-                colors.push_back(glm::vec3(0.5f, 0.5f, 0.5f));
-            }
-            
-            glBindBuffer (GL_ARRAY_BUFFER, vbo_ids[COLORS_VBO]);
-            glBufferData(GL_ARRAY_BUFFER, colors.size() * sizeof(glm::vec3), colors.data(), GL_STATIC_DRAW);
-            
-            glEnableVertexAttribArray(1);
-            glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, 0);
 
             for (unsigned int j = 0; j < mesh->mNumVertices; ++j)
             {
                 aiVector3D aiVertex = mesh->mVertices[j];
                 coordinates.push_back(glm::vec3(aiVertex.x, aiVertex.y, aiVertex.z));
+
+                aiVector3D aiNormal = mesh->mNormals[j];
+                normals.push_back(glm::vec3(aiNormal.x, aiNormal.y, aiNormal.z));
+
+                // Los colores se mantienen por defecto a gris
+                colors.push_back(glm::vec3(0.5f, 0.5f, 0.5f));
+
+                // Aquí puedes agregar la carga de coordenadas UV si las tienes
+                if (mesh->mTextureCoords[0])
+                {
+                    aiVector3D uv = mesh->mTextureCoords[0][j];
+                    texture_uvs.push_back(glm::vec2(uv.x, uv.y));
+                }
+                else
+                {
+                    texture_uvs.push_back(glm::vec2(0.0f, 0.0f));  // Si no hay coordenadas UV, asignar un valor predeterminado
+                }
             }
-            
+
+            // Cargar los índices
             for (unsigned int j = 0; j < mesh->mNumFaces; ++j)
             {
                 aiFace & face = mesh->mFaces[j];
@@ -84,12 +81,13 @@ namespace udit
                     indices.push_back(face.mIndices[k]);
                 }
             }
-            
-            glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vbo_ids[INDEXES_VBO]);
-            glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(GLuint), indices.data(), GL_STATIC_DRAW);
         }
+
         std::cout << scene->mNumMeshes << " meshes loaded." << std::endl;
+        
+        create_mesh();
     }
+
 
     std::shared_ptr <Mesh> Mesh::make_mesh(MeshType type, const std::string &path)
     {
@@ -148,6 +146,17 @@ namespace udit
         glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
         check_gl_error("glVertexAttribPointer (COORDINATES_VBO)");
 
+        // Crear el VBO para las normales
+        glBindBuffer(GL_ARRAY_BUFFER, vbo_ids[NORMALS_VBO]);
+        glBufferData(GL_ARRAY_BUFFER, normals.size() * sizeof(glm::vec3), normals.data(), GL_STATIC_DRAW);
+        check_gl_error("glBufferData (NORMALS_VBO)");
+
+        glEnableVertexAttribArray(2);
+        check_gl_error("glEnableVertexAttribArray (NORMALS_VBO)");
+
+        glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 0, 0);
+        check_gl_error("glVertexAttribPointer (NORMALS_VBO)");
+
         // Crear el VBO para los colores
         glBindBuffer(GL_ARRAY_BUFFER, vbo_ids[COLORS_VBO]);
         glBufferData(GL_ARRAY_BUFFER, colors.size() * sizeof(glm::vec3), colors.data(), GL_STATIC_DRAW);
@@ -159,6 +168,17 @@ namespace udit
         glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, 0);
         check_gl_error("glVertexAttribPointer (COLORS_VBO)");
 
+        // Crear el VBO para las coordenadas de textura
+        glBindBuffer(GL_ARRAY_BUFFER, vbo_ids[TEXTURE_UV_VBO]);
+        glBufferData(GL_ARRAY_BUFFER, texture_uvs.size() * sizeof(glm::vec2), texture_uvs.data(), GL_STATIC_DRAW);
+        check_gl_error("glBufferData (TEXTURE_UV_VBO)");
+
+        glEnableVertexAttribArray(4);
+        check_gl_error("glEnableVertexAttribArray (TEXTURE_UV_VBO)");
+
+        glVertexAttribPointer(4, 2, GL_FLOAT, GL_FALSE, 0, 0);
+        check_gl_error("glVertexAttribPointer (TEXTURE_UV_VBO)");
+
         // Crear el VBO para los índices
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vbo_ids[INDEXES_VBO]);
         glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(GLuint), indices.data(), GL_STATIC_DRAW);
@@ -169,6 +189,7 @@ namespace udit
 
         std::cout << "Mesh created successfully: " << mesh_name << std::endl;
     }
+
 
     /**
      *@brief Destructor de la clase
@@ -207,44 +228,27 @@ namespace udit
     void Mesh::render(glm::mat4 view_matrix)
     {
         // std::cout << "Rendering mesh..." << std::endl;
-        model_view_matrix = view_matrix * model_view_matrix;
-
         m_shader->use();
         
+        model_view_matrix = view_matrix * model_view_matrix;
         glUniformMatrix4fv(m_shader->get_model_view_matrix_id(), 1, GL_FALSE, glm::value_ptr(model_view_matrix));
         
         normal_matrix = glm::transpose(glm::inverse(model_view_matrix));
         glUniformMatrix4fv(m_shader->get_normal_matrix_id(), 1, GL_FALSE, glm::value_ptr(normal_matrix));
-        
-        // Obtener la posición de la cámara (que ya debe ser calculada previamente)
-        glm::vec3 camera_position = glm::inverse(view_matrix)[3];  // La última columna de la matriz de vista es la posición de la cámara
 
-        // Pasar la posición de la cámara al shader
-        GLuint camera_position_location = glGetUniformLocation(m_shader->get_program_id(), "view_pos");
-        glUniform3fv(camera_position_location, 1, glm::value_ptr(camera_position));
-        
-
-        
         glBindVertexArray (vao_id);
-        
-        if (m_mesh_type == MeshType::TERRAIN)
-        {
-            glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(indices.size()), GL_UNSIGNED_INT, 0);
-        }
-        else
-        {
-            glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(indices.size()), GL_UNSIGNED_INT, 0);
-        }
+        glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(indices.size()), GL_UNSIGNED_INT, 0);
         glBindVertexArray (0);
     }
 
     void Mesh::resize(glm::mat4 projection_matrix)
     {
         glUseProgram(get_shader_program_id());
-        glUniformMatrix4fv(get_shader_matrix_ids()[1], 1, GL_FALSE, glm::value_ptr(projection_matrix));
+        glUniformMatrix4fv(m_shader->get_projection_matrix_id(), 1, GL_FALSE, glm::value_ptr(projection_matrix));
+        glUseProgram(0);
     }
 
-    void Mesh::set_shader( std::shared_ptr < udit::Shader > shader)
+    void Mesh::set_shader(std::shared_ptr < udit::Shader > shader)
     {
         if (shader != nullptr)
         {

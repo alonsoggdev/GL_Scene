@@ -22,13 +22,12 @@ namespace udit
      *@param width Ancho de la escena
      *@param height Alto de la escena
      */
-    Scene::Scene(unsigned width, unsigned height) : light(glm::vec3(0.0f, 2.0f, -5.0f), glm::vec3(1.0f, 1.0f, 1.0f), 0.2f, 0.8f, 1.0f)
+    Scene::Scene(unsigned width, unsigned height) : width(width), height(height), light(glm::vec3(4.0f, 2.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), 0.2f, 0.8f)
     {
         // std::cout << "Creating scene..." << std::endl;
 
         std::shared_ptr< Shader > default_shader_program = Shader::make_shader(udit::ShaderType::DEFAULT);
-        /*
-        
+
         // SKYBOX
         skybox = std::dynamic_pointer_cast<Skybox>(Mesh::make_mesh(udit::MeshType::SKYBOX));
         skybox->set_mesh_type(udit::MeshType::SKYBOX);
@@ -51,13 +50,12 @@ namespace udit
         floor->set_mesh_type(MeshType::BASIC);
         std::shared_ptr< Shader > floor_shader_program = Shader::make_shader(udit::ShaderType::SINGLE_TEXTURE, "Shader_SingleTexture_Vertex.glsl", "Shader_SingleTexture_Fragment.glsl", {"snow.jpg"}, "Floor");
         floor->set_shader(floor_shader_program);
-         */
 
         //BULL
         bull = Mesh::make_mesh(udit::MeshType::MESH, "bull.obj");
         bull->set_shader(default_shader_program);
         std::cout << "Bull has shader " << bull->get_shader_program_id() << std::endl;
-        light.send_to_shader(bull->get_shader_program_id(), "light");
+        light.send_to_shader(bull->get_shader_program_id());
         
         resize(width, height);
     }
@@ -66,7 +64,7 @@ namespace udit
      */
     void Scene::update()
     {
-        // angle += 0.5f;
+       // angle += 0.5f;
     }
     
     /**
@@ -78,7 +76,6 @@ namespace udit
         
         glClear (GL_COLOR_BUFFER_BIT);
 
-        /*
         //* Skybox rendering
         glm::mat4 skybox_view_matrix = glm::mat4(glm::mat3(view_matrix));
         skybox->set_model_view_matrix(glm::mat4(1.0f));
@@ -95,7 +92,6 @@ namespace udit
         floor->translate(glm::vec3(0.0f, -2.0f, 0.0f));
         floor->rotate(glm::vec3(1.0f, 0.0f, 0.0f), 90.0f);
         floor->render(view_matrix);
-         */
 
         //* Bull rendering
         bull->set_model_view_matrix(glm::mat4(1.0f));
@@ -103,18 +99,16 @@ namespace udit
         bull->rotate(glm::vec3(1.0f, 0.0f, 0.0f), -90.0f);
         bull->rotate(glm::vec3(0.0f, 0.0f, 1.0f), angle);
         bull->scale(glm::vec3(0.01f, 0.01f, 0.01f));
-        light.send_to_shader(bull->get_shader_program_id(), "light");
-        bull->render(view_matrix);
+        bull->render(view_matrix);        
     }
     
     void Scene::resize (unsigned width, unsigned height)
     {
         glm::mat4 projection_matrix = glm::perspective (20.f, GLfloat(width) / height, 1.f, 5000.f);
-        /*
+
         skybox->resize(projection_matrix);
         terrain->resize(projection_matrix);
         floor->resize(projection_matrix);
-         */
         bull->resize(projection_matrix);
 
         glViewport (0, 0, width, height);
