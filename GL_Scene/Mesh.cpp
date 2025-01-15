@@ -94,6 +94,7 @@ namespace udit
     std::shared_ptr <Mesh> Mesh::make_mesh(MeshType type, const std::string &path)
     {
         std::string absolute_path = "/Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/resources/";
+        std::string relative_path = "../../../../../resources/";
         std::string complete_path = absolute_path + path;
         switch (type)
         {

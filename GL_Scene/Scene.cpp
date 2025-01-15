@@ -79,7 +79,7 @@ namespace udit
     {
         // std::cout << "Rendering scene..." << std::endl;
         
-        glClear (GL_COLOR_BUFFER_BIT);
+        glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         //* Skybox rendering
         glm::mat4 skybox_view_matrix = glm::mat4(glm::mat3(view_matrix));
@@ -97,13 +97,6 @@ namespace udit
         floor->translate(glm::vec3(0.0f, -2.0f, 0.0f));
         floor->rotate(glm::vec3(1.0f, 0.0f, 0.0f), 90.0f);
         floor->render(view_matrix);
-
-        //* Statue rendering
-        statue->set_model_view_matrix(glm::mat4(1.0f));
-        //statue->translate(glm::vec3(0.0f, 0.0f, 0.0f));
-        statue->scale(glm::vec3(30.0f, 30.0f, 30.0f));
-        statue->orbit(glm::vec3(0.0f, 0.0f, 0.0f), 0.5f, 1.0f);
-        statue->render(view_matrix);
         
         //* Bull rendering
         bull->set_model_view_matrix(glm::mat4(1.0f));
@@ -113,6 +106,12 @@ namespace udit
         bull->scale(glm::vec3(0.01f, 0.01f, 0.01f));
         bull->render(view_matrix);
         
+        //* Statue rendering
+        statue->set_model_view_matrix(glm::mat4(1.0f));
+        //statue->translate(glm::vec3(0.0f, 0.0f, 0.0f));
+        statue->scale(glm::vec3(30.0f, 30.0f, 30.0f));
+        statue->orbit(glm::vec3(0.0f, 0.0f, 0.0f), 0.5f, 0.5f);
+        statue->render(view_matrix);
     }
     
     void Scene::resize (unsigned width, unsigned height)

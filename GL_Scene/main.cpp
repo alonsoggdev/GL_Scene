@@ -18,6 +18,12 @@
 #include "Camera.hpp"
 #include "EventHandler.hpp"
 
+/*
+    DUDAS
+        1. El height map sigue sin funcionar.
+        4. Rutas relativas/absolutas
+ */
+
 using udit::Window;
 using udit::Scene;
 

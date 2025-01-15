@@ -85,7 +85,8 @@ namespace udit
         }
         
         glEnable     (GL_CULL_FACE);
-        glDisable    (GL_DEPTH_TEST);
+        glEnable     (GL_DEPTH_TEST);
+        glDepthFunc  (GL_LESS);
         glClearColor (.2f, .2f, .2f, 1.f);
 
         program_id = compile_shaders (vertex_code.c_str(), fragment_code.c_str());
@@ -95,7 +96,8 @@ namespace udit
     {
         std::cout << "Loading default shader..." << std::endl;
         glEnable     (GL_CULL_FACE);
-        glDisable    (GL_DEPTH_TEST);
+        glEnable     (GL_DEPTH_TEST);
+        glDepthFunc  (GL_LESS);
         glClearColor (.2f, .2f, .2f, 1.f);
 
         program_id = compile_shaders (default_vertex_shader_code.c_str(), default_fragment_shader_code.c_str());
@@ -112,6 +114,7 @@ namespace udit
     )
     {
         std::string absolute_path = "/Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/resources/";
+        std::string relative_path = "../../../../../resources/";
 
         switch (type)
         {
