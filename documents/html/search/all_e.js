@@ -1,4 +1,25 @@
 var searchData=
 [
-  ['quiet_5fnan_0',['quiet_NaN',['../classstd_1_1numeric__limits_3_01half__float_1_1half_01_4.html#a4583df9bd2b496cb47e7c0fa7d1fe7eb',1,'std::numeric_limits&lt; half_float::half &gt;']]]
+  ['scale_0',['scale',['../classudit_1_1_mesh.html#a8b7dd47cd13fb1c365f399cb7154ae9c',1,'udit::Mesh::scale()'],['../class_mesh.html#a8b7dd47cd13fb1c365f399cb7154ae9c',1,'Mesh::scale()']]],
+  ['scene_1',['Scene',['../class_scene.html',1,'Scene'],['../classudit_1_1_scene.html',1,'udit::Scene'],['../classudit_1_1_scene.html#ae1140680bbef0fc44b6f9ea8349e1a45',1,'udit::Scene::Scene()'],['../class_scene.html#ae1140680bbef0fc44b6f9ea8349e1a45',1,'Scene::Scene()']]],
+  ['scene_2ehpp_2',['Scene.hpp',['../_scene_8hpp.html',1,'']]],
+  ['send_5fto_5fshader_3',['send_to_shader',['../classudit_1_1_light.html#a36bace83a70cdac93ba4ae1b54fab0f6',1,'udit::Light']]],
+  ['set_5flights_4',['set_lights',['../classudit_1_1_scene.html#a0348a5a32f7f07de916b082373b7fd79',1,'udit::Scene::set_lights()'],['../class_scene.html#a0348a5a32f7f07de916b082373b7fd79',1,'Scene::set_lights()']]],
+  ['set_5fmesh_5ftype_5',['set_mesh_type',['../classudit_1_1_mesh.html#a6184dedb3bf33f00358186100f085d18',1,'udit::Mesh::set_mesh_type()'],['../class_mesh.html#a6184dedb3bf33f00358186100f085d18',1,'Mesh::set_mesh_type()']]],
+  ['set_5fmodel_5fview_5fmatrix_6',['set_model_view_matrix',['../classudit_1_1_mesh.html#ad0e07608c3db6dd61c25594a09ea4a3c',1,'udit::Mesh::set_model_view_matrix()'],['../class_mesh.html#ad0e07608c3db6dd61c25594a09ea4a3c',1,'Mesh::set_model_view_matrix()']]],
+  ['set_5fname_7',['set_name',['../classudit_1_1_shader.html#a8cfbb5ddea1cb5b25e28befb9f427540',1,'udit::Shader::set_name()'],['../class_shader.html#a8cfbb5ddea1cb5b25e28befb9f427540',1,'Shader::set_name()']]],
+  ['set_5fprojection_5fmatrix_8',['set_projection_matrix',['../classudit_1_1_scene.html#a97f81040918793c0817082cb60830bda',1,'udit::Scene::set_projection_matrix()'],['../class_scene.html#a97f81040918793c0817082cb60830bda',1,'Scene::set_projection_matrix()']]],
+  ['set_5fshader_9',['set_shader',['../classudit_1_1_mesh.html#a29bc27b2ed670472856ca5c131aae307',1,'udit::Mesh::set_shader()'],['../class_mesh.html#a29bc27b2ed670472856ca5c131aae307',1,'Mesh::set_shader()']]],
+  ['set_5ftexture_10',['set_texture',['../classudit_1_1_shader.html#a7df9e7d645135fdbb463eac322807a32',1,'udit::Shader::set_texture()'],['../class_shader.html#a7df9e7d645135fdbb463eac322807a32',1,'Shader::set_texture()']]],
+  ['set_5ftexture_5fscale_11',['set_texture_scale',['../classudit_1_1_shader.html#ab691074491374b383b99f64b51b28f77',1,'udit::Shader::set_texture_scale()'],['../class_shader.html#ab691074491374b383b99f64b51b28f77',1,'Shader::set_texture_scale()']]],
+  ['set_5ftype_12',['set_type',['../classudit_1_1_texture.html#ac2c582bf3de7e2257adcab51f4b618e8',1,'udit::Texture::set_type()'],['../class_texture.html#ac2c582bf3de7e2257adcab51f4b618e8',1,'Texture::set_type()']]],
+  ['set_5fview_5fmatrix_13',['set_view_matrix',['../classudit_1_1_scene.html#a80ba37bc7b0f37ecd8280b7a0efec4dc',1,'udit::Scene::set_view_matrix()'],['../class_scene.html#a80ba37bc7b0f37ecd8280b7a0efec4dc',1,'Scene::set_view_matrix()']]],
+  ['shader_14',['Shader',['../class_shader.html',1,'Shader'],['../classudit_1_1_shader.html',1,'udit::Shader'],['../classudit_1_1_shader.html#a504c7a85d3e778b654a61c24f02b7d30',1,'udit::Shader::Shader()'],['../classudit_1_1_shader.html#ae352ce6f486cf4353e49324373bab633',1,'udit::Shader::Shader(ShaderType type, const std::string &amp;vertex_source, const std::string &amp;fragment_source, const std::string &amp;name)'],['../class_shader.html#a504c7a85d3e778b654a61c24f02b7d30',1,'Shader::Shader()'],['../class_shader.html#ae352ce6f486cf4353e49324373bab633',1,'Shader::Shader(ShaderType type, const std::string &amp;vertex_source, const std::string &amp;fragment_source, const std::string &amp;name)']]],
+  ['shader_2ehpp_15',['Shader.hpp',['../_shader_8hpp.html',1,'']]],
+  ['shadertype_16',['ShaderType',['../_shader_8hpp.html#a9bb9f121559f5679c612512875688d17',1,'udit']]],
+  ['single_5ftexture_17',['SINGLE_TEXTURE',['../_shader_8hpp.html#a9bb9f121559f5679c612512875688d17a12eb352270009dc59b1d195ef5c30d0a',1,'udit']]],
+  ['skybox_18',['SKYBOX',['../_shader_8hpp.html#a9bb9f121559f5679c612512875688d17ae3d53ff832d50102618d4fd24ca85a85',1,'udit']]],
+  ['skybox_19',['Skybox',['../class_skybox.html',1,'Skybox'],['../classudit_1_1_skybox.html',1,'udit::Skybox'],['../classudit_1_1_skybox.html#a7c429b2f9157eddd64ae9f8506caf7ef',1,'udit::Skybox::Skybox()'],['../classudit_1_1_skybox.html#a9b69f7d426410428e2f4e5b897c7797f',1,'udit::Skybox::Skybox(float size, const std::vector&lt; std::string &gt; &amp;faces)'],['../class_skybox.html#a7c429b2f9157eddd64ae9f8506caf7ef',1,'Skybox::Skybox()'],['../class_skybox.html#a9b69f7d426410428e2f4e5b897c7797f',1,'Skybox::Skybox(float size, const std::vector&lt; std::string &gt; &amp;faces)']]],
+  ['skybox_2ehpp_20',['Skybox.hpp',['../_skybox_8hpp.html',1,'']]],
+  ['swap_5fbuffers_21',['swap_buffers',['../classudit_1_1_window.html#ab8360f8b171e5eb4895fde9d91a04a8e',1,'udit::Window::swap_buffers()'],['../class_window.html#ab8360f8b171e5eb4895fde9d91a04a8e',1,'Window::swap_buffers()']]]
 ];

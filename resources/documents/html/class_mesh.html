@@ -146,6 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad14a128f7e0d698666906d4eadeb0c20" id="r_ad14a128f7e0d698666906d4eadeb0c20"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad14a128f7e0d698666906d4eadeb0c20">rotate</a> (glm::vec3 rotation, float angle)</td></tr>
 <tr class="memdesc:ad14a128f7e0d698666906d4eadeb0c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rota la malla.  <br /></td></tr>
 <tr class="separator:ad14a128f7e0d698666906d4eadeb0c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae06550fcf688c4034ac1bcbbed612cf7" id="r_ae06550fcf688c4034ac1bcbbed612cf7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae06550fcf688c4034ac1bcbbed612cf7">orbit</a> (glm::vec3 center, float distance, float speed)</td></tr>
+<tr class="memdesc:ae06550fcf688c4034ac1bcbbed612cf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orbita la malla alrededor de un punto.  <br /></td></tr>
+<tr class="separator:ae06550fcf688c4034ac1bcbbed612cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b7dd47cd13fb1c365f399cb7154ae9c" id="r_a8b7dd47cd13fb1c365f399cb7154ae9c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b7dd47cd13fb1c365f399cb7154ae9c">scale</a> (glm::vec3 scale)</td></tr>
 <tr class="memdesc:a8b7dd47cd13fb1c365f399cb7154ae9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escala la malla.  <br /></td></tr>
 <tr class="separator:a8b7dd47cd13fb1c365f399cb7154ae9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,7 +217,7 @@ GLsizei&#160;</td><td class="memItemRight" valign="bottom"><b>number_of_vertices
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Clase que representa una malla 3D. </p>
-<p>La clase <code><a class="el" href="class_mesh.html" title="Clase que representa una malla 3D.">Mesh</a></code> es la base para representar mallas 3D en OpenGL. Contiene todos los atributos y funciones necesarias para cargar, gestionar y renderizar mallas con vértices, normales, colores, coordenadas de textura y los índices que definen la topología de la malla. Esta clase también incluye funciones para transformar la malla (traslación, rotación, escala) y para actualizar y renderizar la malla en la escena. </p>
+<p>La clase <code><a class="el" href="class_mesh.html" title="Clase que representa una malla 3D.">Mesh</a></code> es la base para representar mallas 3D en OpenGL. Contiene todos los atributos y funciones necesarias para cargar, gestionar y renderizar mallas con vértices, normales, colores, coordenadas de textura y los índices que definen la topología de la malla. Esta clase también incluye funciones para transformar la malla (traslación, rotación, escala y órbita) y para actualizar y renderizar la malla en la escena. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1193efd64578b11074fec8e2c69b4ecb" name="a1193efd64578b11074fec8e2c69b4ecb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1193efd64578b11074fec8e2c69b4ecb">&#9670;&#160;</a></span>Mesh()</h2>
@@ -410,6 +413,51 @@ GLsizei&#160;</td><td class="memItemRight" valign="bottom"><b>number_of_vertices
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Un puntero compartido a la malla creada. </dd></dl>
+
+</div>
+</div>
+<a id="ae06550fcf688c4034ac1bcbbed612cf7" name="ae06550fcf688c4034ac1bcbbed612cf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae06550fcf688c4034ac1bcbbed612cf7">&#9670;&#160;</a></span>orbit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void udit::Mesh::orbit </td>
+          <td>(</td>
+          <td class="paramtype">glm::vec3</td>          <td class="paramname"><span class="paramname"><em>center</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>distance</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>speed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Orbita la malla alrededor de un punto. </p>
+<p>Aplica una trayectoria de orbita.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">center</td><td>Punto central de orbita. </td></tr>
+    <tr><td class="paramname">distance</td><td>Distancia al punto central. </td></tr>
+    <tr><td class="paramname">speed</td><td>Velocidad de orbita </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -719,8 +767,8 @@ GLsizei&#160;</td><td class="memItemRight" valign="bottom"><b>number_of_vertices
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/<a class="el" href="_mesh_8hpp_source.html">Mesh.hpp</a></li>
-<li>/Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/GL_Scene/<b>Mesh.cpp</b></li>
+<li>/Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/code/<a class="el" href="_mesh_8hpp_source.html">Mesh.hpp</a></li>
+<li>/Users/alonsoggdev/UDIT/Asignaturas/Programacion_Grafica/GL_Scene/code/<b>Mesh.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

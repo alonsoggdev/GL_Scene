@@ -1,5 +1,5 @@
 \doxysection{Scene.\+hpp}
-\hypertarget{_scene_8hpp_source}{}\label{_scene_8hpp_source}\index{/Users/alonsoggdev/UDIT/Asignaturas/Programacion\_Grafica/GL\_Scene/GL\_Scene/Scene.hpp@{/Users/alonsoggdev/UDIT/Asignaturas/Programacion\_Grafica/GL\_Scene/GL\_Scene/Scene.hpp}}
+\hypertarget{_scene_8hpp_source}{}\label{_scene_8hpp_source}\index{/Users/alonsoggdev/UDIT/Asignaturas/Programacion\_Grafica/GL\_Scene/code/Scene.hpp@{/Users/alonsoggdev/UDIT/Asignaturas/Programacion\_Grafica/GL\_Scene/code/Scene.hpp}}
 \mbox{\hyperlink{_scene_8hpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{//}}
@@ -38,29 +38,33 @@
 \DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ std::shared\_ptr<Mesh>\ bull;}
 \DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ std::shared\_ptr<Light>\ light;}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ std::shared\_ptr<Mesh>\ statue;}
 \DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ width,\ height;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ std::shared\_ptr<Mesh>\ car;}
 \DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ glm::mat4\ view\_matrix;}
-\DoxyCodeLine{00072\ }
-\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ glm::mat4\ projection\_matrix;}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ std::shared\_ptr<Light>\ light;}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ width,\ height;}
 \DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classudit_1_1_scene_ae1140680bbef0fc44b6f9ea8349e1a45}{Scene}}(\textcolor{keywordtype}{unsigned}\ width,\ \textcolor{keywordtype}{unsigned}\ height);}
-\DoxyCodeLine{00085\ }
-\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_a03e281c23d0e567ee5e953d423988656}{update}}();}
-\DoxyCodeLine{00093\ }
-\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_ad9a399c0646c049a107e0f094ff3b961}{render}}();}
-\DoxyCodeLine{00101\ }
-\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_af96df08fac8334941d8b3c0edf4d786a}{resize}}(\textcolor{keywordtype}{unsigned}\ width,\ \textcolor{keywordtype}{unsigned}\ height);}
-\DoxyCodeLine{00110\ }
-\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_a80ba37bc7b0f37ecd8280b7a0efec4dc}{set\_view\_matrix}}(\textcolor{keyword}{const}\ glm::mat4\&\ view);}
-\DoxyCodeLine{00118\ }
-\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_a97f81040918793c0817082cb60830bda}{set\_projection\_matrix}}(\textcolor{keyword}{const}\ glm::mat4\&\ projection);}
-\DoxyCodeLine{00126\ }
-\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_a0348a5a32f7f07de916b082373b7fd79}{set\_lights}}(GLuint\ shader\_program\_id);}
-\DoxyCodeLine{00135\ \ \ \ \ \};}
-\DoxyCodeLine{00136\ \}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ glm::mat4\ view\_matrix;}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ glm::mat4\ projection\_matrix;}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classudit_1_1_scene_ae1140680bbef0fc44b6f9ea8349e1a45}{Scene}}(\textcolor{keywordtype}{unsigned}\ width,\ \textcolor{keywordtype}{unsigned}\ height);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_a03e281c23d0e567ee5e953d423988656}{update}}();}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_ad9a399c0646c049a107e0f094ff3b961}{render}}();}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_af96df08fac8334941d8b3c0edf4d786a}{resize}}(\textcolor{keywordtype}{unsigned}\ width,\ \textcolor{keywordtype}{unsigned}\ height);}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_a80ba37bc7b0f37ecd8280b7a0efec4dc}{set\_view\_matrix}}(\textcolor{keyword}{const}\ glm::mat4\&\ view);}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_a97f81040918793c0817082cb60830bda}{set\_projection\_matrix}}(\textcolor{keyword}{const}\ glm::mat4\&\ projection);}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classudit_1_1_scene_a0348a5a32f7f07de916b082373b7fd79}{set\_lights}}(GLuint\ shader\_program\_id);}
+\DoxyCodeLine{00141\ \ \ \ \ \};}
+\DoxyCodeLine{00142\ \}}
 
 \end{DoxyCode}

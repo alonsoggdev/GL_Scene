@@ -1,0 +1,229 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Camera Class Reference}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{8}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Constructor \& Destructor Documentation}{8}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}Camera()}{8}{subsubsection.4.1.2.1}%
+\contentsline {subsection}{\numberline {4.1.3}Member Function Documentation}{8}{subsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.1}get\_view\_matrix()}{8}{subsubsection.4.1.3.1}%
+\contentsline {subsubsection}{\numberline {4.1.3.2}process\_keyboard()}{8}{subsubsection.4.1.3.2}%
+\contentsline {subsubsection}{\numberline {4.1.3.3}process\_mouse\_movement()}{9}{subsubsection.4.1.3.3}%
+\contentsline {subsection}{\numberline {4.1.4}Member Data Documentation}{9}{subsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.4.1}front}{9}{subsubsection.4.1.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.4.2}mouse\_sensitivity}{9}{subsubsection.4.1.4.2}%
+\contentsline {subsubsection}{\numberline {4.1.4.3}movement\_speed}{9}{subsubsection.4.1.4.3}%
+\contentsline {subsubsection}{\numberline {4.1.4.4}pitch}{10}{subsubsection.4.1.4.4}%
+\contentsline {subsubsection}{\numberline {4.1.4.5}position}{10}{subsubsection.4.1.4.5}%
+\contentsline {subsubsection}{\numberline {4.1.4.6}right}{10}{subsubsection.4.1.4.6}%
+\contentsline {subsubsection}{\numberline {4.1.4.7}up}{10}{subsubsection.4.1.4.7}%
+\contentsline {subsubsection}{\numberline {4.1.4.8}world\_up}{10}{subsubsection.4.1.4.8}%
+\contentsline {subsubsection}{\numberline {4.1.4.9}yaw}{10}{subsubsection.4.1.4.9}%
+\contentsline {subsubsection}{\numberline {4.1.4.10}zoom}{11}{subsubsection.4.1.4.10}%
+\contentsline {section}{\numberline {4.2}Cube Class Reference}{11}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{11}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}udit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Cube Class Reference}{11}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Constructor \& Destructor Documentation}{13}{subsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.1}Cube()\hspace {0.1cm}{\footnotesize \ttfamily [1/4]}}{13}{subsubsection.4.3.1.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.2}Cube()\hspace {0.1cm}{\footnotesize \ttfamily [2/4]}}{13}{subsubsection.4.3.1.2}%
+\contentsline {subsubsection}{\numberline {4.3.1.3}Cube()\hspace {0.1cm}{\footnotesize \ttfamily [3/4]}}{13}{subsubsection.4.3.1.3}%
+\contentsline {subsubsection}{\numberline {4.3.1.4}Cube()\hspace {0.1cm}{\footnotesize \ttfamily [4/4]}}{14}{subsubsection.4.3.1.4}%
+\contentsline {section}{\numberline {4.4}Event\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler Class Reference}{14}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{14}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Constructor \& Destructor Documentation}{14}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}EventHandler()}{14}{subsubsection.4.4.2.1}%
+\contentsline {subsection}{\numberline {4.4.3}Member Function Documentation}{15}{subsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.1}handle\_events()}{15}{subsubsection.4.4.3.1}%
+\contentsline {section}{\numberline {4.5}udit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Light Class Reference}{15}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{16}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Constructor \& Destructor Documentation}{16}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}Light()}{16}{subsubsection.4.5.2.1}%
+\contentsline {subsection}{\numberline {4.5.3}Member Function Documentation}{16}{subsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.3.1}make\_light()}{16}{subsubsection.4.5.3.1}%
+\contentsline {subsubsection}{\numberline {4.5.3.2}send\_to\_shader()}{17}{subsubsection.4.5.3.2}%
+\contentsline {section}{\numberline {4.6}Mesh Class Reference}{17}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{18}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Constructor \& Destructor Documentation}{19}{subsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}Mesh()}{19}{subsubsection.4.6.2.1}%
+\contentsline {subsubsection}{\numberline {4.6.2.2}$\sim $Mesh()}{19}{subsubsection.4.6.2.2}%
+\contentsline {subsection}{\numberline {4.6.3}Member Function Documentation}{19}{subsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.1}create\_mesh()}{19}{subsubsection.4.6.3.1}%
+\contentsline {subsubsection}{\numberline {4.6.3.2}get\_model\_view\_matrix()}{19}{subsubsection.4.6.3.2}%
+\contentsline {subsubsection}{\numberline {4.6.3.3}get\_shader\_matrix\_ids()}{20}{subsubsection.4.6.3.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.4}get\_shader\_program\_id()}{20}{subsubsection.4.6.3.4}%
+\contentsline {subsubsection}{\numberline {4.6.3.5}make\_mesh()}{20}{subsubsection.4.6.3.5}%
+\contentsline {subsubsection}{\numberline {4.6.3.6}orbit()}{20}{subsubsection.4.6.3.6}%
+\contentsline {subsubsection}{\numberline {4.6.3.7}render()}{21}{subsubsection.4.6.3.7}%
+\contentsline {subsubsection}{\numberline {4.6.3.8}resize()}{21}{subsubsection.4.6.3.8}%
+\contentsline {subsubsection}{\numberline {4.6.3.9}rotate()}{21}{subsubsection.4.6.3.9}%
+\contentsline {subsubsection}{\numberline {4.6.3.10}scale()}{21}{subsubsection.4.6.3.10}%
+\contentsline {subsubsection}{\numberline {4.6.3.11}set\_mesh\_type()}{22}{subsubsection.4.6.3.11}%
+\contentsline {subsubsection}{\numberline {4.6.3.12}set\_model\_view\_matrix()}{22}{subsubsection.4.6.3.12}%
+\contentsline {subsubsection}{\numberline {4.6.3.13}set\_shader()}{22}{subsubsection.4.6.3.13}%
+\contentsline {subsubsection}{\numberline {4.6.3.14}translate()}{22}{subsubsection.4.6.3.14}%
+\contentsline {subsubsection}{\numberline {4.6.3.15}update()}{23}{subsubsection.4.6.3.15}%
+\contentsline {section}{\numberline {4.7}udit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Mesh Class Reference}{23}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{24}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Constructor \& Destructor Documentation}{25}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}Mesh()}{25}{subsubsection.4.7.2.1}%
+\contentsline {subsubsection}{\numberline {4.7.2.2}$\sim $Mesh()}{25}{subsubsection.4.7.2.2}%
+\contentsline {subsection}{\numberline {4.7.3}Member Function Documentation}{25}{subsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.1}create\_mesh()}{25}{subsubsection.4.7.3.1}%
+\contentsline {subsubsection}{\numberline {4.7.3.2}get\_model\_view\_matrix()}{25}{subsubsection.4.7.3.2}%
+\contentsline {subsubsection}{\numberline {4.7.3.3}get\_shader\_matrix\_ids()}{26}{subsubsection.4.7.3.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.4}get\_shader\_program\_id()}{26}{subsubsection.4.7.3.4}%
+\contentsline {subsubsection}{\numberline {4.7.3.5}make\_mesh()}{26}{subsubsection.4.7.3.5}%
+\contentsline {subsubsection}{\numberline {4.7.3.6}orbit()}{26}{subsubsection.4.7.3.6}%
+\contentsline {subsubsection}{\numberline {4.7.3.7}render()}{27}{subsubsection.4.7.3.7}%
+\contentsline {subsubsection}{\numberline {4.7.3.8}resize()}{27}{subsubsection.4.7.3.8}%
+\contentsline {subsubsection}{\numberline {4.7.3.9}rotate()}{27}{subsubsection.4.7.3.9}%
+\contentsline {subsubsection}{\numberline {4.7.3.10}scale()}{27}{subsubsection.4.7.3.10}%
+\contentsline {subsubsection}{\numberline {4.7.3.11}set\_mesh\_type()}{28}{subsubsection.4.7.3.11}%
+\contentsline {subsubsection}{\numberline {4.7.3.12}set\_model\_view\_matrix()}{28}{subsubsection.4.7.3.12}%
+\contentsline {subsubsection}{\numberline {4.7.3.13}set\_shader()}{28}{subsubsection.4.7.3.13}%
+\contentsline {subsubsection}{\numberline {4.7.3.14}translate()}{28}{subsubsection.4.7.3.14}%
+\contentsline {subsubsection}{\numberline {4.7.3.15}update()}{29}{subsubsection.4.7.3.15}%
+\contentsline {section}{\numberline {4.8}udit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Window\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Open\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Context\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Settings Struct Reference}{29}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Window\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Open\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Context\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Settings Struct Reference}{29}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Plane Class Reference}{30}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{31}{subsection.4.10.1}%
+\contentsline {subsection}{\numberline {4.10.2}Constructor \& Destructor Documentation}{31}{subsection.4.10.2}%
+\contentsline {subsubsection}{\numberline {4.10.2.1}Plane()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{31}{subsubsection.4.10.2.1}%
+\contentsline {subsubsection}{\numberline {4.10.2.2}Plane()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{32}{subsubsection.4.10.2.2}%
+\contentsline {subsubsection}{\numberline {4.10.2.3}Plane()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{33}{subsubsection.4.10.2.3}%
+\contentsline {section}{\numberline {4.11}udit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Plane Class Reference}{33}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{35}{subsection.4.11.1}%
+\contentsline {subsection}{\numberline {4.11.2}Constructor \& Destructor Documentation}{35}{subsection.4.11.2}%
+\contentsline {subsubsection}{\numberline {4.11.2.1}Plane()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{35}{subsubsection.4.11.2.1}%
+\contentsline {subsubsection}{\numberline {4.11.2.2}Plane()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{35}{subsubsection.4.11.2.2}%
+\contentsline {subsubsection}{\numberline {4.11.2.3}Plane()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{35}{subsubsection.4.11.2.3}%
+\contentsline {section}{\numberline {4.12}Scene Class Reference}{36}{section.4.12}%
+\contentsline {subsection}{\numberline {4.12.1}Detailed Description}{36}{subsection.4.12.1}%
+\contentsline {subsection}{\numberline {4.12.2}Constructor \& Destructor Documentation}{36}{subsection.4.12.2}%
+\contentsline {subsubsection}{\numberline {4.12.2.1}Scene()}{36}{subsubsection.4.12.2.1}%
+\contentsline {subsection}{\numberline {4.12.3}Member Function Documentation}{37}{subsection.4.12.3}%
+\contentsline {subsubsection}{\numberline {4.12.3.1}render()}{37}{subsubsection.4.12.3.1}%
+\contentsline {subsubsection}{\numberline {4.12.3.2}resize()}{37}{subsubsection.4.12.3.2}%
+\contentsline {subsubsection}{\numberline {4.12.3.3}set\_lights()}{37}{subsubsection.4.12.3.3}%
+\contentsline {subsubsection}{\numberline {4.12.3.4}set\_projection\_matrix()}{38}{subsubsection.4.12.3.4}%
+\contentsline {subsubsection}{\numberline {4.12.3.5}set\_view\_matrix()}{38}{subsubsection.4.12.3.5}%
+\contentsline {subsubsection}{\numberline {4.12.3.6}update()}{38}{subsubsection.4.12.3.6}%
+\contentsline {section}{\numberline {4.13}udit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Scene Class Reference}{39}{section.4.13}%
+\contentsline {subsection}{\numberline {4.13.1}Detailed Description}{39}{subsection.4.13.1}%
+\contentsline {subsection}{\numberline {4.13.2}Constructor \& Destructor Documentation}{39}{subsection.4.13.2}%
+\contentsline {subsubsection}{\numberline {4.13.2.1}Scene()}{39}{subsubsection.4.13.2.1}%
+\contentsline {subsection}{\numberline {4.13.3}Member Function Documentation}{40}{subsection.4.13.3}%
+\contentsline {subsubsection}{\numberline {4.13.3.1}render()}{40}{subsubsection.4.13.3.1}%
+\contentsline {subsubsection}{\numberline {4.13.3.2}resize()}{40}{subsubsection.4.13.3.2}%
+\contentsline {subsubsection}{\numberline {4.13.3.3}set\_lights()}{40}{subsubsection.4.13.3.3}%
+\contentsline {subsubsection}{\numberline {4.13.3.4}set\_projection\_matrix()}{40}{subsubsection.4.13.3.4}%
+\contentsline {subsubsection}{\numberline {4.13.3.5}set\_view\_matrix()}{41}{subsubsection.4.13.3.5}%
+\contentsline {subsubsection}{\numberline {4.13.3.6}update()}{41}{subsubsection.4.13.3.6}%
+\contentsline {section}{\numberline {4.14}Shader Class Reference}{41}{section.4.14}%
+\contentsline {subsection}{\numberline {4.14.1}Detailed Description}{42}{subsection.4.14.1}%
+\contentsline {subsection}{\numberline {4.14.2}Constructor \& Destructor Documentation}{43}{subsection.4.14.2}%
+\contentsline {subsubsection}{\numberline {4.14.2.1}Shader()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{43}{subsubsection.4.14.2.1}%
+\contentsline {subsubsection}{\numberline {4.14.2.2}Shader()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{43}{subsubsection.4.14.2.2}%
+\contentsline {subsubsection}{\numberline {4.14.2.3}$\sim $Shader()}{43}{subsubsection.4.14.2.3}%
+\contentsline {subsection}{\numberline {4.14.3}Member Function Documentation}{43}{subsection.4.14.3}%
+\contentsline {subsubsection}{\numberline {4.14.3.1}compile\_shaders()}{43}{subsubsection.4.14.3.1}%
+\contentsline {subsubsection}{\numberline {4.14.3.2}get\_model\_view\_matrix\_id()}{44}{subsubsection.4.14.3.2}%
+\contentsline {subsubsection}{\numberline {4.14.3.3}get\_name()}{44}{subsubsection.4.14.3.3}%
+\contentsline {subsubsection}{\numberline {4.14.3.4}get\_normal\_matrix\_id()}{44}{subsubsection.4.14.3.4}%
+\contentsline {subsubsection}{\numberline {4.14.3.5}get\_program\_id()}{44}{subsubsection.4.14.3.5}%
+\contentsline {subsubsection}{\numberline {4.14.3.6}get\_projection\_matrix\_id()}{45}{subsubsection.4.14.3.6}%
+\contentsline {subsubsection}{\numberline {4.14.3.7}has\_textures()}{45}{subsubsection.4.14.3.7}%
+\contentsline {subsubsection}{\numberline {4.14.3.8}make\_shader()}{45}{subsubsection.4.14.3.8}%
+\contentsline {subsubsection}{\numberline {4.14.3.9}set\_name()}{45}{subsubsection.4.14.3.9}%
+\contentsline {subsubsection}{\numberline {4.14.3.10}set\_texture()}{46}{subsubsection.4.14.3.10}%
+\contentsline {subsubsection}{\numberline {4.14.3.11}set\_texture\_scale()}{46}{subsubsection.4.14.3.11}%
+\contentsline {subsubsection}{\numberline {4.14.3.12}use()}{46}{subsubsection.4.14.3.12}%
+\contentsline {section}{\numberline {4.15}udit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Shader Class Reference}{46}{section.4.15}%
+\contentsline {subsection}{\numberline {4.15.1}Detailed Description}{47}{subsection.4.15.1}%
+\contentsline {subsection}{\numberline {4.15.2}Constructor \& Destructor Documentation}{48}{subsection.4.15.2}%
+\contentsline {subsubsection}{\numberline {4.15.2.1}Shader()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{48}{subsubsection.4.15.2.1}%
+\contentsline {subsubsection}{\numberline {4.15.2.2}Shader()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{48}{subsubsection.4.15.2.2}%
+\contentsline {subsubsection}{\numberline {4.15.2.3}$\sim $Shader()}{48}{subsubsection.4.15.2.3}%
+\contentsline {subsection}{\numberline {4.15.3}Member Function Documentation}{48}{subsection.4.15.3}%
+\contentsline {subsubsection}{\numberline {4.15.3.1}compile\_shaders()}{48}{subsubsection.4.15.3.1}%
+\contentsline {subsubsection}{\numberline {4.15.3.2}get\_model\_view\_matrix\_id()}{49}{subsubsection.4.15.3.2}%
+\contentsline {subsubsection}{\numberline {4.15.3.3}get\_name()}{49}{subsubsection.4.15.3.3}%
+\contentsline {subsubsection}{\numberline {4.15.3.4}get\_normal\_matrix\_id()}{49}{subsubsection.4.15.3.4}%
+\contentsline {subsubsection}{\numberline {4.15.3.5}get\_program\_id()}{49}{subsubsection.4.15.3.5}%
+\contentsline {subsubsection}{\numberline {4.15.3.6}get\_projection\_matrix\_id()}{50}{subsubsection.4.15.3.6}%
+\contentsline {subsubsection}{\numberline {4.15.3.7}has\_textures()}{50}{subsubsection.4.15.3.7}%
+\contentsline {subsubsection}{\numberline {4.15.3.8}make\_shader()}{50}{subsubsection.4.15.3.8}%
+\contentsline {subsubsection}{\numberline {4.15.3.9}set\_name()}{50}{subsubsection.4.15.3.9}%
+\contentsline {subsubsection}{\numberline {4.15.3.10}set\_texture()}{51}{subsubsection.4.15.3.10}%
+\contentsline {subsubsection}{\numberline {4.15.3.11}set\_texture\_scale()}{51}{subsubsection.4.15.3.11}%
+\contentsline {subsubsection}{\numberline {4.15.3.12}use()}{51}{subsubsection.4.15.3.12}%
+\contentsline {section}{\numberline {4.16}Skybox Class Reference}{51}{section.4.16}%
+\contentsline {subsection}{\numberline {4.16.1}Detailed Description}{53}{subsection.4.16.1}%
+\contentsline {subsection}{\numberline {4.16.2}Constructor \& Destructor Documentation}{53}{subsection.4.16.2}%
+\contentsline {subsubsection}{\numberline {4.16.2.1}Skybox()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{53}{subsubsection.4.16.2.1}%
+\contentsline {subsubsection}{\numberline {4.16.2.2}Skybox()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{53}{subsubsection.4.16.2.2}%
+\contentsline {subsection}{\numberline {4.16.3}Member Function Documentation}{54}{subsection.4.16.3}%
+\contentsline {subsubsection}{\numberline {4.16.3.1}getCubemapTexture()}{54}{subsubsection.4.16.3.1}%
+\contentsline {section}{\numberline {4.17}udit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Skybox Class Reference}{54}{section.4.17}%
+\contentsline {subsection}{\numberline {4.17.1}Detailed Description}{56}{subsection.4.17.1}%
+\contentsline {subsection}{\numberline {4.17.2}Constructor \& Destructor Documentation}{56}{subsection.4.17.2}%
+\contentsline {subsubsection}{\numberline {4.17.2.1}Skybox()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{56}{subsubsection.4.17.2.1}%
+\contentsline {subsubsection}{\numberline {4.17.2.2}Skybox()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{56}{subsubsection.4.17.2.2}%
+\contentsline {subsection}{\numberline {4.17.3}Member Function Documentation}{57}{subsection.4.17.3}%
+\contentsline {subsubsection}{\numberline {4.17.3.1}getCubemapTexture()}{57}{subsubsection.4.17.3.1}%
+\contentsline {section}{\numberline {4.18}Texture Class Reference}{57}{section.4.18}%
+\contentsline {subsection}{\numberline {4.18.1}Detailed Description}{58}{subsection.4.18.1}%
+\contentsline {subsection}{\numberline {4.18.2}Constructor \& Destructor Documentation}{58}{subsection.4.18.2}%
+\contentsline {subsubsection}{\numberline {4.18.2.1}Texture()}{58}{subsubsection.4.18.2.1}%
+\contentsline {subsection}{\numberline {4.18.3}Member Function Documentation}{58}{subsection.4.18.3}%
+\contentsline {subsubsection}{\numberline {4.18.3.1}bind()}{58}{subsubsection.4.18.3.1}%
+\contentsline {subsubsection}{\numberline {4.18.3.2}is\_loaded()}{58}{subsubsection.4.18.3.2}%
+\contentsline {subsubsection}{\numberline {4.18.3.3}load\_texture()}{59}{subsubsection.4.18.3.3}%
+\contentsline {subsubsection}{\numberline {4.18.3.4}set\_type()}{59}{subsubsection.4.18.3.4}%
+\contentsline {subsubsection}{\numberline {4.18.3.5}unbind()}{59}{subsubsection.4.18.3.5}%
+\contentsline {section}{\numberline {4.19}udit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Texture Class Reference}{59}{section.4.19}%
+\contentsline {subsection}{\numberline {4.19.1}Detailed Description}{60}{subsection.4.19.1}%
+\contentsline {subsection}{\numberline {4.19.2}Constructor \& Destructor Documentation}{60}{subsection.4.19.2}%
+\contentsline {subsubsection}{\numberline {4.19.2.1}Texture()}{60}{subsubsection.4.19.2.1}%
+\contentsline {subsection}{\numberline {4.19.3}Member Function Documentation}{60}{subsection.4.19.3}%
+\contentsline {subsubsection}{\numberline {4.19.3.1}bind()}{60}{subsubsection.4.19.3.1}%
+\contentsline {subsubsection}{\numberline {4.19.3.2}is\_loaded()}{61}{subsubsection.4.19.3.2}%
+\contentsline {subsubsection}{\numberline {4.19.3.3}load\_texture()}{61}{subsubsection.4.19.3.3}%
+\contentsline {subsubsection}{\numberline {4.19.3.4}set\_type()}{61}{subsubsection.4.19.3.4}%
+\contentsline {subsubsection}{\numberline {4.19.3.5}unbind()}{61}{subsubsection.4.19.3.5}%
+\contentsline {section}{\numberline {4.20}udit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Window Class Reference}{61}{section.4.20}%
+\contentsline {subsection}{\numberline {4.20.1}Constructor \& Destructor Documentation}{62}{subsection.4.20.1}%
+\contentsline {subsubsection}{\numberline {4.20.1.1}Window()}{62}{subsubsection.4.20.1.1}%
+\contentsline {section}{\numberline {4.21}Window Class Reference}{63}{section.4.21}%
+\contentsline {subsection}{\numberline {4.21.1}Constructor \& Destructor Documentation}{63}{subsection.4.21.1}%
+\contentsline {subsubsection}{\numberline {4.21.1.1}Window()}{63}{subsubsection.4.21.1.1}%
+\contentsline {chapter}{\numberline {5}File Documentation}{65}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Camera.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{65}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Cube.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{66}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Event\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{66}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Light.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{66}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Mesh.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{67}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Plane.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{68}{section.5.6}%
+\contentsline {section}{\numberline {5.7}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alonsoggdev/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}UDIT/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Asignaturas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Programacion\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Grafica/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scene/code/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scene.hpp File Reference}{69}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{69}{subsection.5.7.1}%
+\contentsline {section}{\numberline {5.8}Scene.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{69}{section.5.8}%
+\contentsline {section}{\numberline {5.9}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alonsoggdev/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}UDIT/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Asignaturas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Programacion\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Grafica/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scene/code/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Shader.hpp File Reference}{70}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{71}{subsection.5.9.1}%
+\contentsline {subsection}{\numberline {5.9.2}Enumeration Type Documentation}{71}{subsection.5.9.2}%
+\contentsline {subsubsection}{\numberline {5.9.2.1}ShaderType}{71}{subsubsection.5.9.2.1}%
+\contentsline {section}{\numberline {5.10}Shader.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{71}{section.5.10}%
+\contentsline {section}{\numberline {5.11}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alonsoggdev/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}UDIT/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Asignaturas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Programacion\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Grafica/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scene/code/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Skybox.hpp File Reference}{72}{section.5.11}%
+\contentsline {subsection}{\numberline {5.11.1}Detailed Description}{73}{subsection.5.11.1}%
+\contentsline {section}{\numberline {5.12}Skybox.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{73}{section.5.12}%
+\contentsline {section}{\numberline {5.13}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alonsoggdev/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}UDIT/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Asignaturas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Programacion\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Grafica/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scene/code/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Texture.hpp File Reference}{73}{section.5.13}%
+\contentsline {subsection}{\numberline {5.13.1}Detailed Description}{74}{subsection.5.13.1}%
+\contentsline {subsection}{\numberline {5.13.2}Enumeration Type Documentation}{74}{subsection.5.13.2}%
+\contentsline {subsubsection}{\numberline {5.13.2.1}Texture\_Type}{74}{subsubsection.5.13.2.1}%
+\contentsline {section}{\numberline {5.14}Texture.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{74}{section.5.14}%
+\contentsline {section}{\numberline {5.15}Window.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{75}{section.5.15}%
+\contentsline {chapter}{Index}{77}{section*.77}%

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['file_5fpath_0',['file_path',['../classudit_1_1_texture.html#a5fc4b16fd445914330b33e186a421610',1,'udit::Texture::file_path'],['../class_texture.html#a5fc4b16fd445914330b33e186a421610',1,'Texture::file_path']]],
-  ['front_1',['front',['../class_camera.html#a8847cf29c9c124906ad5d97ecb5c55d1',1,'Camera']]]
+  ['pitch_0',['pitch',['../class_camera.html#ab56fcb39f580e8d2159cf2c9c6d9a65a',1,'Camera']]],
+  ['position_1',['position',['../class_camera.html#a04b5db2c530d8630660e8cfb93a4b3b5',1,'Camera']]]
 ];

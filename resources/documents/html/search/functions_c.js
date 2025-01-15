@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['unbind_0',['unbind',['../classudit_1_1_texture.html#a451d7afac3848417bb1007d39ee7d545',1,'udit::Texture::unbind()'],['../class_texture.html#a451d7afac3848417bb1007d39ee7d545',1,'Texture::unbind()']]],
-  ['update_1',['update',['../classudit_1_1_mesh.html#ac5a0797ee60d3ec8d04972ed08fa462c',1,'udit::Mesh::update()'],['../classudit_1_1_scene.html#a03e281c23d0e567ee5e953d423988656',1,'udit::Scene::update()'],['../class_scene.html#a03e281c23d0e567ee5e953d423988656',1,'Scene::update()'],['../class_mesh.html#ac5a0797ee60d3ec8d04972ed08fa462c',1,'Mesh::update()']]],
-  ['use_2',['use',['../classudit_1_1_shader.html#ab92a6c1c845d65e96cf5212f2a1c5a64',1,'udit::Shader::use()'],['../class_shader.html#ab92a6c1c845d65e96cf5212f2a1c5a64',1,'Shader::use()']]]
+  ['texture_0',['Texture',['../classudit_1_1_texture.html#ae992200b6fa02dda942d99305828c0c0',1,'udit::Texture::Texture()'],['../class_texture.html#ae992200b6fa02dda942d99305828c0c0',1,'Texture::Texture()']]],
+  ['translate_1',['translate',['../classudit_1_1_mesh.html#a9d4ae5952b212c449f87b0260d3d1a31',1,'udit::Mesh::translate()'],['../class_mesh.html#a9d4ae5952b212c449f87b0260d3d1a31',1,'Mesh::translate()']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['digits_0',['digits',['../classstd_1_1numeric__limits_3_01half__float_1_1half_01_4.html#a25dd523e9495b75166757d5f73197068',1,'std::numeric_limits&lt; half_float::half &gt;']]],
-  ['digits10_1',['digits10',['../classstd_1_1numeric__limits_3_01half__float_1_1half_01_4.html#adb8ec10ec96a1c60db49b40554fb13ef',1,'std::numeric_limits&lt; half_float::half &gt;']]]
+  ['mouse_5fsensitivity_0',['mouse_sensitivity',['../class_camera.html#aec1b9630980c0019ee346c023cafdbd3',1,'Camera']]],
+  ['movement_5fspeed_1',['movement_speed',['../class_camera.html#ac357bed69095828f8ea9fdf64192f0e3',1,'Camera']]]
 ];

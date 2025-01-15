@@ -7,6 +7,7 @@ var class_mesh =
     [ "get_model_view_matrix", "class_mesh.html#a18ba797aeb3bc4fdd376df8cffe8fc73", null ],
     [ "get_shader_matrix_ids", "class_mesh.html#ad35d4c32e215bc29f2258e41760e8454", null ],
     [ "get_shader_program_id", "class_mesh.html#a8062022e28aef3a74ea8cf09440d8be2", null ],
+    [ "orbit", "class_mesh.html#ae06550fcf688c4034ac1bcbbed612cf7", null ],
     [ "render", "class_mesh.html#a90e71e2684566413839d77dd850fc66b", null ],
     [ "resize", "class_mesh.html#a7a570c95db3ca097c30ae7dc30ac7055", null ],
     [ "rotate", "class_mesh.html#ad14a128f7e0d698666906d4eadeb0c20", null ],

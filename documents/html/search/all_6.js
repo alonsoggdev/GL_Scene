@@ -1,15 +1,6 @@
 var searchData=
 [
-  ['gamma_0',['gamma',['../half_8hpp.html#a85fbb7498c5f00e81419c231fb45d841',1,'half_float::detail']]],
-  ['geometry_1',['GEOMETRY',['../_shader_8hpp.html#a9bb9f121559f5679c612512875688d17ab22957ad8078e8d73de61aef53d13a74',1,'udit']]],
-  ['get_5fmodel_5fview_5fmatrix_2',['get_model_view_matrix',['../classudit_1_1_mesh.html#a18ba797aeb3bc4fdd376df8cffe8fc73',1,'udit::Mesh::get_model_view_matrix()'],['../class_mesh.html#a18ba797aeb3bc4fdd376df8cffe8fc73',1,'Mesh::get_model_view_matrix()']]],
-  ['get_5fmodel_5fview_5fmatrix_5fid_3',['get_model_view_matrix_id',['../classudit_1_1_shader.html#ac6b5ee7b9ad01a0c5d9c6f0ddeeda7a7',1,'udit::Shader::get_model_view_matrix_id()'],['../class_shader.html#ac6b5ee7b9ad01a0c5d9c6f0ddeeda7a7',1,'Shader::get_model_view_matrix_id()']]],
-  ['get_5fname_4',['get_name',['../classudit_1_1_shader.html#aa9430efabd927430efeb7ed9f808a0fb',1,'udit::Shader::get_name()'],['../class_shader.html#aa9430efabd927430efeb7ed9f808a0fb',1,'Shader::get_name()']]],
-  ['get_5fnormal_5fmatrix_5fid_5',['get_normal_matrix_id',['../classudit_1_1_shader.html#a733f13b921cb46e00a19a49e50e5a94b',1,'udit::Shader::get_normal_matrix_id()'],['../class_shader.html#a733f13b921cb46e00a19a49e50e5a94b',1,'Shader::get_normal_matrix_id()']]],
-  ['get_5fprogram_5fid_6',['get_program_id',['../classudit_1_1_shader.html#a01a80991b1ef9215ca0b3537c020d904',1,'udit::Shader::get_program_id()'],['../class_shader.html#a01a80991b1ef9215ca0b3537c020d904',1,'Shader::get_program_id()']]],
-  ['get_5fprojection_5fmatrix_5fid_7',['get_projection_matrix_id',['../classudit_1_1_shader.html#a575d59a841cf007c9d031b4c357ad75e',1,'udit::Shader::get_projection_matrix_id()'],['../class_shader.html#a575d59a841cf007c9d031b4c357ad75e',1,'Shader::get_projection_matrix_id()']]],
-  ['get_5fshader_5fmatrix_5fids_8',['get_shader_matrix_ids',['../classudit_1_1_mesh.html#ad35d4c32e215bc29f2258e41760e8454',1,'udit::Mesh::get_shader_matrix_ids()'],['../class_mesh.html#ad35d4c32e215bc29f2258e41760e8454',1,'Mesh::get_shader_matrix_ids()']]],
-  ['get_5fshader_5fprogram_5fid_9',['get_shader_program_id',['../classudit_1_1_mesh.html#a8062022e28aef3a74ea8cf09440d8be2',1,'udit::Mesh::get_shader_program_id()'],['../class_mesh.html#a8062022e28aef3a74ea8cf09440d8be2',1,'Mesh::get_shader_program_id()']]],
-  ['get_5fview_5fmatrix_10',['get_view_matrix',['../class_camera.html#a330720093351b96355d66df8e4e728b9',1,'Camera']]],
-  ['getcubemaptexture_11',['getCubemapTexture',['../classudit_1_1_skybox.html#a5c2b4c4d5bdd2ff769d29348f58a1689',1,'udit::Skybox::getCubemapTexture()'],['../class_skybox.html#a5c2b4c4d5bdd2ff769d29348f58a1689',1,'Skybox::getCubemapTexture()']]]
+  ['handle_5fevents_0',['handle_events',['../class_event_handler.html#a8d8917acad4258ae9624ad1079f01021',1,'EventHandler']]],
+  ['has_5ftextures_1',['has_textures',['../classudit_1_1_shader.html#a61067b60121d37c3bdca41a893e7df6c',1,'udit::Shader::has_textures()'],['../class_shader.html#a61067b60121d37c3bdca41a893e7df6c',1,'Shader::has_textures()']]],
+  ['height_2',['HEIGHT',['../_texture_8hpp.html#a5d05643d6fef9f5f2f3a06738872c62cad770ba3ce18fa409965dfdf5e7c348e6',1,'udit']]]
 ];

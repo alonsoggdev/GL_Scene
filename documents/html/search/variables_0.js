@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['binary_0',['binary',['../half_8hpp.html#a083e9a0ced4c4a5495ac89dd753dd215',1,'half_float::detail']]]
+  ['coordinates_0',['coordinates',['../classudit_1_1_mesh.html#a3852dc96f3b35397c3469d5c06f8d424',1,'udit::Mesh::coordinates'],['../class_mesh.html#a3852dc96f3b35397c3469d5c06f8d424',1,'Mesh::coordinates']]]
 ];

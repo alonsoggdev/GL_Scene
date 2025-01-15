@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['plane_0',['Plane',['../classudit_1_1_plane.html#abc1df60c4a2612a284465bc7f454b078',1,'udit::Plane::Plane()'],['../classudit_1_1_plane.html#aa5c80b69cf80ffe5828f562861aac03f',1,'udit::Plane::Plane(float size)'],['../classudit_1_1_plane.html#a7d90d744ea4a2d4dff6930059760d9de',1,'udit::Plane::Plane(float width, float height, unsigned columns, unsigned rows)'],['../class_plane.html#abc1df60c4a2612a284465bc7f454b078',1,'Plane::Plane()'],['../class_plane.html#aa5c80b69cf80ffe5828f562861aac03f',1,'Plane::Plane(float size)'],['../class_plane.html#a7d90d744ea4a2d4dff6930059760d9de',1,'Plane::Plane(float width, float height, unsigned columns, unsigned rows)']]],
-  ['pole_1',['pole',['../half_8hpp.html#afedd62a662f9f6d189773787349c9ee8',1,'half_float::detail']]],
-  ['pow_2',['pow',['../namespacehalf__float.html#ae93aefb7ce84a478da5345f02cebd87f',1,'half_float']]],
-  ['process_5fkeyboard_3',['process_keyboard',['../class_camera.html#a8fac6f001fe4701239aa5d7cedc403f6',1,'Camera']]],
-  ['process_5fmouse_5fmovement_4',['process_mouse_movement',['../class_camera.html#ac34989a6aad816da24a2f2a158a425c4',1,'Camera']]]
+  ['unbind_0',['unbind',['../classudit_1_1_texture.html#a451d7afac3848417bb1007d39ee7d545',1,'udit::Texture::unbind()'],['../class_texture.html#a451d7afac3848417bb1007d39ee7d545',1,'Texture::unbind()']]],
+  ['update_1',['update',['../classudit_1_1_mesh.html#ac5a0797ee60d3ec8d04972ed08fa462c',1,'udit::Mesh::update()'],['../classudit_1_1_scene.html#a03e281c23d0e567ee5e953d423988656',1,'udit::Scene::update()'],['../class_scene.html#a03e281c23d0e567ee5e953d423988656',1,'Scene::update()'],['../class_mesh.html#ac5a0797ee60d3ec8d04972ed08fa462c',1,'Mesh::update()']]],
+  ['use_2',['use',['../classudit_1_1_shader.html#ab92a6c1c845d65e96cf5212f2a1c5a64',1,'udit::Shader::use()'],['../class_shader.html#ab92a6c1c845d65e96cf5212f2a1c5a64',1,'Shader::use()']]]
 ];

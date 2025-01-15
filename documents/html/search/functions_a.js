@@ -1,13 +1,6 @@
 var searchData=
 [
-  ['make_5flight_0',['make_light',['../classudit_1_1_light.html#ad3e0c8f91d85f8785eb7cec3da909818',1,'udit::Light']]],
-  ['make_5fmesh_1',['make_mesh',['../classudit_1_1_mesh.html#a7c6a9492d0b27fbe8f81334392a56da9',1,'udit::Mesh::make_mesh()'],['../class_mesh.html#a7c6a9492d0b27fbe8f81334392a56da9',1,'Mesh::make_mesh()']]],
-  ['make_5fshader_2',['make_shader',['../classudit_1_1_shader.html#aaff09e57ec963c791a284d7c1904366a',1,'udit::Shader::make_shader()'],['../class_shader.html#aaff09e57ec963c791a284d7c1904366a',1,'Shader::make_shader()']]],
-  ['max_3',['max',['../classstd_1_1numeric__limits_3_01half__float_1_1half_01_4.html#a18dff56a912af3306b967a49a7a1a859',1,'std::numeric_limits&lt; half_float::half &gt;']]],
-  ['mesh_4',['Mesh',['../classudit_1_1_mesh.html#a806cd0680dc3e9d08248e0d5d00e8513',1,'udit::Mesh::Mesh()'],['../classudit_1_1_mesh.html#a1193efd64578b11074fec8e2c69b4ecb',1,'udit::Mesh::Mesh(std::string &amp;path)'],['../class_mesh.html#a806cd0680dc3e9d08248e0d5d00e8513',1,'Mesh::Mesh()'],['../class_mesh.html#a1193efd64578b11074fec8e2c69b4ecb',1,'Mesh::Mesh(std::string &amp;path)']]],
-  ['min_5',['min',['../classstd_1_1numeric__limits_3_01half__float_1_1half_01_4.html#a52dd448e009c0a1a7e463c773cbd8f9e',1,'std::numeric_limits&lt; half_float::half &gt;']]],
-  ['mod_6',['mod',['../half_8hpp.html#a339493fc31caa0e1163101c796f53a24',1,'half_float::detail']]],
-  ['modf_7',['modf',['../namespacehalf__float.html#aea611921bef3891bd2554446c74bdce3',1,'half_float']]],
-  ['mulhi_8',['mulhi',['../half_8hpp.html#a5bab58d55c3e04b00aef9b6a28007c5a',1,'half_float::detail']]],
-  ['multiply64_9',['multiply64',['../half_8hpp.html#a4bb4e140d84e87a66ca65c71738a55d7',1,'half_float::detail']]]
+  ['render_0',['render',['../classudit_1_1_mesh.html#a90e71e2684566413839d77dd850fc66b',1,'udit::Mesh::render()'],['../classudit_1_1_scene.html#ad9a399c0646c049a107e0f094ff3b961',1,'udit::Scene::render()'],['../class_scene.html#ad9a399c0646c049a107e0f094ff3b961',1,'Scene::render()'],['../class_mesh.html#a90e71e2684566413839d77dd850fc66b',1,'Mesh::render()']]],
+  ['resize_1',['resize',['../classudit_1_1_mesh.html#a7a570c95db3ca097c30ae7dc30ac7055',1,'udit::Mesh::resize()'],['../classudit_1_1_scene.html#af96df08fac8334941d8b3c0edf4d786a',1,'udit::Scene::resize()'],['../class_scene.html#af96df08fac8334941d8b3c0edf4d786a',1,'Scene::resize()'],['../class_mesh.html#a7a570c95db3ca097c30ae7dc30ac7055',1,'Mesh::resize()']]],
+  ['rotate_2',['rotate',['../classudit_1_1_mesh.html#ad14a128f7e0d698666906d4eadeb0c20',1,'udit::Mesh::rotate()'],['../class_mesh.html#ad14a128f7e0d698666906d4eadeb0c20',1,'Mesh::rotate()']]]
 ];
